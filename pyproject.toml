@@ -1,0 +1,9 @@
+[project]
+name = "subrating"
+version = "0.2.0"
+description = "Agentic RAG over film subtitles to estimate parent-guide content ratings"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
