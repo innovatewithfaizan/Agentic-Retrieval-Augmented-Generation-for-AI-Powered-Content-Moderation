@@ -1,0 +1,78 @@
+film_id,subtitle_file,review_title,genre,kind,match
+broken_flowers,10237_138367_189590_broken_flowers.xml,Broken Flowers,Adventure,film,exact
+harry_potter_and_the_goblet_of_fire,10256_224114_296563_harry_potter_and_the_goblet_of_fire.xml,Harry Potter and the Goblet of Fire,Adventure,film,exact
+zathura,10268_188740_250917_zathura.xml,Zathura,Adventure,film,exact
+mr_3000,103_118947_161756_mr_3000.xml,Mr. 3000,Comedy,film,exact
+million_dollar_baby,110_97723_133067_million_dollar_baby.xml,Million Dollar Baby,Drama,film,exact
+along_came_a_spider,1120_104767_143770_along_came_a_spider.xml,Along Came a Spider,Thriller,film,exact
+meet_the_fockers,114_92818_125413_meet_the_fockers.xml,Meet the Fockers,Comedy,film,exact
+pitch_black,122_82593_110005_pitch_black.xml,Pitch Black,Horror,film,exact
+alfie,127_97306_132382_alfie.xml,Alfie,Comedy,film,exact
+avp_alien_vs_predator,128_85224_114038_avp_alien_vs_predator.xml,Alien vs. Predator,Horror,film,suffix
+pi,134_19608_22231_pi.xml,Pi,Thriller,film,exact
+closer,143_225934_298982_closer.xml,Closer,Drama,film,exact
+eternal_sunshine_of_the_spotless_mind,146_206647_272090_eternal_sunshine_of_the_spotless_mind.xml,Eternal Sunshine of the Spotless Mind,Drama,film,exact
+bad_boys_ii,1545_62212_79987_bad_boys_ii.xml,Bad Boys II,Action,film,exact
+stir_of_echoes,1595_203106_267554_stir_of_echoes.xml,Stir of Echoes,Horror,film,exact
+charlie_and_the_chocolate_factory,1629_131536_180881_charlie_and_the_chocolate_factory.xml,Charlie and the Chocolate Factory (2005),Adventure,film,exact
+terminator_3_rise_of_the_machines,1644_51566_65088_terminator_3_rise_of_the_machines.xml,Terminator 3,Action,film,prefix
+the_descent,1653_105006_144109_the_descent.xml,The Descent,Adventure,film,exact
+the_pelican_brief,1714_71332_92848_the_pelican_brief.xml,The Pelican Brief,Thriller,film,exact
+the_hitchhikers_guide_to_the_galaxy,1728_119637_162606_the_hitchhikers_guide_to_the_galaxy.xml,The Hitchhiker's Guide to the Galaxy,Adventure,film,exact
+twisted,1819_78230_103507_twisted.xml,Twisted,Crime,film,exact
+the_princess_diaries_2_royal_engagement,1844_141877_194255_the_princess_diaries_2_royal_engagement.xml,The Princess Diaries 2,Romance,film,prefix
+after_the_sunset,185_91150_122823_after_the_sunset.xml,After the Sunset,Crime,film,exact
+garden_state,186_84657_113212_garden_state.xml,Garden State,Drama,film,exact
+the_passion_of_the_christ,1952_77445_102300_the_passion_of_the_christ.xml,The Passion of the Christ,Drama,film,exact
+the_game,1959_195130_258684_the_game.xml,The Game,Mystery,film,exact
+desperate_housewives,200_235496_311326_desperate_housewives.xml,Desperate Housewives TV Review,Comedy,tv,exact
+out_of_time,2035_58111_74035_out_of_time.xml,Out of Time,Crime,film,exact
+eyes_wide_shut,2082_133973_184043_eyes_wide_shut.xml,Eyes Wide Shut,Thriller,film,exact
+final_destination,2208_33778_40584_final_destination.xml,Final Destination,Horror,film,exact
+50_first_dates,223_73036_95414_50_first_dates.xml,50 First Dates,Comedy,film,exact
+oceans_twelve,227_291_375_oceans_twelve.xml,Ocean's Twelve,Comedy,film,exact
+i_heart_huckabees,229_88845_119585_i_heart_huckabees.xml,I Heart Huckabees,Comedy,film,exact
+the_italian_job,2395_54431_68975_the_italian_job.xml,The Italian Job,Action,film,exact
+johnny_english,2422_51743_65334_johnny_english.xml,Johnny English,Action,film,exact
+layer_cake,244_97765_133122_layer_cake.xml,Layer Cake,Crime,film,exact
+sideways,247_91723_123670_sideways.xml,Sideways,Comedy,film,exact
+the_bone_collector,2481_18277_20690_the_bone_collector.xml,The Bone Collector,Mystery,film,exact
+dracula_2000,2583_106301_145877_dracula_2000.xml,Dracula 2000,Horror,film,exact
+elephant,2598_207363_273026_elephant.xml,Elephant,Crime,film,exact
+shattered_glass,2625_63075_81179_shattered_glass.xml,Shattered Glass,Crime,film,exact
+spawn,2655_18233_20644_spawn.xml,Spawn,Thriller,film,exact
+the_english_patient,269_126649_174383_the_english_patient.xml,The English Patient,Romance,film,exact
+narc,2732_114901_156280_narc.xml,NARC,Mystery,film,exact
+envy,273_80031_106154_envy.xml,Envy,Comedy,film,exact
+shanghai_knights,2758_48767_61294_shanghai_knights.xml,Shanghai Knights,Action,film,exact
+taking_lives,2870_77577_102498_taking_lives.xml,Taking Lives,Crime,film,exact
+master_and_commander_the_far_side_of_the_world,2947_65946_85036_master_and_commander_the_far_side_of_the_world.xml,Master and Commander,Action,film,prefix
+prison_break,2968_137953_189049_prison_break.xml,Prison Break TV Review,Adventure,tv,exact
+the_net,2977_18600_21030_the_net.xml,The Net,Thriller,film,exact
+the_andromeda_strain,3056_171428_230328_the_andromeda_strain.xml,The Andromeda Strain,Mystery,film,exact
+high_fidelity,3148_54510_69069_high_fidelity.xml,High Fidelity,Romance,film,exact
+dirty_dancing,3227_119207_162105_dirty_dancing.xml,Dirty Dancing,Romance,film,exact
+kate_and_leopold,3270_110542_150715_kate__leopold.xml,Kate and Leopold,Romance,film,exact
+maria_full_of_grace,330_89135_119985_maria_full_of_grace.xml,Maria,Crime,film,prefix
+white_chicks,33_80920_107485_white_chicks.xml,White Chicks,Crime,film,exact
+what_lies_beneath,3438_26584_31116_what_lies_beneath.xml,What Lies Beneath,Horror,film,exact
+the_alamo,3555_81002_107594_the_alamo.xml,The Alamo,Drama,film,exact
+the_last_samurai,395_60483_77539_the_last_samurai.xml,The Last Samurai,Action,film,exact
+a_love_song_for_bobby_long,403_93574_126748_a_love_song_for_bobby_long.xml,A Love Song for Bobby Long,Drama,film,exact
+21_grams,40_66622_86014_21_grams.xml,21 Grams,Crime,film,exact
+bridget_jones_the_edge_of_reason,424_153359_209079_bridget_jones_the_edge_of_reason.xml,Bridget Jones,Drama,film,prefix
+national_security,4548_114298_155524_national_security.xml,National Security,Action,film,exact
+the_firm,4583_24347_28208_the_firm.xml,The Firm,Thriller,film,exact
+the_thomas_crown_affair,462_128131_176340_the_thomas_crown_affair.xml,The Thomas Crown Affair,Romance,film,exact
+the_sisterhood_of_the_traveling_pants,4644_104761_143761_the_sisterhood_of_the_traveling_pants.xml,The Sisterhood of the Traveling Pants,Adventure,film,exact
+the_brothers_grimm,4973_105007_144111_the_brothers_grimm.xml,The Brothers Grimm,Adventure,film,exact
+shaun_of_the_dead,49_79592_105423_shaun_of_the_dead.xml,Shaun of the Dead,Comedy,film,exact
+wolf_creek,5291_150648_205515_wolf_creek.xml,Wolf Creek,Adventure,film,exact
+bless_the_child,5502_225637_298582_bless_the_child.xml,Bless the Child,Thriller,film,exact
+passion_of_mind,5511_22011_25285_passion_of_mind.xml,Passion of Mind,Romance,film,exact
+in_the_cut,645_61405_78790_in_the_cut.xml,In the Cut,Crime,film,exact
+ladder_49,740_209798_276210_ladder_49.xml,Ladder 49,Action,film,exact
+saw,74_119118_161992_saw.xml,Saw,Crime,film,exact
+silver_city,8394_86858_116569_silver_city.xml,Silver City,Drama,film,exact
+the_village,86_208961_275101_the_village.xml,The Village,Drama,film,exact
+cradle_2_the_grave,9_115516_157098_cradle_2_the_grave.xml,Cradle 2 the Grave,Action,film,exact
