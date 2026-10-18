@@ -1,0 +1,53 @@
+{
+  "film_id": "sideways",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows a brief physical struggle over a bottle and some tense shoving/commands, but no graphic or sustained violent scenes—mostly scuffle and a bottle landing.",
+      "evidence": [
+        "Give me that bottle.",
+        "Back off, man!",
+        "[ Bottle Lands ]"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Frequent crude sexual talk and explicit references to getting laid and sexual conquest, but no explicit sex scenes described in the dialogue.",
+      "evidence": [
+        "You need to get laid, Miles.",
+        "That's gonna be my best- man gift to you this week. I'm gonna get you laid.",
+        "I am going to get laid before I get married on Saturday."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity including multiple uses of the f-word and insults (e.g., 'asshole'), present throughout the dialogue.",
+      "evidence": [
+        "Oh, fuck.",
+        "What the fuck?",
+        "If you have diabetes or a history of kidney trouble... you're dead, asshole!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters drink heavily throughout (wine-focused trip), and prescription drugs (Xanax, Lexapro) are discussed/used; drunkenness and regular drinking are recurring elements in the dialogue.",
+      "evidence": [
+        "We're gonna drink a lot of good wine, we're gonna play some golf... we're gonna eat some great food, enjoy the scenery... and we're gonna send you off in style, mon frere.",
+        "What is that stuff you take? Xanax? And Lexapro, yes.",
+        "[ Pills Rattle ]"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11303,
+    "output_tokens": 2021,
+    "cost_usd": 0.00687
+  },
+  "seconds": 33.1
+}

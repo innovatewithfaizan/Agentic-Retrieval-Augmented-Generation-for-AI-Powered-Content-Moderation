@@ -1,0 +1,53 @@
+{
+  "film_id": "closer",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes realistic threats of killing, aggressive insults, and provocation to physical violence, but no graphic gore or torture; implies injury but not graphic.",
+      "evidence": [
+        "If you go near her again, I swear...",
+        "I will kill you.",
+        "Go on, hit me. That's what you want. Hit me, fucker."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple explicit sexual descriptions and crude sexual dialogue (\"fucked me\", oral sex, stripping commands and sexual performance language); frequent explicit sexual content in dialogue.",
+      "evidence": [
+        "I was on top, then he fucked me from behind.",
+        "You enjoy sucking him off?",
+        "You're gonna turn around very slowly, and you're gonna bend over... and you're gonna touch the fucking floor for my viewing pleasure."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and sexual slurs (f-word, explicit sexual terms, insults) appear in the subtitles.",
+      "evidence": [
+        "Thank you for your honesty.\nNow fuck off and die... you fucked- up slag.",
+        "\" Cum- hungry bitch. \"",
+        "What does your cunt taste like?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple references to smoking and repeated drinking (vodka, vodka tonic, Guinness), mentions of alcohol poisoning — indicates recurring alcohol use and drunkenness.",
+      "evidence": [
+        "I have some vodka in the fridge.",
+        "Vodka tonic and a Guinness, please.",
+        "Alcohol poisoning.\nI sat with him for a week in the hospital."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2502,
+    "output_tokens": 1231,
+    "cost_usd": 0.00309
+  },
+  "seconds": 14.5
+}

@@ -1,0 +1,45 @@
+{
+  "film_id": "the_princess_diaries_2_royal_engagement",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles include screaming and grunts of pain and a direct line asking \"Did I hurt you again?\", indicating physical harm or a scuffle but no graphic detail—fits mild violence/peril.",
+      "evidence": [
+        "( screamiing ) ( grunts of paiin )",
+        "- I'm sorry.",
+        "Did I hurt you again?"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Dialogue references kissing and hugging children and playful bridal-shower activity (“mattress surfing”) and romantic song lyrics — suggests kissing/romance but no explicit sexual activity.",
+      "evidence": [
+        "Kissing children.",
+        "Hugging orphans.",
+        "It's time for mattress surfing!"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "The provided subtitle lines contain no profanity, only formal and song lyrics and polite speech.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "substances": {
+      "rationale": "Subtitles mention only milk and cookies and general festivities; no references to alcohol, smoking or drugs.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2959,
+    "output_tokens": 1317,
+    "cost_usd": 0.00337
+  },
+  "seconds": 16.1
+}

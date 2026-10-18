@@ -1,0 +1,49 @@
+{
+  "film_id": "pitch_black",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes killings, large-scale destruction, specific brutal acts (attacks on Furya, strangling newborns by birth cords), armed battles, rocket launchers and deaths. These are violent and disturbing but not graphically gory in the subtitles provided.",
+      "evidence": [
+        "This young warrior mounted an attack on Furya, killing all young males he could find, even strangling some with their birth cords.",
+        "In a heartbeat he dropped 20 of my men.",
+        "They'll take the one ship in the hangar and leave everyone else here to die."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There is minor sexual content referenced (mention of a 'whorehouse') but no explicit sexual activity or nudity in the dialogue.",
+      "evidence": [
+        "They close the local whorehouse?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "The subtitles include strong profanity, including the f-word as well as other expletives.",
+      "evidence": [
+        "For the goddamn death of me, I cannot remember her name.",
+        "Fuck you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental references to drinking (\"Let's pop the cork\") and tea appear in dialogue; no depiction or discussion of heavy drinking or drug use.",
+      "evidence": [
+        "Let's pop the cork. Get some fresh air.",
+        "Tea, actually."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3778,
+    "output_tokens": 1528,
+    "cost_usd": 0.004
+  },
+  "seconds": 16.4
+}

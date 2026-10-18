@@ -1,0 +1,50 @@
+{
+  "film_id": "dracula_2000",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Multiple scenes in the subtitles describe killings, impalement, gurgling victims, vampiric feeding, instructions to 'shoot it in the heart or cut off its head', and other disturbing deaths — intense horror and violent acts are explicit in dialogue.",
+      "evidence": [
+        "Get your hands off of her!",
+        "We sucked him dry.",
+        "You must pierce their heart or behead them."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and crude sexual language (sexual offers, 'suck', and an explicit reference to seeing 'the outline of your cock'), implying sexual content though not graphic scenes shown in subtitles.",
+      "evidence": [
+        "Oh, ah... you know why you never had me, Simon? ' Cause you Brits like to sweet- talk... and you Brits like to romance... and all I want to do is suck.",
+        "I can even see the outline of your cock... through your pants."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity including multiple uses of the f-word and other strong swearing in the subtitles.",
+      "evidence": [
+        "Fucking crucifixes and coffee cups.",
+        "No, I am not touching that fucking coffin.",
+        "Never, ever fuck with an antiques dealer."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There is an explicit reference to prescription drug use ('go back to Xanax'), which is a direct mention of drug use in dialogue (no heavy on-screen drug depiction).",
+      "evidence": [
+        "Father Devereaux says I should go back to Xanax... and your bartender friend Ray..."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8704,
+    "output_tokens": 1708,
+    "cost_usd": 0.00559
+  },
+  "seconds": 32.3
+}

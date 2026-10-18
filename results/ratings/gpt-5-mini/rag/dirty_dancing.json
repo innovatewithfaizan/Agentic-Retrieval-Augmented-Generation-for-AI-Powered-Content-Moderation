@@ -1,0 +1,51 @@
+{
+  "film_id": "dirty_dancing",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats about people being killed, commands to hit, and references to fighting; these indicate realistic non-graphic violence and physical confrontation rather than slapstick.",
+      "evidence": [
+        "You trying to kill me?",
+        "They kill each other if I'm not there.",
+        "Hit me. Hit me."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Numerous flirtatious lines, references to 'lover boy' and crude sexual braggadocio (e.g. 'I humped the entire army') amount to sexual references and crude sexual talk.",
+      "evidence": [
+        "Have you had many women?",
+        "You wouldn't care if I humped the entire army...... as long as I were on the right side of the Ho Chi Minh Trail.",
+        "- \" How you call your lover boy? \""
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains mild insults and colloquial/name-calling (e.g., 'college boy', 'Get outa here') but no strong profanity or slurs in the provided subtitles.",
+      "evidence": [
+        "Just put your pickle on everybody's plate, college boy, and leave the hard stuff to me.",
+        "Get outa here."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Subtitles reference wine and stomping grapes (implying alcohol production/consumption) but show no heavy drinking, drug use, or addiction—incidental alcohol-related content.",
+      "evidence": [
+        "Sit down, sit down and I'll get you some wine.",
+        "Stomp those grapes and stomp some more!"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2741,
+    "output_tokens": 1566,
+    "cost_usd": 0.00382
+  },
+  "seconds": 20.9
+}

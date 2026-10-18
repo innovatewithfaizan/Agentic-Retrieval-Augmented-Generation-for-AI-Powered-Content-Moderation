@@ -1,0 +1,52 @@
+{
+  "film_id": "along_came_a_spider",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles show multiple shootings, gunfire, screams, explicit statements that a man is dead and a description of a kill shot to the head — sustained realistic lethal violence and life-threatening peril throughout.",
+      "evidence": [
+        "- [ Gunshots ]",
+        "That man is dead.",
+        "Kill shot tapped him crown of the head."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes crude sexual language and repeated references to a possible 'sex maniac' — sexual references and explicit crude sexual talk but no explicit sex scenes indicated by dialogue alone.",
+      "evidence": [
+        "Look at me. I want to see your eyes. Innocent. Just the way I like ' em.",
+        "I think you're a natural- born cocksucker.",
+        "Is he. Um... Are we dealing with a sex maniac?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity including the f-word and repeated insults.",
+      "evidence": [
+        "- You fucking bitch!",
+        "I want you to look inside here and tell me what the fuck you see!",
+        "- Megan. Open the fucking door!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental mentions of smoking in dialogue; no depiction of heavy drinking, drugs, or addiction themes in the subtitles provided.",
+      "evidence": [
+        "You could smoke a can' ton a day.",
+        "Uh... got any tips for helpless situations? Well. You could smoke a can' ton a day."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2208,
+    "output_tokens": 1792,
+    "cost_usd": 0.00414
+  },
+  "seconds": 27.3
+}

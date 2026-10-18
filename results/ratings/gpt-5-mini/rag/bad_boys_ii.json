@@ -1,0 +1,49 @@
+{
+  "film_id": "bad_boys_ii",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows threats, chasing, and references to dogs biting and scuffles, but no graphic injury or gore. This indicates mild, non-graphic peril and brief confrontations.",
+      "evidence": [
+        "If I catch your butt, I'm gonna bite it.",
+        "Get away from him, you punks.",
+        "Run!\nDown.\nMom.\nDad."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Lines include kissing requests, flirtation and light references to appearance/romance but no explicit sexual content or nudity.",
+      "evidence": [
+        "Gimme a kiss good- bye, Shep.",
+        "Loosen my collar a notch.",
+        "Love?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains insults and mild name-calling (e.g., 'loser', 'punks', 'brats') and colloquial crude terms like 'butt' and 'shut your yap!', but no strong profanity.",
+      "evidence": [
+        "Good morning, loser.",
+        "Get away from him, you punks.",
+        "Shut your yap!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No clear dialogue references to drinking, smoking or drug use; nothing in the provided subtitles indicates substance use or intoxication.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2494,
+    "output_tokens": 1441,
+    "cost_usd": 0.00351
+  },
+  "seconds": 21.0
+}

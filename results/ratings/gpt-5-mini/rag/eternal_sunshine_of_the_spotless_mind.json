@@ -1,0 +1,53 @@
+{
+  "film_id": "eternal_sunshine_of_the_spotless_mind",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats, references to killing and being buried, and characters saying things like 'You're dead' and 'You can run, but you can't hide.' No graphic descriptions or gore are present, so this indicates realistic violent threats and implied killings without graphic detail.",
+      "evidence": [
+        "I didn't kill anybody!",
+        "You can really kill me this time.",
+        "You can run, but you can't hide."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual innuendo, flirting, fantasies about marriage/sex, and explicit discussion of sex being 'just sad.' These are sexual references and implied sexual encounters beyond mild flirting.",
+      "evidence": [
+        "I so want what's in your suit.",
+        "I had these fantasies of us being married... and having kids...",
+        "No, I don't think her sex is... motivated. It wasn't sex. It was just sad."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles include multiple uses of the f-word and a homophobic slur, as well as repeated strong profanity. Presence of slurs and f-words puts language at the strongest level.",
+      "evidence": [
+        "Get out of my face, faggot!",
+        "Fuck it.",
+        "Get the fuck away from me!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly refers to drinking and alcohol (requests for vodka, mentions of wine/liquor cabinet) and explicit drug use ('You're stoned', 'The pot brings you back up'). These indicate on-screen substance use and driving while stoned — more than incidental background, so rated moderate.",
+      "evidence": [
+        "I would die for a vodka.",
+        "You're stoned, and you're driving.",
+        "The pot brings you back up. That's why I smoke it."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3006,
+    "output_tokens": 1278,
+    "cost_usd": 0.00331
+  },
+  "seconds": 18.3
+}

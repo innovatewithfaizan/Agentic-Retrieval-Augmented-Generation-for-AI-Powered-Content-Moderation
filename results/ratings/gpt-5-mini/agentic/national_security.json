@@ -1,0 +1,52 @@
+{
+  "film_id": "national_security",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains multiple armed encounters, shootings, threats to kill, and at least one person saying they have been shot. These indicate realistic gun violence and peril without graphic detail, consistent with 'moderate'.",
+      "evidence": [
+        "A- six- seven, my partner's down!",
+        "I have four suspects, armed!",
+        "I been shot!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines include sexual innuendo, references to underwear/thong and a strip-search, and flirtatious talk — sexual content and implied nudity without explicit sex scenes, consistent with 'moderate'.",
+      "evidence": [
+        "Want to take a peek?",
+        "Is this a thong?! Are you gonna strip- search me?",
+        "Earl? You're not wearing any underwear. I don't like to wear drawers, okay?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains the f-word and multiple uses of insults/profanity, which meets the 'strong' threshold.",
+      "evidence": [
+        "You're...... a...... fucking...... pig.",
+        "Bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference alcohol and beer kegs and even an alcohol-smuggling plot point. These are plot-related and incidental references rather than on-screen heavy drinking or drug use, so 'mild' is appropriate.",
+      "evidence": [
+        "The ClA, they're smuggling alcohol...... into the inner city in an effort to further subjugate the black man.",
+        "Please be guns. Please be guns. What the hell is that? This is a beer keg.",
+        "We're talking beer kegs, bitch!"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2756,
+    "output_tokens": 1645,
+    "cost_usd": 0.00398
+  },
+  "seconds": 176.2
+}

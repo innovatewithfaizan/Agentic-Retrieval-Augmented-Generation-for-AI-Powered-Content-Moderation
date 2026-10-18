@@ -1,0 +1,53 @@
+{
+  "film_id": "shattered_glass",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions non-graphic physical aggression (Mike Tyson biting reference, discussion of people who 'chomp flesh'), and references to 'ugly' behavior at parties, but no graphic gore or sustained frightening scenes are present in the subtitles.",
+      "evidence": [
+        "Every station on the radio was talking about it -- Mike Tyson biting Evander Holyfield.",
+        "I told the guy that I'd done all this extensive research on people who chomp flesh under extreme stress --",
+        "Drugs, binge drinking, hookers -- it gets pretty ugly."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Subtitles include sexual references and implied sexual activity (kissing/forcing tongue down throat), references to porn and naked pictures, and mention of hookers. These are sexual content and references but not explicit sex scenes or graphic nudity.",
+      "evidence": [
+        "he somehow managed to slip his tongue down my throat.",
+        "\"... a lifetime subscription to Playboy. \"",
+        "posted naked pictures of women and the salary of every Jukt employee on Jukt's website"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple instances of strong profanity appear in the subtitles, including repeated uses of the f-word and other expletives.",
+      "evidence": [
+        "You're writing for The New- fucking- Republic.",
+        "this New Republic piece is a fucking sieve.",
+        "Shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Subtitles repeatedly reference alcohol (minibars, empty little bottles of booze, binge drinking) and also mention drugs. These are clear references to substance use and intoxication.",
+      "evidence": [
+        "Drugs, binge drinking, hookers -- it gets pretty ugly.",
+        "The mini-bar is open, and empty little bottles of booze are scattered on the carpet.",
+        "There were little bottles of booze all over the room."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 13425,
+    "output_tokens": 1415,
+    "cost_usd": 0.00619
+  },
+  "seconds": 24.0
+}

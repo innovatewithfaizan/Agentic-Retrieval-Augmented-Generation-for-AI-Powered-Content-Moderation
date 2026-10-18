@@ -1,0 +1,52 @@
+{
+  "film_id": "closer",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains direct threats of killing and aggressive confrontations, as well as heated confrontations and calls to hit someone. No graphic or gory descriptions, so this is non-graphic but realistic violence/threats.",
+      "evidence": [
+        "If you go near her again, I swear... I will kill you.",
+        "Hit me, fucker."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual acts and descriptions (oral sex, explicit references to genitalia and ejaculation), and graphic sexual language — clearly sexual content beyond mere kissing or innuendo.",
+      "evidence": [
+        "\"Wear my wet knickers.\" \"Sit on my face.\" \"Cum- hungry bitch.\"",
+        "What does your cunt taste like?",
+        "I love his cock. Like him coming in your face? Yes!"
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity including multiple uses of the f-word and sexual slurs (e.g., 'cunt'), and insults throughout the dialogue.",
+      "evidence": [
+        "Fuck off.",
+        "You're a cunt.",
+        "Go fuck yourself."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Repeated references to smoking and alcohol use (characters smoke, attempt to give up, order and drink vodka tonics and Guinness). Drinking and smoking are part of multiple scenes/dialogue lines.",
+      "evidence": [
+        "Looking for a cigarette. / I've given up.",
+        "Vodka tonic and a Guinness, please.",
+        "I had a drink with Harry."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10243,
+    "output_tokens": 774,
+    "cost_usd": 0.00411
+  },
+  "seconds": 28.6
+}

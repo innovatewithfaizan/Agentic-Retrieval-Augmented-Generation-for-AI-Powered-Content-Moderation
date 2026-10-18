@@ -1,0 +1,53 @@
+{
+  "film_id": "sideways",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains panicked sounds, banging and expletives indicating tense/perilous moments (panic, scuffling or commotion) but no mention of weapons, injuries, deaths or graphic harm — fits mild violence/peril.",
+      "evidence": [
+        "[ Banging Continues ]",
+        "[ Panicked Panting ]",
+        "Oh, fuck me!"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Repeated explicit sexual references and intent (’get laid’, moans and sexual teasing) indicate crude sexual talk and implied sexual activity, though no explicit sex scenes or nudity are described in the dialogue.",
+      "evidence": [
+        "You need to get laid, Miles.",
+        "I am going to get laid before I get married on Saturday.",
+        "[ Moans ]"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains multiple uses of the f-word and strong insults (e.g. “Where the fuck were you, man?”, “you are such a fuckin' loser”), meeting the rubric threshold for strong language.",
+      "evidence": [
+        "Where the fuck were you, man?",
+        "God, you are such a fuckin ' loser.",
+        "You make me so fuckin ' sick."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Many lines focus on drinking and wine tasting, characters are described as hungover and there are repeated references to drinking — indicates regular on-screen alcohol use and drunkenness but no drug use, so moderate.",
+      "evidence": [
+        "You're fucking hungover. You know you are.",
+        "When do we drink it? - Now.",
+        "So, what's good here? - What is this you're drinking?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2694,
+    "output_tokens": 1378,
+    "cost_usd": 0.00343
+  },
+  "seconds": 20.6
+}

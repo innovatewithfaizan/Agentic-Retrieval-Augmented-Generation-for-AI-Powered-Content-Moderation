@@ -1,0 +1,92 @@
+{
+  "film_id": "harry_potter_and_the_goblet_of_fire",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats to watch someone be killed, references to blood and killing (including naming a victim). These are realistic threats and deaths mentioned without graphic detail — corresponds to moderate violence.",
+      "evidence": [
+        "I want that you watch to me when it kills to you!",
+        "The blood of the enemy...",
+        "to Cedric Diggory I kill it '...... Lord Voldemort."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes references to beds, dating/going with someone, and mentions of love — mild romantic/sexual themes but no explicit sex or nudity.",
+      "evidence": [
+        "Already váyanse to the bed both.",
+        "If for a boy he is shameful, for a girl he would be depressing.",
+        "It was the love."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitle dialogue contains mild profanities/insults such as “damn” and repeated uses of the word “curse.” No strong f-word or slurs are present.",
+      "evidence": [
+        "Curse.",
+        "Curse.",
+        "the name, déme the damn name."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue refers to alcohol (rum) and various magical potions (Polyjuice, Veritaserum/‘potion of the truth’). These are incidental and not depicting heavy or problematic substance use — mild.",
+      "evidence": [
+        "Good, Rum, but yours he is more traditional.",
+        "Potion multi- juice.",
+        "Potion of the truth."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "bitch",
+          "stupid",
+          "crap",
+          "motherfucker",
+          "slut",
+          "asshole",
+          "prick",
+          "curse",
+          "kill",
+          "blood",
+          "rum",
+          "drunk",
+          "potion"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 0,
+        "damn": 1,
+        "hell": 0,
+        "bitch": 0,
+        "stupid": 0,
+        "crap": 0,
+        "motherfucker": 0,
+        "slut": 0,
+        "asshole": 0,
+        "prick": 1,
+        "curse": 3
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 6265,
+    "output_tokens": 2829,
+    "cost_usd": 0.00722
+  },
+  "seconds": 42.5
+}

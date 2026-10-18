@@ -1,0 +1,48 @@
+{
+  "film_id": "master_and_commander_the_far_side_of_the_world",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue frequently references armed conflict, orders to take up weapons, threats to destroy, battle cries and explicit physical punishment (whipping/‘8 belt’) — indicating realistic non-graphic violence and sustained combat danger.",
+      "evidence": [
+        "Get your weapons.",
+        "This is your last warning. Stop now. Or we will destroy you.",
+        "Stand for. Take that man. Mr. Polink, punish him with 8 belt."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines contain mild romantic references and implication of intimate interest (mentions of 'wives and sweethearts', 'our love', and a line asking if someone is 'in the mood'), but no explicit sexual acts or nudity in the dialogue.",
+      "evidence": [
+        "To wives and to sweethearts.",
+        "Our love.",
+        "For you in the mood for more aggressive?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "No strong profanity appears in the subtitles; there are a few insults/derogatory descriptors (e.g. 'Disgusting', 'dumber') and brusque command language, which fits mild language.",
+      "evidence": [
+        "That is the ugly devil. - Disgusting.",
+        "Out the up, dumber."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No dialogue references to drinking, smoking, drugs, or intoxication were present in the provided excerpts.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2503,
+    "output_tokens": 1268,
+    "cost_usd": 0.00316
+  },
+  "seconds": 23.8
+}

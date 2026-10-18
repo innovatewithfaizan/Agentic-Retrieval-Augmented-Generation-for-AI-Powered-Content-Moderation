@@ -1,0 +1,51 @@
+{
+  "film_id": "the_hitchhikers_guide_to_the_galaxy",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes large-scale destruction, the demolition/blowing-up of the planet, weapons and missiles, characters threatened with being thrown off ships or fed to a beast, and active firefights — non-graphic but realistic violence and peril throughout.",
+      "evidence": [
+        "And your planet is one of those scheduled for demolition.",
+        "Throw them off the ship!",
+        "the punishment for a presidential kidnapping is to be fed to the Ravenous Bugblatter Beast of Traal."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains flirtation, sexual innuendo and references to underwear and rough sex; no explicit sexual activity or nudity is described.",
+      "evidence": [
+        "You're too gorgeous, baby, stop it.",
+        "I love it rough. Hit me.",
+        "Hey, Slim, are you wearing my underwear?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue uses mild profanity/insults (e.g. \"bollocks\", \"sodding\") and some name-calling; no strong f-word or slurs are present in the provided subtitles.",
+      "evidence": [
+        "Oh, bollocks!",
+        "Just wait a sodding minute."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Multiple casual references to drinking (pub scene ordering pints, beer) and a description of a very strong fictional cocktail (Pan-Galactic Gargle Blaster). Drinking is incidental to scenes rather than an ongoing focus on addiction or drug use.",
+      "evidence": [
+        "Barman, six pints of bitter and quickly.",
+        "The best drink in existence is the Pan- Galactic Gargle Blaster, the effect of which is like having your brains smashed out by a slice of lemon wrapped round a large gold brick."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 17253,
+    "output_tokens": 1795,
+    "cost_usd": 0.0079
+  },
+  "seconds": 19.3
+}

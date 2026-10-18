@@ -1,0 +1,53 @@
+{
+  "film_id": "layer_cake",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated threats, shootings and murders, references to decapitation and graphic outcomes (head-lopping, disintegrated on impact, 'blew his fucking head away'), and talk of guns and killing—warrants 'strong'.",
+      "evidence": [
+        "His party piece, right, is lopping people's heads off then fetching them back to his boss.",
+        "Blew his fucking head away.",
+        "If I do not get my cargo back, you're a dead man."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual references and nudity (oral sex reference, rubbing phone against 'fanny', visible nipples). This is explicit sexual dialogue though not a depicted sex scene—rated 'moderate'.",
+      "evidence": [
+        "Washing machines, hand- made shoes, blow- jobs.",
+        "I was just rubbing the phone against my fanny.",
+        "Look at my nipples, standing up like little soldiers."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity throughout (many uses of the f-word) and at least one ethnic slur in the dialogue—rated 'strong'.",
+      "evidence": [
+        "Fucking get down!",
+        "We're in the wrong fucking game.",
+        "How is it with that Paki accountant I put your way?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Drug dealing, trafficking and use are central to the plot: repeated explicit mentions of cocaine, LSD, hashish, Ecstasy pills, overdoses and addicts—rated 'strong'.",
+      "evidence": [
+        "Hashish and LSD arrived on the scene.",
+        "I'm a businessman whose commodity happens to be cocaine.",
+        "One million Ecstasy pills of very high levels of MDMA, OK?"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 12318,
+    "output_tokens": 1668,
+    "cost_usd": 0.00642
+  },
+  "seconds": 18.5
+}

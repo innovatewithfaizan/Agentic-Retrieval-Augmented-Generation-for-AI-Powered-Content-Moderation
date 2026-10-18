@@ -1,0 +1,53 @@
+{
+  "film_id": "maria_full_of_grace",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue indicates forced physical control, coercion and threats (orders to open mouth, lay down, spread your legs) and references to 'dangerous' men and being removed—suggesting non-graphic but realistic physical threat and assault/tension.",
+      "evidence": [
+        "Take them. Open your mouth. Open. Here.",
+        " - How many is it so far? - Twenty- three. Come. Lay down.",
+        "Not so close to the wall. Spread your legs, please. Maria Alvarez."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual references and implications (pregnancy, talk of 'sleeping with another woman') plus coercive physical instructions that imply sexual/assaultive context. No explicit sex scenes are described in the dialogue, so this is moderate.",
+      "evidence": [
+        "- You're not fucking with me, right? - No. I've missed my last two periods.",
+        "You're gonna marry someone you don't even love? How many months or days before you're sleeping with another woman?",
+        "Not so close to the wall. Spread your legs, please. Maria Alvarez."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity (f-word, 'fuck', 'bitches', 'bitch') and insults appear in the dialogue, meeting the 'strong' threshold.",
+      "evidence": [
+        "How fucking stupid... swallowing drugs when you're pregnant. Fuck you.",
+        "Fucking little bitches.",
+        "Shut the fuck up, bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly discusses swallowing and transporting drugs, bringing drugs into the United States, and instructions about laxatives/returning drugs — indicating drug smuggling/dealing content rather than incidental drinking, so this rates strong.",
+      "evidence": [
+        "I think you're bringing drugs... into the United States.",
+        "Does he know you swallowed drugs? I didn't swallow drugs.",
+        "You can't smoke. You can't drink alcohol. No beer, no wine. Especially not drugs."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2369,
+    "output_tokens": 1464,
+    "cost_usd": 0.00352
+  },
+  "seconds": 18.7
+}

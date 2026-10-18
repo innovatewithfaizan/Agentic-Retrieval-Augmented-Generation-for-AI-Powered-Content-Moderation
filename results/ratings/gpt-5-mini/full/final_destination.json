@@ -1,0 +1,51 @@
+{
+  "film_id": "final_destination",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes a catastrophic plane explosion with numerous deaths, a suicide, and explicit graphic descriptions of injury (e.g. “blew his head off,” “The fire caramelized her blood.”). These are graphic/disturbing violent events — severity: strong.",
+      "evidence": [
+        "A guy blew his head off.",
+        "The fire caramelized her blood.",
+        "There are no known survivors."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit/crude sexual language and references (e.g. “titty-fuck,” “felt up Tammy”), but no on-screen sex scenes or nudity described — severity: moderate.",
+      "evidence": [
+        "You really think we'd titty- fuck them over Greenland?",
+        "I should have felt up Tammy in the pool."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity including multiple instances of the f-word and insults in the dialogue — severity: strong.",
+      "evidence": [
+        "What the fuck does he want?",
+        "Fuck off, dude.",
+        "You fucking prick!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental mentions of cigarettes and casual drinking; no depiction of heavy drinking, drugs, or addiction — severity: mild.",
+      "evidence": [
+        "He went into a 7- Eleven for cigarettes.",
+        "To Terry. And to Tod. To all of our friends that can't be here. Cheers."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7898,
+    "output_tokens": 1396,
+    "cost_usd": 0.00477
+  },
+  "seconds": 26.1
+}

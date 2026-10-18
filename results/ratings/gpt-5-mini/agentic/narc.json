@@ -1,0 +1,51 @@
+{
+  "film_id": "narc",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes realistic killings, guns being taken and fired, direct threats to kill and shoot, and a victim dying instantly. These are non-graphic but serious violent acts and sustained threat.",
+      "evidence": [
+        "You took it, you pointed it in his skull, you pulled the trigger and you killed him.",
+        "I'm going to kill ' em!",
+        "I will shoot you where you stand!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There are sexual references beyond kissing, including an explicit crude description of oral sex; this is more than mild flirting and constitutes crude sexual talk.",
+      "evidence": [
+        "Give me a kiss. Where's my kiss?",
+        "I think I might've let him suck on my dick once or twice."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains frequent strong profanity (multiple f-words) and a racial slur; the presence of slurs and repeated strong profanity meets the 'strong' threshold.",
+      "evidence": [
+        "I'll have you wearing half- shirts and halter tops, braiding some nigger's hair!",
+        "Crotch rot, pussy stank!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference drug use, being high, smoking blunts and criminal charges for possession/trafficking; these are clear references to drug use and dealing (non-graphic), fitting moderate.",
+      "evidence": [
+        "Are you high right now? Nah, man. Are you sure? Because you look fuckin ' spun to me.",
+        "I used to smoke blunts with you, Mr. Cop, man.",
+        "Possession, trafficking."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3021,
+    "output_tokens": 1836,
+    "cost_usd": 0.00443
+  },
+  "seconds": 21.9
+}

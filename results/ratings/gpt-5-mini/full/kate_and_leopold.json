@@ -1,0 +1,51 @@
+{
+  "film_id": "kate_and_leopold",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes realistic dangerous situations and threats (people jumping/falling, a reported jumper on the bridge, explicit threat of physical harm). No graphic gore is present in the subtitles.",
+      "evidence": [
+        "I jumped off the Brooklyn Bridge and took a walk in 1 876 today.",
+        "Where you run, I shall ride and when you stop, the steel of this strap will be lodged in your brain.",
+        "Central, be advised\nThis is Breech Post Four. I've got a jumper on the southwest location of the bridge."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Primarily romantic content and flirting, declarations of love and references to kissing; no sexual scenes or nudity in the dialogue.",
+      "evidence": [
+        "You haven't even kissed me yet.",
+        "I love you, Kate McKay."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include multiple instances of strong but non-f-word profanity and crude words (e.g., “shit”, “asshole”, “Goddamn it”).",
+      "evidence": [
+        "Goddamn it!",
+        "Hey, you asshole!",
+        "'Cause there's some shit here that just cannot be said."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Brief, incidental references to drinking (going out on Guinness, mentions of wine/champagne), with no depiction of addiction or heavy drug use.",
+      "evidence": [
+        "we went out, got a little sloppy on Guinness and he passed out on my couch.",
+        "Chilled, do you understand? Chilled."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 16884,
+    "output_tokens": 1295,
+    "cost_usd": 0.00681
+  },
+  "seconds": 16.1
+}

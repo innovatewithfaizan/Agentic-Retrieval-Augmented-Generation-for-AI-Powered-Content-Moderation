@@ -1,0 +1,52 @@
+{
+  "film_id": "what_lies_beneath",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly references murder, deaths, and attempted killing, plus ghostly attacks and threats. There are implications of real deaths but no graphic detail.",
+      "evidence": [
+        "She was terrified...... and now she doesn't answer the door, but her car's in the garage.",
+        "He killed her and I'm not crazy.",
+        "It was her, Norman. She tried to kill you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Romantic/sexual relationships and an affair are referenced; there's also explicit mention of being 'wet, naked,' indicating partial nudity/sexual context.",
+      "evidence": [
+        "The first time I met you...... all I ever wanted was to spend the rest of my life with you.",
+        "It's not gonna happen now. Too cold. I almost froze to death laying here...... wet, naked, pretending to be electrocuted."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Strong profanity appears in the dialogue, including the f-word and other explicit swear words.",
+      "evidence": [
+        "So you slept with a fucking student?",
+        "Don't give me that shit.",
+        "Here was this brilliant conductor in purple bikini briefs...... with no bangs... cursing his ass off in Finnish."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Incidental references to alcohol (wine) and prescription medication (Valium) for sleep; presented as background/character detail rather than heavy use or addiction.",
+      "evidence": [
+        "Well, Valium. For sleeping.",
+        "When I get anxious. Do you get anxious only at night? No, I only take Valium at night.",
+        "White wine, please."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2382,
+    "output_tokens": 1837,
+    "cost_usd": 0.00427
+  },
+  "seconds": 22.3
+}

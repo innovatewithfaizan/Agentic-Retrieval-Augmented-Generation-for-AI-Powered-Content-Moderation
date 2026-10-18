@@ -1,0 +1,49 @@
+{
+  "film_id": "spawn",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated explicit threats to kill, cut off heads, slaughter, shoot-on-sight orders, and references to murder and apocalypse. These imply realistic lethal violence and sustained threats but no graphic gore described in the subtitles, so this rates as moderate.",
+      "evidence": [
+        "If you fail me, you will die.",
+        "All I got to do is cut off your head.",
+        "But first... first, I want to slaughter each and every one of you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles include sexual references, innuendo and crude comments about bodies (e.g., 'feel that butt') and references to puberty/erection ('Getting a chubby'). There is implied sexual interest but no explicit sex or nudity shown in the dialogue, fitting 'moderate' for sexual references/crude sexual talk.",
+      "evidence": [
+        "Pretty soon you'll get hair in funny places, and you'll start thinking about girls.",
+        "Getting a chubby, studly?",
+        "It feels... so good. And feel that butt."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains multiple instances of strong expletives and insults (e.g., 'son of a bitch', 'holy shit', frequent 'what the hell'), including the word 'shit', which places this at the moderate level under the rubric.",
+      "evidence": [
+        "You son of a bitch.",
+        "Holy shit!",
+        "Hey, what the hell are you doing?"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "The provided subtitles contain no clear references to drinking, smoking, or drug use — only medical/health mentions (heart rate, asthma) and non-substance dialogue. No incidental or on-screen substance use is evident from the dialogue alone.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2719,
+    "output_tokens": 1790,
+    "cost_usd": 0.00426
+  },
+  "seconds": 29.4
+}

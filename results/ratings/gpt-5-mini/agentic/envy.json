@@ -1,0 +1,53 @@
+{
+  "film_id": "envy",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly mentions people being shot and killed (arrows, shootings) and a character admitting \"I killed\" multiple times, indicating realistic, non-graphic killings and a wounded person — evidence of moderate violence and peril.",
+      "evidence": [
+        "I killed the bum.",
+        "I shot an arrow.",
+        "L killed Corky."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines include suggestive, sexualized prompts (hip movement, \"get ready for the big stuff\", invitations to lie together) and flirting/romantic physicality but no explicit sex or nudity described — consistent with mild sexual content.",
+      "evidence": [
+        "Come on, honey. Start with your hips. Come on. Whoo!",
+        "I'll do everything. You just stay there and just relax and get ready for the big stuff.",
+        "Come lie on the warm pile."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains repeated crude words and insults (\"shit\", \"Oh, shit!\", \"Goddamned... Bastard, bitch ...\") but no f-word or slurs shown in the subtitles — fits the moderate level.",
+      "evidence": [
+        "...every day I get into my little shit- box car",
+        "Oh, shit!",
+        "Goddamned... Bastard, bitch merry- go- round."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference drinking and drunkenness (characters saying they got drunk, asking for a drink), indicating substance use and drunkenness as a plot element — moderate severity.",
+      "evidence": [
+        "I got drunk and by mistake killed Corky.",
+        "I don't really drink ... and I want a drink.",
+        "The day that you gave me the wine, remember? I got drunk on the wine."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2810,
+    "output_tokens": 1086,
+    "cost_usd": 0.00287
+  },
+  "seconds": 13.4
+}

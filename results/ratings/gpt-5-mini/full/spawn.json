@@ -1,0 +1,51 @@
+{
+  "film_id": "spawn",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "The subtitles describe numerous killings, deaths, threats of graphic violence (decapitation, ripping out hearts, mailing body parts), mass biological-weapon attacks, and scenes of people dead or dying. This includes threats and implied gore and large-scale lethal peril, so the violence is strong.",
+      "evidence": [
+        "I'll cut you into 50 pieces... and mail you to every state.",
+        "Gunshot wound to the head, Doc. Oh, she's dead.",
+        "I will rip your heart out!"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "There are crude sexual references and innuendo (explicit talk about 'humpin' and 'porkin' and comments about panties), but no explicit sex scenes or nudity shown in the dialogue. This fits a moderate rating.",
+      "evidence": [
+        "Multiplying like rabbits. And humpin ' and porkin '... and doin ' it and likin ' it.",
+        "I smell you're not wearing any panties."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The dialogue contains frequent profanity and several derogatory slurs (e.g., 'retards', 'fudge-packing midget') and insults; this constitutes strong language.",
+      "evidence": [
+        "God hogs up all the good followers, and we get all the retards.",
+        "Get away from me, you fudge- packing midget!",
+        "You son of a bitch."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental references to drinking or thirst (offers of a drink, 'I'm thirsty') appear in the subtitles; there is no depiction of heavy drinking, drug use, or addiction. This is mild.",
+      "evidence": [
+        "Let's have a drink.",
+        "I'm thirsty."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8434,
+    "output_tokens": 1793,
+    "cost_usd": 0.00569
+  },
+  "seconds": 19.1
+}

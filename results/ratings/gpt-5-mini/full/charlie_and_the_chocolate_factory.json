@@ -1,0 +1,43 @@
+{
+  "film_id": "charlie_and_the_chocolate_factory",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes a child (Augustus) falling into the chocolate river, being sucked into a pipe, others shouting that he can't swim and will drown, and explicit lines saying he will be made into strawberry-flavored, chocolate-coated fudge — clear peril and implied harm/dehumanization though not graphic.",
+      "evidence": [
+        "He'll drown.",
+        "Augustus! No!",
+        "Then he will be made into strawberry- flavored, chocolate- coated fudge."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content, romance, or nudity is suggested by the provided dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes a derogatory slur ('A retard could figure it out.'), which is a strong-language indicator (use of slurs).",
+      "evidence": [
+        "A retard could figure it out."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "The dialogue mentions eating chocolate and chewing gum but contains no references to drinking alcohol, smoking, or drugs.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6178,
+    "output_tokens": 808,
+    "cost_usd": 0.00316
+  },
+  "seconds": 17.0
+}

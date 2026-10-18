@@ -1,0 +1,53 @@
+{
+  "film_id": "50_first_dates",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains multiple explicit threats of killing, references to a meat cleaver and kidnapping, and a police code for homicide; there is peril and realistic threat but no graphic gore shown in the subtitles.",
+      "evidence": [
+        "She said that if I talk to Lucy, you'll kill me with a meat cleaver.",
+        "I'm gonna kill you!",
+        "Come on, that's a 187, code blue."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes crude sexual talk and explicit references to wanting sex and having made love; crude phrasing such as \"try to bang our women\" indicates sexual references/innuendo beyond mild flirting.",
+      "evidence": [
+        "Try to bang our women.",
+        "Do we have sex? No, we don't. Just so everybody knows that. We want to.",
+        "We made love tonight!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple insults and profanity appear (\"shit\", \"asshole\", \"sick bastard\", \"tramp\", \"bitches\"); these are stronger than mild but no f-word appears in the provided dialogue.",
+      "evidence": [
+        "Now, will everybody keep it down...... while I whack the crap out of this thing? Sit! Stay! Shit!",
+        "Yes, ma' am. You asshole!",
+        "You sick bastard!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Several lines indicate drinking and drunkenness (characters saying they got drunk, are getting kind of drunk, and references to beers); no heavy drug use or addiction theme in the subtitles.",
+      "evidence": [
+        "Well, we got a little drunk.",
+        "I think I'm getting kind of drunk.",
+        "You've earned yourself a couple beers."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2878,
+    "output_tokens": 1392,
+    "cost_usd": 0.0035
+  },
+  "seconds": 20.5
+}

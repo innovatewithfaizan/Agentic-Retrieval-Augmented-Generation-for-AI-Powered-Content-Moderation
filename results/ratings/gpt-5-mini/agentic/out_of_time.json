@@ -1,0 +1,87 @@
+{
+  "film_id": "out_of_time",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats to kill, references to homicide and dead bodies, armed confrontation and 'Don't shoot me' pleas; these indicate realistic violence, weapons and deaths without graphic detail — fits 'moderate'.",
+      "evidence": [
+        "\" Just come near her again...... and I'll kill you. \"",
+        "\"I'm a homicide detective, and there's two dead bodies.\"",
+        "\"Don't shoot me.\""
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual activity references (threesome/foursome), bedroom/come in lines, and admissions of sleeping with someone — sexual activity and explicit references beyond mere kissing/flirting, so 'moderate'.",
+      "evidence": [
+        "It's all right if I come in your bedroom?",
+        "Figuring out what it is I'm doing in the middle of this... threesome. Try foursome.",
+        "I was sleeping with her."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of stronger profanity (multiple instances of 'shit') and insults ('assholes'), plus crude sexual slang ('pussy'). No f-word seen but the presence of these stronger words places language at 'moderate'.",
+      "evidence": [
+        "T. - Shit.",
+        "Little pussy?",
+        "Assholes."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple explicit references to drinking (beer, bar, 'drinking-on-duty') and a line mentioning 'drug money.' These are regular, on-screen implied alcohol use and drug-related references — 'moderate'.",
+      "evidence": [
+        "It ain't a bribe, just a beer.",
+        "I called him from the bar. I wanted to see if he wanted to have a couple of drinks.",
+        "That drug money?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "asshole",
+          "bitch",
+          "damn",
+          "crap",
+          "hell",
+          "pussy",
+          "rack",
+          "chick",
+          "shit*",
+          "assholes"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 6,
+        "asshole": 3,
+        "bitch": 0,
+        "damn": 3,
+        "crap": 0,
+        "hell": 4,
+        "pussy": 2,
+        "rack": 1,
+        "chick": 1,
+        "shit*": 6,
+        "assholes": 3
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 5882,
+    "output_tokens": 1772,
+    "cost_usd": 0.00501
+  },
+  "seconds": 41.7
+}

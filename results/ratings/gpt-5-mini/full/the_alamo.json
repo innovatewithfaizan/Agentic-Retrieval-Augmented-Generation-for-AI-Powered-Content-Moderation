@@ -1,0 +1,53 @@
+{
+  "film_id": "the_alamo",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "The subtitles contain repeated battle action, cannon and gunfire, mass killings and explicit violent language (massacred, 'slit throat'), plus a graphic boast ('I cut his heart out'). This indicates sustained, realistic battlefield violence with at least one graphic reference, so severity is strong.",
+      "evidence": [
+        "They're all dead! Massacred!",
+        "Deguello means \" slit throat. \"",
+        "Itwas three shots. Sword came through my lung and went through my hand, and then I cut his heart out."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "No explicit sexual scenes or nudity appear in the dialogue. There are sexual accusations/insults (references to 'catamite' and 'pederast') and mention of 'adultery', so there's mild sexual content by reference.",
+      "evidence": [
+        "I called you a Scottish catamite.",
+        "One step down from associate pederast.",
+        "Well, the choices are abandonment, adultery, or cruel and barbarous treatment."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes multiple profanities and crude terms (e.g., 'son-of-a-bitch', 'Goddamn', 'shit', 'sons of bitches'), but no f-word appears in the provided subtitles. This fits the 'moderate' level.",
+      "evidence": [
+        "I ain't swearin ' allegiance to no son- of- a- bitch dictator.",
+        "Goddamn!",
+        "Dyin' for nothin ' means shit to me."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "There are several references to drinking (mescal, characters saying 'I didn't know you drank', warnings about drinking too much). Drinking is a recurring behavior but not depicted as heavy addiction or drug use, so this rates moderate.",
+      "evidence": [
+        "I'll be interested to see you gentlemen when you arrive in Texas and have your first taste of mescal.",
+        "I didn't know you drank.",
+        "If he drinks too much, he ain't worth a damn."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6989,
+    "output_tokens": 1796,
+    "cost_usd": 0.00534
+  },
+  "seconds": 26.0
+}

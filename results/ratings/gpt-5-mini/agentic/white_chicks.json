@@ -1,0 +1,52 @@
+{
+  "film_id": "white_chicks",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats to kill and shoot someone, an arrest, and fearful lines about being killed — indicating realistic violent threat and weapons without graphic detail, so severity is moderate.",
+      "evidence": [
+        "Are you crazy?\nIf you crash this mans car, he will kill you.",
+        "You run and ill shoot you.",
+        "FBl.\nYoure under arrest."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references (e.g. mentioning vaginas) and crude sexual language about being 'not a whore but not a virgin', indicating sexual content beyond mild innuendo but not explicit sex scenes — severity moderate.",
+      "evidence": [
+        "And braiding our vaginas.",
+        "Yes, actually.\nI need something for my friend.\nSomething that says, lm not a whore but lm not a virgin either."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple strong insults and slurs such as 'bitch', 'asswipe', 'bastard' and crude phrases — occasional stronger profanity consistent with 'moderate' on the rubric.",
+      "evidence": [
+        "I told you you were going to regret it.\nYou hit like a bitch!",
+        "Honey... what makes you think youre that special?\n- Bastard.\n- Excuse me.\nAsswipe!",
+        "ID?\nLm so fricking pissed."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drugs and offers 'you want some of this', and multiple lines show drinking (bar, champagne, wine, martinis) and smoking — presence of drug dealing plus regular alcohol use supports a 'strong' rating.",
+      "evidence": [
+        "My man!\nWheres the drugs?\nI know nothing about drugs.",
+        "Whats up?\nYall got a problem?\nYall want some of this?\nYou want some of this, punk?",
+        "Baby... its only 8: 00.\nLook, after work, me and Kevin went down to the bar and had a couple of drinks."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2719,
+    "output_tokens": 1853,
+    "cost_usd": 0.00439
+  },
+  "seconds": 21.7
+}

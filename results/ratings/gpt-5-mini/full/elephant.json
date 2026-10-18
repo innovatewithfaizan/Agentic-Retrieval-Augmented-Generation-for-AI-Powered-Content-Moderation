@@ -1,0 +1,49 @@
+{
+  "film_id": "elephant",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue explicitly describes planning and carrying out a school shooting: guns (Tec-9, rifle, shotty), explosives, threats to \"pick off kids one by one,\" and \"I shot the principal and some other people.\" Realistic firearm use and killings are described without graphic gore.",
+      "evidence": [
+        "\"You've got your Tec- 9 and your rifle... and I've got my shotty and my. 223 on my back.\"",
+        "\"we'll be able to pick them off, one by one.\"",
+        "\"I shot the principal and some other people, and...\""
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit references to nudity and proposals to pose naked for photos (discussed, not shown). There are also sexual insults referenced. This is more than mild flirting but not graphic sexual scenes.",
+      "evidence": [
+        "\"Like, naked people?\"",
+        "\"Want us to get naked with you, take our picture?\""
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity (multiple uses of the f-word and other strong expletives and insults) appears in the subtitles.",
+      "evidence": [
+        "\"Get the fuck out of here and don't come back.\"",
+        "\"they will kill you if you fuck with them like you did me and Jared.\""
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Brief references to alcohol/drunkenness (\"Dad's drunk again\") and incidental drinking mentions appear, but no sustained portrayal of substance abuse or drug use.",
+      "evidence": [
+        "\"Dad's drunk again.\""
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6226,
+    "output_tokens": 1952,
+    "cost_usd": 0.00546
+  },
+  "seconds": 20.4
+}

@@ -1,0 +1,48 @@
+{
+  "film_id": "the_last_samurai",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles contain repeated threats, orders to shoot, explicit talk of killing, references to 'gruesome death', battle commands and many scenes implying warfare. No graphic gore described in dialogue, so level is moderate.",
+      "evidence": [
+        "I... many's the time, I found myself... surrounded by a squad of wrath...... angry hostiles. with nothing but this rifle, between me and their certain and gruesome death.",
+        "I will kill Jappos.",
+        "Ujio...... there will be plenty of killing to come."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitle excerpts contain no sexual content, romance, kissing or nudity in the dialogue provided.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes stronger insults and crude wording such as 'bastards' and 'shit-kick' and 'swine', beyond mild swear words, but no f-word or racial slurs, so it fits moderate.",
+      "evidence": [
+        "All right, you little bastards, you should stand up straight in a line... or I will passionately shit- kick every one of you sad parade, let it be before my eyes.",
+        "Insolent swine!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple explicit mentions of alcoholic drinks (\"Whiskey\", \"Sake\", offers of whiskey) but no depiction of heavy addiction or drug use; fits mild.",
+      "evidence": [
+        "Whiskey.",
+        "Sake...",
+        "May I offer you a whiskey?"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2570,
+    "output_tokens": 1300,
+    "cost_usd": 0.00324
+  },
+  "seconds": 16.4
+}

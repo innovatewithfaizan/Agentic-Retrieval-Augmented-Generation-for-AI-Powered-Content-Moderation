@@ -1,0 +1,53 @@
+{
+  "film_id": "the_hitchhikers_guide_to_the_galaxy",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains threats, weapons and active shooting/attacks (missiles, guns, orders to shoot, screams, characters saying 'we're gonna die'), implying realistic peril and use of weapons but no graphic descriptions.",
+      "evidence": [
+        "Yeah, we're gonna die.",
+        "You'll kill him! Bang! Bang!",
+        "Shoot him, quickly, shoot him!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines include explicit sexual/romantic pleas and crude sexual phrasing (flirting, pleas of 'I just want to be loved', and 'I love it rough'), indicating sexual references and innuendo beyond mere kissing.",
+      "evidence": [
+        "I just want to be loved?\n[ whispers ]\nYes, yes, yes.\nYes, yes, yeah, please.",
+        "I love it rough.",
+        "Hey, all right.\nHow you doin '?\nHey, what have we here?\nI love it!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes name-calling and mild profanity (e.g. 'bollocks', 'idiot', 'you are stupid') but no f-word or racial slurs.",
+      "evidence": [
+        "Oh, bollocks!\nAgghh!\nI'm gonna be sick.",
+        "And, incidentally, you are stupid.",
+        "Idiot!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference drinking and intoxication (orders for pints, rounds of drinks, characters urging others to 'please, drink', description of a potent fictional cocktail), indicating regular alcohol use and drunkenness on screen.",
+      "evidence": [
+        "Barman, six pints of bitter and quickly.",
+        "The best drink in existence is the Pan- Galactic Gargle Blaster, the effect of which is like having your brains smashed out by a slice of lemon wrapped round a large gold brick.",
+        "Please, drink."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2490,
+    "output_tokens": 1513,
+    "cost_usd": 0.00365
+  },
+  "seconds": 20.4
+}

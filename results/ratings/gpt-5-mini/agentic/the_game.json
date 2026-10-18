@@ -1,0 +1,53 @@
+{
+  "film_id": "the_game",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes real guns, threats to shoot or kill, someone being shot, hostage commands and police involvement. These indicate realistic, non-graphic violent peril (guns and threats) — moderate under the rubric.",
+      "evidence": [
+        "Nicholas you're not about to shoot anyone",
+        "You tell them I'm gonna shoot somebody",
+        "You shot him"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows flirtation, sexual services implied and references to underwear (a bra) and ‘new experiences’ — sexual content is mild and non-graphic.",
+      "evidence": [
+        "To make your life... fun",
+        "We provide... whatevers lacking",
+        "Well um... the bra, The red bra"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains multiple uses of strong profanity including the f-word and insults (e.g. \"fuck off,\" \"Where the fuck is he?\", \"Don't you fucking start with me\"), so language rates as strong.",
+      "evidence": [
+        "Don't explain, just fuck off",
+        "Where the fuck is he?",
+        "Asshole"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references buying crystal meth in college and mentions smoking and medication — drug use is referenced (past) and smoking/drinking references appear. This supports a moderate rating.",
+      "evidence": [
+        "No I used to buy crystal- meth from the maitre d '",
+        "I thought you quit - I did. it didn't take well you can't smoke here",
+        "You still on medication"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3071,
+    "output_tokens": 1930,
+    "cost_usd": 0.00463
+  },
+  "seconds": 25.7
+}

@@ -1,0 +1,50 @@
+{
+  "film_id": "terminator_3_rise_of_the_machines",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes attempted murders, kidnappings, shootings, large-scale destruction and nuclear attack—violent peril and deaths are repeatedly referenced though nothing graphic in the subtitles.",
+      "evidence": [
+        "They tried to murder me, before I was born.",
+        "I've been kidnapped!",
+        "ROUNDS FlRED... 750 VEHlCLES DESTROYED... 013"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes strip-club commands and sexualized exhortations and mild references to relationships/fiancé but no explicit sexual acts or nudity beyond verbal commands.",
+      "evidence": [
+        "Take off your clothes!",
+        "I have a fiance."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include multiple instances of strong profanity, including the f-word and frequent swearing.",
+      "evidence": [
+        "Fuck you!",
+        "Fucking machine!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue shows incidental drinking and explicit drug use/references (hiding beer; a character asking how much they took and 'Enough!'), indicating more than just background drinking.",
+      "evidence": [
+        "Hide a beer.",
+        "How much did you take? Enough!"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8009,
+    "output_tokens": 780,
+    "cost_usd": 0.00356
+  },
+  "seconds": 9.7
+}

@@ -1,0 +1,50 @@
+{
+  "film_id": "the_pelican_brief",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references multiple murders, shootings, a car explosion, and a discovered body with a bullet to the head. These indicate realistic lethal violence and deaths without graphic detail.",
+      "evidence": [
+        "There's been another murder.",
+        "He was shot...... in broad daylight in a crowd.",
+        "There was a bullet in his head...... and a gun beside him."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual innuendo and references to casual sexual encounters (e.g. 'punch notches in your belt') and suggestive lines, but no explicit sex or nudity.",
+      "evidence": [
+        "Maybe we could...... finish up in the morning?",
+        "I know it sounds silly, but...... would you sleep on the sofa?",
+        "This is a hell of a time to punch notches in your belt."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Contains at least one instance of strong insult language ('son of a bitch'), but no f-word or slurs, so fits occasional stronger words.",
+      "evidence": [
+        "You son- of- a- bitch!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly mentions characters 'sipping on some bourbon' and someone 'being detoxified,' indicating substance use and treatment beyond incidental background drinking.",
+      "evidence": [
+        "...in it, the President and Mattiece are in front of Mattiece's hunting lodge...... sipping on some bourbon, having a good laugh.",
+        "He's being detoxified."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2722,
+    "output_tokens": 1093,
+    "cost_usd": 0.00287
+  },
+  "seconds": 14.5
+}

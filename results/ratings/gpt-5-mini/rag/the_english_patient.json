@@ -1,0 +1,53 @@
+{
+  "film_id": "the_english_patient",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions bombs, bomb squad, booby-traps, injuries, dying people and direct threats to kill — realistic peril and injuries but no graphic gore shown in dialogue.",
+      "evidence": [
+        "Here comes the bomb squad!",
+        "A woman is dying!",
+        "- I thought I would kill you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Contains romantic/sexual conversation and an explicit sexual reference ('kama sutra'), indicating sexual references/innuendo beyond simple flirting.",
+      "evidence": [
+        "If one night I didn't come to see you, what would you do?",
+        "Darling.",
+        "He didn't ask me if I could spin the ball at cricket or kama sutra or -"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity including the f-word and insults (\"asshole\"), plus repeated use of 'bloody'. This meets the 'strong' profanity threshold.",
+      "evidence": [
+        "I'm going to give you a fucking good hiding!",
+        "Count Fuckin ' Asshole Von Bismarck!",
+        "I'm never going to bloody forgive myself."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes explicit requests for morphine and references to poison/gasoline — depiction/reference to drug/chemical use (medical drug mentioned), but not chronic abuse shown.",
+      "evidence": [
+        "- And I need - I need morphine.",
+        "You get to the morning and the poison leaks away, doesn't it?",
+        "with German gasoline."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2555,
+    "output_tokens": 2640,
+    "cost_usd": 0.00592
+  },
+  "seconds": 46.3
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "white_chicks",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats with guns, a character saying they were shot at, arrests and talk of kidnappings — realistic peril and weapons are present but not graphic.",
+      "evidence": [
+        "I swear ill shoot both of you.",
+        "I got shot at.",
+        "Freeze. FBl."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple crude sexual references, talk of sleeping with other people's partners, auctioning women and lines like 'not a whore but not a virgin' — sexual content and innuendo present but no explicit sex scenes described in dialogue.",
+      "evidence": [
+        "I sleep with everyones boyfriend.",
+        "Youre a total booty call.",
+        "I need something for my friend. Something that says, lm not a whore but lm not a virgin either."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains racial slurs and repeated use of the N-word in song lyrics and insults — strong language and slurs are present.",
+      "evidence": [
+        "Dont try to act like you dont feel a nigga",
+        "Negro, please!",
+        "Someone get this jigaboo away from me!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters drink (several mentions of drinking) and there are explicit references to cocaine and to spiking drinks — more than incidental alcohol use.",
+      "evidence": [
+        "after work, me and Kevin went down to the bar and had a couple of drinks.",
+        "Clean it up, coke whore. Do you have any more of that?",
+        "Drop a couple of these babies in her drink, man."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 14768,
+    "output_tokens": 1509,
+    "cost_usd": 0.00671
+  },
+  "seconds": 18.3
+}

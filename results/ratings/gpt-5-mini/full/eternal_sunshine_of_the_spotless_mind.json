@@ -1,0 +1,52 @@
+{
+  "film_id": "eternal_sunshine_of_the_spotless_mind",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic threats, references to a car crash and possible killing, scuffles and commands to 'Hit him!' and 'Get off', but no graphic descriptions. These indicate moderate, non-graphic violence and physical conflict.",
+      "evidence": [
+        "Could've killed somebody.",
+        "Hit him!",
+        "You're dead."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual language, frequent references to 'fucked' and sexual behavior, and stealing underwear — sexual content and implications are explicit though not graphic.",
+      "evidence": [
+        "I assume you fucked someone tonight.",
+        "She'll go around fucking everybody.",
+        "I stole a pair of her panties as well."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Transcript contains strong profanity and a homophobic slur (f-word and slur), meeting the 'strong' threshold for language.",
+      "evidence": [
+        "Fuck it.",
+        "Get out of my face, faggot!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines show characters being 'stoned', references to smoking pot and drinking, and being 'tipsy' — repeated drug/alcohol use is present in dialogue, so rated moderate.",
+      "evidence": [
+        "I'm so stoned.",
+        "If I'm going to be drinking, then I'll smoke it.",
+        "I was a little tipsy."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 19056,
+    "output_tokens": 1779,
+    "cost_usd": 0.00832
+  },
+  "seconds": 42.7
+}

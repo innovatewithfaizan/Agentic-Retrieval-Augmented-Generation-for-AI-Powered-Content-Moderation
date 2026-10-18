@@ -1,0 +1,48 @@
+{
+  "film_id": "million_dollar_baby",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes realistic boxing violence and injuries (severed vein, broken nose, ruptures, knockouts) and references to fights that could kill, but nothing graphic or gory in the subtitles.",
+      "evidence": [
+        "maybe you got a severed vein, or you just cant get the cuagulant deep enough.",
+        "If there's magic in boxing, its the magic of fighting battles beyond endurance, beyond cracked rips, ruptured kidneys and detached raetna's."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains crude sexual references and explicit talk about breasts and sexualized insults as well as kissing mention — more than mild flirting/innocent romance but no explicit sex scenes or nudity.",
+      "evidence": [
+        "Look at them itty bitty titties, there like mosquito bites, man there's barely even a mouth full.",
+        "it's perfect boot, cause you know why, cause she are you, you could fight to him and then you could kiss to him, and then you fight to him one more time."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes the f-word and racial slur(s), i.e. strong profanity and slurs.",
+      "evidence": [
+        "There are no demigods you fucking pagan.",
+        "Hey, you know, I gots nothing against niggers."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue has incidental references to drinking/drunkenness (manager getting drunk) but no on-screen heavy substance use or drug dealing.",
+      "evidence": [
+        "My manager was off getting drunk somewhere,"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8388,
+    "output_tokens": 1431,
+    "cost_usd": 0.00496
+  },
+  "seconds": 29.4
+}

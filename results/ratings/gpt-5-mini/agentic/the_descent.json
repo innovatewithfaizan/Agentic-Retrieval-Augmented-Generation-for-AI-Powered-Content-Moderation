@@ -1,0 +1,53 @@
+{
+  "film_id": "the_descent",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows sustained peril and frightening scenes (screams, growling, creature noises and commands to keep breathing/move) indicating sustained scary tension but no graphic gore in the subtitles provided — fits 'moderate'.",
+      "evidence": [
+        "Don't move!\nWe're coming down to you.\nOh, fuck!\n( Screams ) No!",
+        "( Screeches )\n( Crawler squeals and whimpers )\n( Growls ) ( Screeches )",
+        "Mummy.\nlf you're really ready...\n( Coughs and splutters )\n( Growling )"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual jokes/innuendo and flirtatious lines (sexual humor) but no explicit sex or nudity — fits 'mild'.",
+      "evidence": [
+        "Hey.\nHey, listen, listen.\nListen to me, you'll love this one.\nHow do you give a lemon an orgasm?",
+        "How do you give a lemon an orgasm?\nWhat do you do?\nYou tickle its citrus.",
+        "That's bad.\nSexy!\nLove each day."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles contain frequent strong profanity including multiple uses of the f-word and 'fucking' — per rubric this is 'strong'.",
+      "evidence": [
+        "( Gasps )\nFuck!\n( Panting )\nFuck, fuck, fuck.",
+        "l'm calling you a fucking cheater.",
+        "Fuck!\n( Groans )"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes repeated drinking references (brandy shot, 'Who wants a drink?', 'get wasted') and a line about searching for 'the next big high' (drug-seeking reference) — exceeds incidental drinking, so 'moderate'.",
+      "evidence": [
+        "Who wants a drink?\n- Yes!\nMe!\n- Brandy shot?",
+        "Listen, we don't have to do this, you know.\nWe can head back and stay in town.\nGet wasted, go to a barn dance.",
+        "- So you live in America now?\nRan out of things to jump off in Galway, you know.\nI'm always searching for the next big high."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2542,
+    "output_tokens": 1385,
+    "cost_usd": 0.00341
+  },
+  "seconds": 23.0
+}

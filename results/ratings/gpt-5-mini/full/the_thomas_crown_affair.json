@@ -1,0 +1,51 @@
+{
+  "film_id": "the_thomas_crown_affair",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes planned robberies, physical assaults and threats (e.g. beatings, ‘beat up the Romanians’, threats to break arms). Content depicts real-world violence and peril but is non-graphic.",
+      "evidence": [
+        "We're gonna go beat up the Romanians.",
+        "I fucked five women in three days... flipped my car on an on- ramp... beat a suspect unconscious, got suspended.",
+        "I'll break both your arms."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual language and references to sexual activity and seduction (crude sexual talk and implied sexual encounters), but no explicit sex scenes described in dialogue.",
+      "evidence": [
+        "Do you really think I'm going to sleep with a man I'm investigating, hmm?",
+        "I fucked five women in three days..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent profanity appears in the subtitles, including the f-word and multiple instances of 'shit' and other strong language.",
+      "evidence": [
+        "He's takin ' her to the fucking museum.",
+        "I don't give a shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Numerous casual references to alcoholic drinks (vodka, scotch, champagne, wine, burgundy) and ordering/consuming alcohol, but no depiction of heavy addiction or drug use in the dialogue.",
+      "evidence": [
+        "Vodka rocks, twist.",
+        "Scotch neat.",
+        "I'd like to send a bottle of burgundy to those two gentlemen."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10131,
+    "output_tokens": 1105,
+    "cost_usd": 0.00474
+  },
+  "seconds": 16.7
+}

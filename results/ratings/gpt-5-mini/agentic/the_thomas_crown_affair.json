@@ -1,0 +1,51 @@
+{
+  "film_id": "the_thomas_crown_affair",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains threats of physical harm, commands to 'get away', references to arrests and a line about smelling blood — indicating realistic peril and threats but no graphic gore in the dialogue.",
+      "evidence": [
+        "Get away, get away!",
+        "I'll tell you what. You pull a stunt like that again... I'll break both your arms."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue discusses sexual/romantic relationships and implies potential sexual encounter ('sleep with a man I'm investigating') but contains no explicit sexual descriptions or nudity.",
+      "evidence": [
+        "I enjoy women.",
+        "Do you really think I'm going to sleep with a man I'm investigating, hmm?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include several profanities and strong insults (e.g. 'shit', 'son of a bitch'), but no f-word or racial slurs.",
+      "evidence": [
+        "Jesus Christ!",
+        "Shit!",
+        "Damn you, you son of a bitch!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple lines explicitly mention alcohol (wine, vodka, scotch) and a reference to someone getting drunk, indicating on-screen drinking or drinking as a recurring element.",
+      "evidence": [
+        "I set out a bottle of wine.",
+        "Vodka rocks, twist.",
+        "My girlfriend got drunk."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2625,
+    "output_tokens": 1201,
+    "cost_usd": 0.00306
+  },
+  "seconds": 21.3
+}

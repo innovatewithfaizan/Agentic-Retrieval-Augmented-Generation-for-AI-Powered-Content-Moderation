@@ -1,0 +1,52 @@
+{
+  "film_id": "johnny_english",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes multiple scenes of weapons (guns cocking, gunshots), physical fights, assaults, threats to kill, and injuries (nasty wound). These are realistic but non-graphic violent actions and perilous situations.",
+      "evidence": [
+        "[ Guns Cocking ]",
+        "[ Gunshot ]",
+        "It's Colonel Chevenix! He's got a nasty wound, sir."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Frequent sexual references and crude sexual talk appear in the dialogue and song lyrics (explicit innuendo and references to sexual acts), but no explicit sex scenes or nudity are described in the subtitles.",
+      "evidence": [
+        "A stallion in the sack",
+        "Never prematurely shooting his load",
+        "I suppose you've made love to lots of women, haven't you, Johnny?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The subtitles contain multiple insults and stronger coarse words (e.g., 'asshole', 'bugger off', 'merde'), but no repeated use of the strongest profanity (f-word) or racial slurs.",
+      "evidence": [
+        "such a pompous, know- nothing asshole.",
+        "Bugger off!",
+        "Merde!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue shows characters ordering/consuming alcohol (Bloody Mary, sake) and also depicts drugging (sodium pentothal truth serum, muscle relaxant) used on people — more than incidental references.",
+      "evidence": [
+        "A Bloody Mary, please, not too spicy.",
+        "Sodium pentothal."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11345,
+    "output_tokens": 1886,
+    "cost_usd": 0.00661
+  },
+  "seconds": 20.5
+}

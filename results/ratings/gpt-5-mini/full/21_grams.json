@@ -1,0 +1,53 @@
+{
+  "film_id": "21_grams",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes a fatal car crash that kills two children and a man, threats and armed robbery, a confessed shooting and a gunshot — realistic lethal violence and use of guns, though not graphic.",
+      "evidence": [
+        "I just ran over a man and two girls.",
+        "They both died in the accident.",
+        "I shot him."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual references, crude talk about someone being 'a good lay', depiction of explicit porn audio at a fertility clinic and discussion of artificial insemination — implied sexual activity and crude sexual content without explicit sex on-screen in the subtitles.",
+      "evidence": [
+        "Is he a good lay?",
+        "I have to donate sperm and then...",
+        "[ Woman On Video ] Hey, big boy, what are you doing?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity is present in the subtitles (multiple uses of the f-word and other strong insults).",
+      "evidence": [
+        "What the fuck is wrong with you, man?",
+        "How much did the fucking lawyer charge?",
+        "Get the fuck out of my house!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes drug dealing and drug references (Special K/angel dust/R-2), mentions of illegal substances found in blood, ongoing smoking and drinking — drug dealing/use and substance misuse are explicit themes.",
+      "evidence": [
+        "I got Special \"K,\" angel dust. I got your all-time favorite.",
+        "We found very high levels of illegal substances in your blood.",
+        "If I don't smoke, I'll go fuckin' nuts."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 14267,
+    "output_tokens": 1641,
+    "cost_usd": 0.00685
+  },
+  "seconds": 16.6
+}

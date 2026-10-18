@@ -1,0 +1,51 @@
+{
+  "film_id": "wolf_creek",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats to kill, orders to shoot, an on-screen gun/bolt sound and characters pleading \"Don't kill me\", plus references to being a shooter and a bullet wound — indicating realistic violence (shootings, threats, harm) but no graphic gore shown in dialogue.",
+      "evidence": [
+        "I could tell you, but then I'd have to kill you.",
+        "No! Please! Don't kill me! Please!",
+        "Now Lizzie.. a rifle in the wrong hands can be really dangerous.. so.. Give me the fucking gun! Shoot him! Shoot him!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains an explicit sexual proposition referencing a \"gang bang\" (crude, explicit sexual talk). There are no indications of on-screen sex scenes or graphic nudity in the dialogue.",
+      "evidence": [
+        "Hey uh, me and me mates are gonna see if your girlfriends would be interested in a little bit of a gang bang?",
+        "We just wanna make sure it's alright with you first."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the subtitles, including multiple uses of the f-word and an explicit slur (\"cunt\"), which meets the 'strong' threshold.",
+      "evidence": [
+        "Fuck you cunt!",
+        "You fucking loser!",
+        "Yeah good on ya.. fuckhead."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue contains incidental references to drinking and beer (questions about booze, characters mentioning not drinking again, seeing beer), but no depiction of heavy drunkenness, drug use or addiction in the dialogue.",
+      "evidence": [
+        "Where's the booze?",
+        "Aww! Is that your beer?"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2641,
+    "output_tokens": 1720,
+    "cost_usd": 0.0041
+  },
+  "seconds": 21.8
+}

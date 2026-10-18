@@ -1,0 +1,51 @@
+{
+  "film_id": "pi",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows realistic physical assault, threats and use of a gun, as well as implied deaths/serious injury (stroke, screams). These are non-graphic but intense and include weapons and kidnapping/assault.",
+      "evidence": [
+        "we've got the fucking gun!",
+        "Get off of me!",
+        "You bastards!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There are explicit audible sexual moans and implied sexual activity in the dialogue/subtitles (moaning with pleasure). No explicit sexual description or nudity is shown in the subtitles, but sexual activity is implied.",
+      "evidence": [
+        "[ Devi moans with pleasure ]",
+        "[ Devi moaning faintly ]"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity including repeated use of the f-word and other strong insults/curse words in the dialogue.",
+      "evidence": [
+        "Fuck you!",
+        "Fuck!",
+        "You bastard."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes medical drug administration and lists of drugs/tried treatments including marijuana and prescription drugs — references to drug use/medication are explicit.",
+      "evidence": [
+        "' Administered 80 milligrams Promozine HCI",
+        "' acupuncture, marijuana,"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7055,
+    "output_tokens": 1947,
+    "cost_usd": 0.00566
+  },
+  "seconds": 36.0
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "out_of_time",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats to kill, references to assault with a deadly weapon, homicide and multiple dead bodies, and shooting/ambulance scenes. These indicate realistic violent crime and peril but no graphic gore in the subtitles—moderate.",
+      "evidence": [
+        "- Assault with a deadly weapon.",
+        "\"Just come near her again...... and I'll kill you.\"",
+        "I'm a homicide detective, and there's two dead bodies."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles show explicit sexual activity and references: bedroom invitation, admissions of sleeping with someone, and mention of a threesome/foursome — sexual content and implied sex beyond simple kissing.",
+      "evidence": [
+        "It's all right if I come in your bedroom? Yeah. Come in.",
+        "Trying to catch my self- respect... in the middle of this... threesome.",
+        "I was sleeping with her."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains multiple instances of stronger profanity and crude insults (\"shit\", \"assholes\", sexual slur), but no f-word or slurs of the strongest category—fits moderate.",
+      "evidence": [
+        "T. - Shit.",
+        "Little pussy?",
+        "Assholes."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Frequent references to drinking (beer, bar, refills) and at least one explicit mention of \"drug money.\" This indicates recurring alcohol use and drug-related discussion—moderate.",
+      "evidence": [
+        "Did I...? Oh, Jesus, I did call him last night. I called him from the bar. I wanted to see if he wanted to have a couple of drinks.",
+        "- You want a beer? - Nah, I'm okay.",
+        "- What? - It's money. - What money? That drug money?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2514,
+    "output_tokens": 1149,
+    "cost_usd": 0.00293
+  },
+  "seconds": 23.5
+}

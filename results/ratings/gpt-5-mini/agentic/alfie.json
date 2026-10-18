@@ -1,0 +1,53 @@
+{
+  "film_id": "alfie",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions torture, death and threats (e.g. 'you're a dead man'), indicating non-graphic but realistic violent peril and implied harm. No graphic detail is present in the subtitles, so level is moderate.",
+      "evidence": [
+        "Change your nature, you're a dead man.",
+        "You've tortured him long enough.",
+        "Yells, \"Soup's on,\" and slumps to the kitchen floor. Just like that. Dead as disco."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple explicit sexual references, crude talk about body parts and sexual experiences (threesome, 'I've never had sex with two people', 'boobs', 'penis'). These are sexual references and crude sexual talk without descriptions of explicit sex scenes — fits 'moderate'.",
+      "evidence": [
+        "For us boys, it's all about F. B. B. Face. Boobs. Bum.",
+        "I've never had sex with two people in one night.",
+        "I thought I felt a lump...... on your penis."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains stronger profanity (e.g. 'bullshit', 'shitty') and crude insults, but no f-word or slurs in the provided subtitles. This matches 'moderate'.",
+      "evidence": [
+        "Oh, bullshit.",
+        "You? - Shitty.",
+        "Don't tell me to calm down!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple references to drinking, drunkenness and taking alcohol (nicknacked bottle of vodka, 'I drank a lot last night', suggestions to 'abuse a little substance'). Repeated on-screen drinking/drunkenness implied — fits 'moderate'.",
+      "evidence": [
+        "I nicked half a bottle of Stoli from the limo.",
+        "I drank a lot last night.",
+        "You wanna abuse a little substance, Alfie?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2868,
+    "output_tokens": 1103,
+    "cost_usd": 0.00292
+  },
+  "seconds": 16.9
+}

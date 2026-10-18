@@ -1,0 +1,53 @@
+{
+  "film_id": "stir_of_echoes",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains direct threats, orders to kill, gunshots and references to murder and people being killed, indicating realistic violent danger and deaths though no graphic gore is shown in the subtitles.",
+      "evidence": [
+        "Kill her!",
+        "They were gonna kill you, Tommy. You and Maggie both.",
+        "- I- I'm not leaving until...\nGet out!\nGet out!\n( gunshot ) ( hammering on door )"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles include crude sexual references (explicit mention of sperm), sexual moaning and offers of kissing — sexual content and innuendo beyond mild flirting.",
+      "evidence": [
+        "Well, your beer- addled sperm still work.",
+        "Don't stop.\n( moans )",
+        "Well,..... you can kiss me if you want to."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple occurrences of the f-word and strong profanity appear in the dialogue, which meets the rubric's threshold for 'strong' language.",
+      "evidence": [
+        "Fuck!",
+        "Goddammit, Lenny, shut your fuckin ' pie hole!",
+        "So how the fuck am I supposed to feel about that?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Subtitles explicitly mention smoking a 'fatty' (marijuana), repeated drinking/being drunk and encouragement to drink — clear drug and alcohol use and drunkenness reflected in dialogue.",
+      "evidence": [
+        "Y' see, we... we just smoked this great big fatty a few minutes before you walked in,...",
+        "You want me to go inside and just, uh... sit down on the couch in front of the TV..... and drink beer until I fall asleep, and maybe repeat the whole thing again tomorrow?",
+        "D' you want a beer?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2682,
+    "output_tokens": 2254,
+    "cost_usd": 0.00518
+  },
+  "seconds": 35.7
+}

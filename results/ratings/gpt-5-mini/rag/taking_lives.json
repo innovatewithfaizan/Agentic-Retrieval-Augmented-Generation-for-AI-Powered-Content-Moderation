@@ -1,0 +1,52 @@
+{
+  "film_id": "taking_lives",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles include multiple explicit descriptions of murder, beating with a rock, stabbing/knife killing, gunshot victims and a scene of torture ('I'm not gonna kill you...do this until you pass out'). This indicates graphic/serious violent acts and torture, so severity = strong.",
+      "evidence": [
+        "And then...... he started beating this guy's face in....",
+        "He saw me and he came towards me.",
+        "And I grabbed a knife and I ran towards him."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "There is explicit mention of a sexual element tied to violent acts: 'Also, there's a sexual element to all this. Strangling from behind, cutting off the hands...' and there are also forcible/kissy demands ('Give me a kiss'). This indicates sexual violence/assault and sexualized violence references — rated moderate-to-strong; per rubric this is best categorized as moderate (explicit sexual violence referenced but not explicit sex scenes/nudity).",
+      "evidence": [
+        "Also, there's a sexual element to all this.",
+        "Strangling from behind, cutting off the hands, smashing in the face.",
+        "Give me a kiss. Kiss me."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple uses of strong profanity including the f-word ('Fuck you') as well as 'Oh, shit.' A single clear use of the f-word makes language severity = strong.",
+      "evidence": [
+        "Fuck you.",
+        "Oh, shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue shows casual drinking and references to alcohol and smoking (toasts, 'Scotch, right?', 'The way you smoke...') but no drug use or heavy addiction shown — rated mild.",
+      "evidence": [
+        "Well, I'll drink to that, brother.",
+        "Scotch, right?",
+        "The way you smoke...... your voice...... it's a little low."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2540,
+    "output_tokens": 1766,
+    "cost_usd": 0.00417
+  },
+  "seconds": 32.2
+}

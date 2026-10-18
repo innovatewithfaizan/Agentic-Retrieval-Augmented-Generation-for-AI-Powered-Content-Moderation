@@ -1,0 +1,49 @@
+{
+  "film_id": "the_village",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes multiple murders, skinned livestock, bloody clothing on a child, and explicit references to violent deaths — including stabbing/shooting and sexual homicide. This is graphic/disturbing violent content.",
+      "evidence": [
+        "It was murdered.",
+        "Noah Percy was found with quarts of blood upon his clothes and hands.",
+        "A group of men raped and killed her."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "The subtitles explicitly describe a sexual assault and murder (rape), which is explicit sexual violence referenced in dialogue.",
+      "evidence": [
+        "A group of men raped and killed her.",
+        "They stuffed her in a Dumpster..."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "The dialogue contains minimal profanity or insults; mainly mild exclamations and religious invocations rather than strong swear words.",
+      "evidence": [
+        "Oh, God.",
+        "God in heaven."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "There is a passing reference to a \"drug addict\" in dialogue (background/referenced drug use) but no depiction of drug use or heavy drinking on screen.",
+      "evidence": [
+        "A drug addict came in with a wound to his ribs."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7900,
+    "output_tokens": 1861,
+    "cost_usd": 0.0057
+  },
+  "seconds": 24.0
+}

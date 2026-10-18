@@ -1,0 +1,53 @@
+{
+  "film_id": "broken_flowers",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue refers to someone being 'beat up' and includes aggressive commands ('Danny, grab that fucker') and hostile insults, indicating realistic physical assault or fights without graphic gore.",
+      "evidence": [
+        "Look, I'm really sorry that you got beat up and everything.",
+        "Danny, grab that fucker.",
+        "Man, you're fucked up."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines refer to a woman being a 'mistress', talk of desire and repeated 'I want you' lyrics — clear flirting/sexual desire but no explicit sexual acts or nudity.",
+      "evidence": [
+        "I mean, I'm like your mistress, except you're not even married.",
+        "I want you, babe",
+        "The eternal hunger of women for love."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity including the f-word and related forms, present in the subtitles.",
+      "evidence": [
+        "Fuck you, Donny!",
+        "What the hell's your fuckin' problem?",
+        "Man, you're fucked up."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly names cannabis ('cannabis sativa') and mentions cigarettes and drinking (or refusal to drink), indicating on-screen drug/tobacco references.",
+      "evidence": [
+        "It's just cannabis sativa.",
+        "No cigarettes.",
+        "I don't drink."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2923,
+    "output_tokens": 1700,
+    "cost_usd": 0.00413
+  },
+  "seconds": 26.5
+}

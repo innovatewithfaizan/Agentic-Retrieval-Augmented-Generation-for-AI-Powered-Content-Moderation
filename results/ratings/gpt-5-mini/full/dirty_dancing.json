@@ -1,0 +1,51 @@
+{
+  "film_id": "dirty_dancing",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions a traumatic, non-medical abortion performed with a \"dirty knife and a folding table\" and screams in the hallway; there are also references to real-world violent events and scenes of peril. These indicate realistic, disturbing situations but no graphic gore described in the subtitles.",
+      "evidence": [
+        "\"The guy had a dirty knife and a folding table.\"",
+        "\"I could hear her screaming in the hallway.\"",
+        "\"A tragedy is three men trapped in a mine or police dogs used in Birmingham. Monks burning themselves in protest.\""
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles contain implied sexual activity (pregnancy: \"She's knocked up\"), talk of promiscuity and crude sexual language (\"humped the entire army\") and references to relationships and sexual encounters; no explicit sex scenes described.",
+      "evidence": [
+        "\"She's knocked up, Baby.\"",
+        "\"I don't sleep around...... whatever Robbie might have told you.\"",
+        "\"You wouldn't care if I humped the entire army......\""
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple instances of strong coarse language appear in the subtitles (repeated use of \"shit\" and \"goddamn\", and \"Holy shit\"). No f-word or slurs are present in the provided dialogue, but profanity is frequent enough to exceed mild.",
+      "evidence": [
+        "\"...show the goddamn daughters a good time.\"",
+        "\"Shit!\"",
+        "\"You don't know shit about my problems.\""
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Only incidental/reference-level alcohol appears in dialogue (offering wine), and routine social drinking is implied; no drug use or heavy drunkenness is described in the subtitles.",
+      "evidence": [
+        "\"Sit down, sit down and I'll get you some wine.\""
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 9353,
+    "output_tokens": 1420,
+    "cost_usd": 0.00518
+  },
+  "seconds": 20.3
+}

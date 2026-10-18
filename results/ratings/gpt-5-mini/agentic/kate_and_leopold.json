@@ -1,0 +1,50 @@
+{
+  "film_id": "kate_and_leopold",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains direct threats of violence, screams/growling and references to weapons/threats to lodge 'the steel of this strap' in someone's brain. No graphic descriptions or gore are present, so this indicates realistic peril and violent threats but not graphic violence.",
+      "evidence": [
+        "I don't want to harm you.",
+        "I warn you, scoundrel\nI was trained to ride at the King's Academy and schooled in weaponry by the palace guard.\nYou stand no chance.\nWhere you run, I shall ride and when you stop, the steel of this strap will be lodged in your brain."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains romantic references, talk of marriage and intimate moments like 'It's time for bed' and affectionate lyrics. There is no sexual description or explicit content, only mild romance.",
+      "evidence": [
+        "Take a wife.\nMarry.\nMarriage... marriage is the promise of eternal love.",
+        "It's time for bed.\nOh.\n( Kate sighs )\nI'm so relaxed."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include several stronger expletives and insults such as 'Shit!' and 'asshole', and 'Goddamn it!'. These are stronger than mild profanity and fit the 'occasional stronger words' category, but no f-word or frequent extreme slurs appear.",
+      "evidence": [
+        "Goddamn it!",
+        "Shit!",
+        "Hey, you asshole!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drinking and drunkenness (e.g. getting 'sloppy on Guinness' and 'She’s drunk'), indicating on-screen or central-character alcohol use rather than incidental background. No drugs or addiction themes are mentioned.",
+      "evidence": [
+        "We went out, got a little sloppy on Guinness and he passed out on my couch.",
+        "Can you go away?\nShe's drunk, Leo."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2903,
+    "output_tokens": 997,
+    "cost_usd": 0.00272
+  },
+  "seconds": 14.4
+}

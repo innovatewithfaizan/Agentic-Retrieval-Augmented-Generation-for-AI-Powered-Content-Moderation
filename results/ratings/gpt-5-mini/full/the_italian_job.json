@@ -1,0 +1,49 @@
+{
+  "film_id": "the_italian_job",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly references shootings, murder, armed guards, explosives and a violent heist (threats, killing, grenades, detonator, guards, 'paint on the train') — realistic criminal violence and killings without graphic gore.",
+      "evidence": [
+        "I liked him right up until the minute I shot him.",
+        "two triple- charged chemical grenades and a launcher.",
+        "You killed my cousin Yevhen."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains flirting, sexual invitation and suggestions of going to someone's place but no explicit sex or nudity.",
+      "evidence": [
+        "Let's go back to my place.",
+        "Not tonight.",
+        "We should take this maybe a little slower, you know?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Contains strong profanity including the f-word and other strong expletives.",
+      "evidence": [
+        "What the fuck happened to my truck?!",
+        "I just don't give a shit.",
+        "Bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "No dialogue references to drinking, smoking, or drug use were present in the subtitles.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6112,
+    "output_tokens": 1403,
+    "cost_usd": 0.00433
+  },
+  "seconds": 16.2
+}

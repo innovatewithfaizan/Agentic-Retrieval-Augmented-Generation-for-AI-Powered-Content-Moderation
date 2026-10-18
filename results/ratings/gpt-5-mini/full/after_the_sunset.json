@@ -1,0 +1,53 @@
+{
+  "film_id": "after_the_sunset",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats, firearms and a shooting is referenced, multiple scenes of pursuit, an armed transfer, and people being knocked out or attacked. These are realistic violent actions and threats but not graphic gore, so this is moderate.",
+      "evidence": [
+        "Put down the weapon.",
+        "Don't make me shoot you again.",
+        "You're gonna shoot an FBI agent, Burdett?"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and implied sexual activity (couple-swapping, taking off clothes, spanking and sexual innuendo). These are more than mild flirting, so rate as moderate.",
+      "evidence": [
+        "We like to have sex with other couples.",
+        "Are you being naughty?",
+        "Naughty enough to spank."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles include explicit strong profanity including the f-word and multiple insults, which meets the 'strong' level.",
+      "evidence": [
+        "Now fuck off.",
+        "You sons of bitches!",
+        "That's some bullshit!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Many lines reference drinking, drunkenness and on-screen drinking (whiskey, Jack on the rocks, guests described as 'bombed'). No drug use is indicated, but drinking and drunkenness are frequent, so this is moderate.",
+      "evidence": [
+        "All I see is an intruder...... who just swallowed $80 worth of my whiskey.",
+        "Give me a Jack on the rocks.",
+        "There's a guest down here that's bombed that's shouting your name."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11888,
+    "output_tokens": 1611,
+    "cost_usd": 0.00619
+  },
+  "seconds": 16.1
+}

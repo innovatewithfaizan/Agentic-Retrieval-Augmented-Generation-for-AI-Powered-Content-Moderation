@@ -1,0 +1,52 @@
+{
+  "film_id": "passion_of_mind",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles show physical struggle, screams and direct threats/peril (scuffling, a character yelling 'Get off of me!', and panicked screams) but no graphic or gory detail.",
+      "evidence": [
+        "( Man ) Get off of me!",
+        "( Grunting ) Ohh!",
+        "( Aaron's Voice ) Marty? - ( Screams ) - No, no, no."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit references to 'making love' and discussion of sex and its emotional consequences — sexual content and implied activity but not explicit nudity.",
+      "evidence": [
+        "I want to make love to you.",
+        "Make love? - Yeah. And even more serious stuff.",
+        "All my life, sex never really brought me closer --"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Contains mild profanity/insulting language such as 'Kiss their ass' and name-calling ('doofus'), but no strong swears or slurs.",
+      "evidence": [
+        "Kiss their ass.",
+        "Not him, doofus."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Characters explicitly smoke and ask for cigarettes; smoking is present as incidental/brief rather than a major theme.",
+      "evidence": [
+        "Dr. Peters, I really need to smoke today.",
+        "Do you mind if I have a cigarette?",
+        "Just one more puff."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2959,
+    "output_tokens": 1471,
+    "cost_usd": 0.00368
+  },
+  "seconds": 18.0
+}

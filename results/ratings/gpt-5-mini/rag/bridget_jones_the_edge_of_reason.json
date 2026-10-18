@@ -1,0 +1,53 @@
+{
+  "film_id": "bridget_jones_the_edge_of_reason",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated threats to kill, talk of dying, planning to 'kill the bear', and characters in peril and pain. These indicate realistic danger, threats and non-graphic injuries/scary scenes rather than graphic gore.",
+      "evidence": [
+        "' How are you planning to kill me? \"",
+        "We're going to die out here!",
+        "I'm gonna kill the bear!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes a direct question about sunbathing nude, crude sexual language ('fucking about') and an explicit reference to 'screwing the maid', indicating sexual references and partial nudity rather than explicit sex scenes.",
+      "evidence": [
+        "Officer... can I sunbathe on this beach nude?",
+        "Let's stopfucking about, shall we, and getthe guy warm.",
+        "Sit upthere, drinks and golf, screwing the maid, but getyou in an emergency..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes multiple uses of strong profanity including the f-word and words like 'shit' and 'son of a bitch', meeting the 'strong' threshold for language.",
+      "evidence": [
+        "Look, even if I wanted to kill you, I need you to get home, youfucking idiot.",
+        "Oh, shit.",
+        "Fucking shithole of a world, eh, Charles?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drug use ('snorting coke off the girls' hipbones') and also includes drinking references and comments about being unable to do something sober, indicating on-screen or discussed substance use.",
+      "evidence": [
+        "Differentfrom snorting coke off the girls ' hipbones.",
+        "Can't do it sober?",
+        "Drinking the otherfellow's supplies?"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2455,
+    "output_tokens": 1352,
+    "cost_usd": 0.00332
+  },
+  "seconds": 19.1
+}

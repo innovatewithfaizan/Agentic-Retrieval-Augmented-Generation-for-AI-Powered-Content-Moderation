@@ -1,0 +1,53 @@
+{
+  "film_id": "the_italian_job",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references explosives and weapons (detonating cord, grenades, launcher) and explicit shootings/killings ('you shot John', 'you killed my cousin'), indicating realistic, non-graphic violence and lethal threats.",
+      "evidence": [
+        "Nitromin, primer,",
+        "detonating cord...",
+        "Right, right.... two triple- charged chemical grenades and a launcher."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes romantic/sexual propositions and flirting (inviting someone back to a place, 'baby' terms), but no explicit sexual descriptions, so mild.",
+      "evidence": [
+        "Let's go back to my place.",
+        "No assumptions...",
+        "Not tonight."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple strong profanities appear in the dialogue, including the f-word and frequent strong language ('What the fuck happened...', 'I just don't give a shit.', 'goddamn'), so language is rated strong.",
+      "evidence": [
+        "What the fuck happened to my truck?!",
+        "' cause I just don't give a shit.",
+        "So cut the crap, and give me my goddamn gold!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There are indirect references to 'supplies', 'greens' and '208 bricks' which may imply transactions (money or drugs), but no explicit on-screen drinking, smoking or drug use described in dialogue, so mild.",
+      "evidence": [
+        "We need, uh... some supplies.",
+        "You want all greens?",
+        "13 across, four high, four deep. That's, uh, 208 bricks."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2551,
+    "output_tokens": 2153,
+    "cost_usd": 0.00494
+  },
+  "seconds": 28.3
+}

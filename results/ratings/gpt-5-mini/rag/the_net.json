@@ -1,0 +1,53 @@
+{
+  "film_id": "the_net",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats of killing, a statement that someone was killed, and a police report mentioning a body with a gangland shot to the head — realistic deaths and threats without graphic gore described.",
+      "evidence": [
+        "They'd be interested to hear how you killed Dale and came after me.",
+        "You're gonna kill us.",
+        "I'm near where the body was found with a gangland shot to the head."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple explicit sexual references and implied sexual activity (mentions of condoms, sex, one-night stand, procreation) — sexual references and implied sex.",
+      "evidence": [
+        "The Net is the ultimate condom.",
+        "first date. sex. one- night stand.",
+        "No one has sex."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of strong swear words and insults (e.g. 'shit', 'sons of bitches', 'what the hell') — stronger profanity but no f-word shown.",
+      "evidence": [
+        "You mean shit to me.",
+        "Shit!",
+        "You are amazing sons of bitches."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple references to drinking and smoking, mention of narcotics in a police file and an overdose noted elsewhere — substance use and drug-related references beyond incidental.",
+      "evidence": [
+        "Oh no, I've had three already.",
+        "I used to smoke those... But you quit, right? Well. I refuse to.",
+        "PROSTlTUTlON - LARCENY NARCOTlCS"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2751,
+    "output_tokens": 2255,
+    "cost_usd": 0.0052
+  },
+  "seconds": 39.8
+}

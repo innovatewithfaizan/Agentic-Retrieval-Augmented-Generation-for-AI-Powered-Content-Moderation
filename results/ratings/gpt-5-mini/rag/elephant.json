@@ -1,0 +1,51 @@
+{
+  "film_id": "elephant",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit discussion and planning of armed attacks, references to multiple firearms (Tec-9, rifle, shotty, .223), gunpoint confrontation, and threats to shoot people. This indicates realistic weapon-based violence and threats, but no graphic gore shown in the subtitles.",
+      "evidence": [
+        "You've got your Tec- 9 and your rifle... and I've got my shotty and my. 223 on my back.",
+        "Put the gun down, we'll talk about this.",
+        "I should shoot you right now for it, you know I should."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue explicitly mentions nudity and a request to get naked for pictures (public nudity discussed). While there are no explicit sexual acts described, the mention of getting naked and taking pictures implies partial nudity.",
+      "evidence": [
+        "Want us to get naked with you, take our picture?",
+        "Public nudity is..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain frequent strong profanity (multiple instances of the f-word) and derogatory slur ('retarded'), as well as insults and coarse language throughout.",
+      "evidence": [
+        "No, my parents are being bitches. That's retarded.",
+        "Get the fuck out and don't come back.",
+        "Fuck!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There is an explicit reference to a character being drunk ('Dad's drunk again'), which indicates depiction or mention of drunkenness but not extended scenes of heavy drug use or addiction as a main theme.",
+      "evidence": [
+        "Dad's drunk again.",
+        "I wouldn't drink that. You'll get herpes or something."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2512,
+    "output_tokens": 2352,
+    "cost_usd": 0.00533
+  },
+  "seconds": 41.2
+}

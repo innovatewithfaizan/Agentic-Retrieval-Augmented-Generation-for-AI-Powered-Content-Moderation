@@ -1,0 +1,52 @@
+{
+  "film_id": "envy",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes deaths and violent acts: accidental killing of a horse with an arrow, a buried body, and a line explicitly admitting a person was shot and killed. No graphic gore is described in the subtitles, but there are lethal injuries and sustained dangerous situations.",
+      "evidence": [
+        "I killed his horse.",
+        "I killed a person!",
+        "I shot him. I killed him."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and crude discussion of genitalia (penises, 'manhood'), which is explicit sexual content in the subtitles though not depicting sexual activity on screen.",
+      "evidence": [
+        "He says, \" I noticed when we climbed into the tub our three penises were quite similar in size and bulk. \"",
+        "Armando's freight- train- sized manhood"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and crude insults appear in the dialogue, including the f-word and repeated use of 'shit' and crude phrases.",
+      "evidence": [
+        "toodly- fucking- do to your best friend,",
+        "Where does the shit go?",
+        "Up your ass with Mobil gas."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines indicate characters drinking and drunkenness (admissions of being drunk, wanting a drink, 'I got drunk'), which plays a role in the plot (drunken actions causing events). No drug use shown in dialogue.",
+      "evidence": [
+        "I got drunk and by mistake killed Corky.",
+        "I don't really drink, but my family just left me And I got fired and I want a drink.",
+        "I got drunk on the wine."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 16037,
+    "output_tokens": 1653,
+    "cost_usd": 0.00732
+  },
+  "seconds": 30.8
+}

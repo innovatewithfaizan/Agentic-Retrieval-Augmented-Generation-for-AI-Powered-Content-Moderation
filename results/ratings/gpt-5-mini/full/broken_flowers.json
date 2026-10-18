@@ -1,0 +1,52 @@
+{
+  "film_id": "broken_flowers",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit references to physical assault and scuffles (someone saying “grab that fucker,” references to being beaten and a punch to the face). No graphic description, but realistic violence and threats are present, so rated moderate.",
+      "evidence": [
+        "Danny, grab that fucker.",
+        "I, uh - I ran into somebody. Somebody's fist.",
+        "I'm sorry that you got beat up and everything."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Sexual content is limited to flirting, references to past sexual relationships and being a 'mistress' — suggestive but not explicit sexual acts or nudity, so rated mild.",
+      "evidence": [
+        "I mean, I'm like your mistress, except you're not even married.",
+        "He never kissed you."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains multiple uses of strong profanity (f-word and variations), including direct insults and expletives, so rated strong.",
+      "evidence": [
+        "That's fucked up.",
+        "No fuckin' way.",
+        "Fuck you, Donny!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references and depicts drug use (smoking cannabis: 'cheeba' / 'cannabis sativa') and also mentions tobacco; this is more than incidental background, so rated moderate.",
+      "evidence": [
+        "This is just herbs.",
+        "It's just a little Cheeba.",
+        "It's just cannabis sativa."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10961,
+    "output_tokens": 1527,
+    "cost_usd": 0.00579
+  },
+  "seconds": 16.6
+}

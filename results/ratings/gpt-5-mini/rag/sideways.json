@@ -1,0 +1,49 @@
+{
+  "film_id": "sideways",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "No dialogue indicates physical harm, threats, or frightening scenes. Lines show panic, swearing and noise but no violence or peril described in the subtitles. Rating is based solely on subtitle dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "sex": {
+      "rationale": "Multiple lines include crude sexual talk and explicit intent to have sex (e.g., 'get laid') plus audible moans—implied sexual activity. This supports a moderate rating for sexual content based on dialogue alone.",
+      "evidence": [
+        "You need to get laid, Miles.",
+        "I am going to get laid before I get married on Saturday. Do you read me?",
+        "- [ Moans ]"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity (multiple uses of the f-word and other harsh language) appears in the subtitles, so language is rated strong.",
+      "evidence": [
+        "Where the fuck were you, man?",
+        "God, you are such a fuckin ' loser. You make me so fuckin ' sick.",
+        "No, I'd just fuck ' em up."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Many lines reference drinking, wine tasting, and hangovers; characters are drinking and discussing alcohol directly. This indicates regular alcohol use/drunkenness on screen, so 'moderate' is appropriate based on dialogue.",
+      "evidence": [
+        "Oh, come on. You're fucking hungover. You know you are. Okay, there was a tasting last night, yes.",
+        "When do we drink it? - Now.",
+        "Thanks. [ Jack ] So, what's good here? - What is this you're drinking?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2418,
+    "output_tokens": 1320,
+    "cost_usd": 0.00324
+  },
+  "seconds": 17.8
+}

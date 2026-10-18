@@ -1,0 +1,53 @@
+{
+  "film_id": "in_the_cut",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains an explicit, graphic description of a murder (strangling, throat cut through windpipe/jugular/epiglottis/hyoid/tongue) and references to liking blood and threats with a gun; this is graphic and disturbing.",
+      "evidence": [
+        "He strangled her...... till she lost consciousness, probably in the bedroom...... then dragged her into the bathroom and cut her throat.",
+        "Cut through the windpipe, the jugular, the epiglottis, the hyoid, the tongue.",
+        "He held her by her hair and cut all around. This guy likes blood."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual language and instructions (manual stimulation inside panties, crude references to genitals) and repeated offers of sex; this is explicit sexual content.",
+      "evidence": [
+        "Put your hand between your legs.",
+        "lnside your panties.",
+        "That pussy that I like. And you slip your middle finger in."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the dialogue (multiple uses of the f-word and insults).",
+      "evidence": [
+        "I must be out of my fucking mind.",
+        "Fuck that man, all right.",
+        "Get your fucking ass out the goddamn street, bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters explicitly reference drunkenness and alcohol (a character says 'I'm drunk' and there are mentions/offers of wine), indicating on-screen intoxication/incidental drinking.",
+      "evidence": [
+        "I'm drunk.",
+        "You want wine?",
+        "I got wine."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2673,
+    "output_tokens": 1003,
+    "cost_usd": 0.00267
+  },
+  "seconds": 15.3
+}

@@ -1,0 +1,116 @@
+{
+  "film_id": "dirty_dancing",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats and physical confrontation lines (requests to be hit, references to people 'killing each other', and 'You trying to kill me?'). These indicate realistic interpersonal violence and threats though nothing graphic, so the appropriate level is moderate.",
+      "evidence": [
+        "You trying to kill me?",
+        "They kill each other if I'm not there.",
+        "Hit me. Hit me."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains clear sexual references and crude sexual talk (flirting, 'lover boy' lines and an explicit crude line about 'humping' the army). This goes beyond mild romance/teen kissing into crude sexual talk, so classify as moderate.",
+      "evidence": [
+        "You wouldn't care if I humped the entire army...... as long as I were on the right side of the Ho Chi Minh Trail.",
+        "Have you had many women?",
+        "Romance ' em any way you want."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains mild profanity and insults (\"wise ass,\" and \"goddamned\"), but no f‑word or frequent severe slurs. This fits the 'mild' category.",
+      "evidence": [
+        "Listen, wise ass, you got your own rules.",
+        "Because I need this goddamned job lined up for next summer."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue includes incidental, non-problematic references to alcohol/food (offering wine, hotel context). No depiction of heavy drinking, drugs, or addiction in the dialogue. This corresponds to mild.",
+      "evidence": [
+        "Sit down, sit down and I'll get you some wine.",
+        "A brownie, some milk, leftover rice pudding...... beets, leftover cabbage roll..."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "kill"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "hit me"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "gun"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "fight"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "shoot"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "die"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "stab"
+      },
+      "new_chunks": 6
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "kill each other"
+      },
+      "new_chunks": 6
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 8106,
+    "output_tokens": 2167,
+    "cost_usd": 0.00636
+  },
+  "seconds": 44.4
+}

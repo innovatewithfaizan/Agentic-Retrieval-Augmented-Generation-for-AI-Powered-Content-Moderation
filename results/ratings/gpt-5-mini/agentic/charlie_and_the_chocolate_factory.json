@@ -1,0 +1,48 @@
+{
+  "film_id": "charlie_and_the_chocolate_factory",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains perilous situations and directions that imply danger to children (drowning, poking around a large chocolate-mixing barrel) but no graphic injury or torture. This suggests slapstick/cartoonish or non-graphic peril — mild level.",
+      "evidence": [
+        "He'll drown.",
+        "He can't swim.",
+        "Take a long stick and start poking around in the big chocolate- mixing barrel, okay?"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Lines reference feelings of love and use the word 'fling' in a non-explicit, suggestive way. There is mild romantic/innuendo content but no explicit sexual acts or nudity.",
+      "evidence": [
+        "You and I are going to have one more fling...... at finding that last ticket.",
+        "Gives one the feeling of being in love."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes mild insults and name-calling (\"dummy\", \"loser\", \"devil\") but no strong profanity or slurs, consistent with a mild rating.",
+      "evidence": [
+        "Only a dummy would give this up for something as common as money.",
+        "Are you a dummy?",
+        "I'd be a loser, like you."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No dialogue references to drinking, smoking or drugs; mentions are limited to candy/food. No evidence of alcohol, tobacco or drug use in the subtitles.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3103,
+    "output_tokens": 1468,
+    "cost_usd": 0.00371
+  },
+  "seconds": 22.8
+}

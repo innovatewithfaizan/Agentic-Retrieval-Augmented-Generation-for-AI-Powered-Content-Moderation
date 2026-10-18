@@ -1,0 +1,50 @@
+{
+  "film_id": "the_firm",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes murders, suspicious deaths, explosions and threats against characters (multiple lawyers killed, funeral prayers, explicit threats). The content implies real-world criminal violence and lethal outcomes though not graphic, so moderate is appropriate.",
+      "evidence": [
+        "They were diving off a boat on Grand Cayman, and then there was some kind of explosion on the boat.",
+        "Our brother Marty was suddenly and violently taken from us.",
+        "No Iawyer has ever Ieft your Iaw firm alive."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual language and references to sexual acts and infidelity (direct use of 'fuck' in a sexual context and mention of oral acts). This is explicit sexual reference but not depicted as on-screen sex scenes, so rated moderate.",
+      "evidence": [
+        "Why did you fuck some stranger on a beach one night away from me?",
+        "Not just screwing, Mitch. But the kind of intimate acts, oraI and what not, that could be particularly hard for a trusting young wife to forgive and impossible to forget."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The subtitles include frequent strong profanity (multiple uses of the f-word and other strong insults). Under the rubric a single f-word is enough to place this at the strong level.",
+      "evidence": [
+        "Are you out of your fucking mind?",
+        "Why the fuck are you here?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue shows routine alcohol consumption (martinis, rum, beer) and includes a clear instance of someone being drugged ('Mickey Finn'), so substance use and illicit drugging are present — rated strong.",
+      "evidence": [
+        "Bombay martini on the rocks, EIlis, three olives.",
+        "Tammy's friend slipped him a Mickey Finn."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 16922,
+    "output_tokens": 2253,
+    "cost_usd": 0.00874
+  },
+  "seconds": 34.0
+}

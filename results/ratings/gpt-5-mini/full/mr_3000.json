@@ -1,0 +1,53 @@
+{
+  "film_id": "mr_3000",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes repeated threats of physical harm and aggressive confrontations (threats to pull things out of someone's 'ass', threats to shove a bat, threats to slap someone), plus scuffles and pushing. No graphic injury or gore is described, so content is non-graphic but realistic threats/assault language.",
+      "evidence": [
+        "or someone will have to pull a piece of baseball history out the crack of your ass!",
+        "How ' bout I shove my Hall of Fame bat up the crack of your mascot ass?",
+        "If he throw another curve ball, I'm gonna slap the shit out of T- Rex."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and crude sexual talk (descriptions of sex, 'best sex I ever had', questions about 'more positions' and frequency). There are no on-screen nudity descriptions or graphic sexual scenes in the subtitles, but the sexual talk is explicit and crude.",
+      "evidence": [
+        "The best sex I ever had was with you.",
+        "More positions, then?",
+        "More times a night?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent profanity and insults appear in the dialogue (\"sons of bitches\", \"shit\", \"kiss my ass\", \"bitch\" etc.). There are no instances of the f-word or slurs in the provided subtitles, but strong/occasional coarse language is present.",
+      "evidence": [
+        "Like it or not, I'm a certified immortal. And there ain't nothin ' you sons of bitches can do about it.",
+        "Kiss my Ass",
+        "I promise, it won't be like last time when I'm in front of the microphone with all that cussin ' and shit, you know?"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue includes repeated references to alcohol (beer promotions, characters saying someone is 'drunk', talk of past heavy drinking) and an endorsement mention of Viagra. This indicates frequent drinking/drunkenness references but no depiction of drug dealing or heavy addiction as a central theme.",
+      "evidence": [
+        "He's drunk.",
+        "You used to drink half the American League underneath the table.",
+        "We got 3, 000 different kind of beers."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 17811,
+    "output_tokens": 1961,
+    "cost_usd": 0.00837
+  },
+  "seconds": 32.2
+}

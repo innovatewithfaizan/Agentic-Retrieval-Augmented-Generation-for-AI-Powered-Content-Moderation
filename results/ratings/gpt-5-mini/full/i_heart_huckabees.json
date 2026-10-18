@@ -1,0 +1,52 @@
+{
+  "film_id": "i_heart_huckabees",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains multiple violent threats and descriptions (threats to chop heads with a machete/ax, smashing faces, arson/fire, and a mention of an alligator biting a friend's head off). These are disturbing violent references beyond slapstick.",
+      "evidence": [
+        "I thought about chopping your head off with a machete.",
+        "I thought about hacking you up with an ax, and smashing your face in with a baseball bat.",
+        "one time, a big alligator bit his friend's head off."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual references and crude sexual talk (mention of masturbating, direct discussion of sexual frequency/quality), though no on-screen sex described in subtitles.",
+      "evidence": [
+        "If we might see you... you floss or masturbate... that could be the key to your entire reality.",
+        "How's the sex?",
+        "a preliminary surveillance... indicates it's been infrequent and short... eight to nine minutes... typically."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity occurs throughout the dialogue, including the f-word and multiple obscene insults.",
+      "evidence": [
+        "Motherfucking cocksucker.",
+        "I don't know what the fuck I'm supposed to fucking do anymore.",
+        "Cocksucker! Motherfucking bitch ass motherfucking cocksucker!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental drinking references and mentions of cocktails (margaritas, pina coladas) are present; no drug use or heavy drunkenness depicted in dialogue.",
+      "evidence": [
+        "You oughta see her after a couple margaritas.",
+        "Pina coladas."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 26418,
+    "output_tokens": 1777,
+    "cost_usd": 0.01016
+  },
+  "seconds": 30.8
+}

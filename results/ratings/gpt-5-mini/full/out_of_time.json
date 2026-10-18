@@ -1,0 +1,53 @@
+{
+  "film_id": "out_of_time",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes multiple murders, arson, a pushed-from-balcony incident, weapons and threats (shooting, “I’ll kill you”), and assault — realistic, non-graphic violent crimes and sustained danger.",
+      "evidence": [
+        "Someone was pushed off the seventh- floor balcony!",
+        "It's possibly a double homicide.",
+        "Just come near her again...... and I'll kill you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes an account of sexual assault: the intruder grabbing, forcing himself on top of the victim, kissing her and stripping her — clear sexual violence described in the subtitles.",
+      "evidence": [
+        "He forced himself on top of me.",
+        "And he stripped me naked.",
+        "He kissed me."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong swear words and insults appear in the dialogue (goddamn, shit, bastard, assholes), but no f-word was shown in the provided subtitles.",
+      "evidence": [
+        "It ain't my goddamn fault!",
+        "You little bastard!",
+        "Those assholes from the DEA are at 8400 Southeast 63rd Street."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple references to drinking, drunkenness/overserving and alcohol at bars; also references to drug-related cash/evidence but no on-screen drug use described in dialogue.",
+      "evidence": [
+        "His breath smelled like he'd been drinking on the job, like yours.",
+        "It ain't a bribe, just a beer.",
+        "One of your patrons has been overserved."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 12260,
+    "output_tokens": 1551,
+    "cost_usd": 0.00617
+  },
+  "seconds": 35.0
+}

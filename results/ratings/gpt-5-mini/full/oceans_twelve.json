@@ -1,0 +1,50 @@
+{
+  "film_id": "oceans_twelve",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic threats, kidnapping/abduction references, and weapons/attacks (crossbow, threats of death). No graphic gore is described in the subtitles, so level is moderate.",
+      "evidence": [
+        "He's got two weeks.",
+        "You'll be dead in five days, and I'll get my paintings back.",
+        "They put Yen in a handbag."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes romantic/sexual intimacy (bed, honeymoon, flirting) but no explicit sexual acts or nudity—mild content.",
+      "evidence": [
+        "Are you coming to bed, baby?",
+        "You smell nice."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include slurs and multiple strong expletives (censored f-words and 'retarded'), meeting the threshold for strong language.",
+      "evidence": [
+        "Jesus christ, are you people retarded?",
+        "What the **** do you want me to do?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue mentions drinking (vodka tonic) and prescription sleeping pills (Ambien) incidentally; no depiction of heavy drug use or addiction—mild.",
+      "evidence": [
+        "So finally, she slams her vodka tonic down on the tray and says:",
+        "Every night at 1: 30 he takes an Ambien, puts on Beethoven's Third."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10061,
+    "output_tokens": 1260,
+    "cost_usd": 0.00504
+  },
+  "seconds": 24.7
+}

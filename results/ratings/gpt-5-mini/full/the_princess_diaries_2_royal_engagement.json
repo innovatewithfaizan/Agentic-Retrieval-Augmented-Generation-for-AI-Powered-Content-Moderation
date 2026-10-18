@@ -1,0 +1,47 @@
+{
+  "film_id": "the_princess_diaries_2_royal_engagement",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes non-graphic peril, falls/crashing and screams/grunts of pain indicating slapstick/brief physical mishaps and mild peril, but no graphic or sustained violence.",
+      "evidence": [
+        "( crashiing and clatteriing )",
+        "( screamiing ) ( grunts of paiin )"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Contains romantic/sexual situations and implication of sexual pleasure but no explicit sex or nudity — kissing and suggestive dialogue.",
+      "evidence": [
+        "You may kiss the bride.",
+        "- I mean, it was pleasurable.",
+        "- Very pleasant, but, but, but no fireworks."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Only mild insults/name-calling appear in the dialogue (no strong profanity).",
+      "evidence": [
+        "It's really a shame he didn't get juicier stuff last night, you jerk.",
+        "You're a couch potato."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No references to drinking, smoking, or drug use appear in the subtitles.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 9063,
+    "output_tokens": 1330,
+    "cost_usd": 0.00493
+  },
+  "seconds": 13.5
+}

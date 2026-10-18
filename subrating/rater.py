@@ -135,6 +135,10 @@ def _json_in_text(text: str) -> dict:
     return json.loads(match.group(0))
 
 
+def approx_tokens(messages: list[dict]) -> int:
+    return len(json.dumps(messages, ensure_ascii=False)) // 4
+
+
 def _format_chunks(chunks: list[dict]) -> str:
     return "\n---\n".join(f"[{c['start']}]\n{c['text']}" for c in chunks)
 
@@ -177,7 +181,9 @@ def rate(ctx: FilmContext, mode: str, backend: llm.Backend, on_step=None) -> dic
     trace, searches, ratings = [], 0, None
 
     for _ in range(MAX_TURNS):
-        can_search = agentic and searches < config.AGENT_MAX_SEARCHES
+        cap = backend.max_prompt_tokens
+        too_big = bool(cap) and approx_tokens(messages) > cap
+        can_search = agentic and searches < config.AGENT_MAX_SEARCHES and not too_big
         tools = SEARCH_TOOLS + [SUBMIT_TOOL] if agentic else [SUBMIT_TOOL]
         response = backend.chat(messages, tools, "auto" if can_search else llm.force(SUBMIT))
         usage.add(response)
@@ -207,7 +213,7 @@ def rate(ctx: FilmContext, mode: str, backend: llm.Backend, on_step=None) -> dic
                         content, info = "Received.", {}
                     except ValueError as exc:
                         content, info = f"Invalid ratings: {exc}. Call {SUBMIT} again.", {"error": str(exc)}
-                elif searches >= config.AGENT_MAX_SEARCHES or not agentic:
+                elif not can_search or searches >= config.AGENT_MAX_SEARCHES:
                     content, info = f"Search budget used up. Call {SUBMIT} now.", {"error": "budget"}
                 else:
                     content, info = run_tool(ctx, name, args)

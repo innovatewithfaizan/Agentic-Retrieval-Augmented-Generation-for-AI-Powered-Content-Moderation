@@ -1,0 +1,80 @@
+{
+  "film_id": "ladder_49",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles show realistic peril (firefighting rescues), burns and at least one death/memorial. There are threats and tense rescue situations but no graphic gore described in dialogue.",
+      "evidence": [
+        "Calm down, or you'll kill us!",
+        "You tell July Custer, that Alex's dad got burned trying to save people.",
+        "We'll never forget you, Jack."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content or romantic/sexual scenes are evident from the dialogue; lines are affectionate/familial only.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Contains occasional strong words (one occurrence of “shit”) plus uses of “ass” and multiple instances of “hell” and “damn,” placing it above mild.",
+      "evidence": [
+        "I got this all shit falling from above.",
+        "- I kicked his ass too.",
+        "What a hell is wrong with you?"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue includes casual drinking (mention of having a few drinks) but no heavy intoxication, drug use, or addiction themes.",
+      "evidence": [
+        "Been drinking?",
+        "Yes, I had a few drinks with boys."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "ass",
+          "hell",
+          "damn",
+          "bitch",
+          "f**k",
+          "crap",
+          "stupid",
+          "swear",
+          "I swear"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 1,
+        "ass": 1,
+        "hell": 4,
+        "damn": 1,
+        "bitch": 0,
+        "f**k": 0,
+        "crap": 0,
+        "stupid": 0,
+        "swear": 1,
+        "I swear": 1
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 5965,
+    "output_tokens": 2242,
+    "cost_usd": 0.00598
+  },
+  "seconds": 39.3
+}

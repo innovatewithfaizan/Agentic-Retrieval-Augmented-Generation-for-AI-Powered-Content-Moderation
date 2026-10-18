@@ -1,0 +1,53 @@
+{
+  "film_id": "garden_state",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes accidental drowning and a push that caused paralysis, and contains explicit threats of physical harm; there is realistic injury and death but no graphic detail.",
+      "evidence": [
+        "Your mother died yesterday evening.",
+        "She got drowned with yesterday evening in bathtub.",
+        "I pushed her."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes crude sexual references and explicit sexual language (references to 'fuck', 'whores', and references to breasts), but no explicit sex scenes.",
+      "evidence": [
+        "Girl who looks so it does not it fuck with such guy, probably that it walks her about coca, cash desk or fame.",
+        "Hey, wagina!",
+        "Who looked at cycuszki just?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent crude profanity and insults appear (e.g., 'ass-hole', 'whore') and a strong Polish profanity equivalent to 'motherf***er' is used; this meets the highest profanity category.",
+      "evidence": [
+        "Ass- hole!",
+        "Whore, so.",
+        "I will to club to death matkojebcê."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly mentions cocaine lines, 'powders', and many prescription/psychiatric medications (lithium, paxil, zoloft, celexa, depakote); drug use and medication dependence are prominent.",
+      "evidence": [
+        "There now, Kenny, I saw ostatni once when you you did on chamber pot the lines of cocaine.",
+        "You take lithium since? Under different figures since dust ten years. And paxil, zoloft, celexa? Depakote?",
+        "There now this city this swamp. Every on different powders, how in \" Nowym splendid world \"."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 12631,
+    "output_tokens": 2445,
+    "cost_usd": 0.00805
+  },
+  "seconds": 49.9
+}

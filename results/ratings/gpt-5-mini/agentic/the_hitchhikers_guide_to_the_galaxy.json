@@ -1,0 +1,53 @@
+{
+  "film_id": "the_hitchhikers_guide_to_the_galaxy",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly references realistic weapons, shootings, missiles, threats and screams (guns/missile launched, orders to shoot, threats to kick). No graphic descriptions, but clear use of weapons and violent action.",
+      "evidence": [
+        "Launch a missile.",
+        "Shoot him, quickly, shoot him!",
+        "You blew it with her, Earthman, so shut your face or I'll kick you in the zatch."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual/romantic lines and crude sexual innuendo (requests for love, repeated erotic affirmations, and a line implying rough sexual preference). No explicit sex acts described, but sexual content is more than mild flirting.",
+      "evidence": [
+        "I just want to be loved?",
+        "Yes, yes, yes.",
+        "I love it rough."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains insults and expletives (e.g. 'bollocks', 'stupid', 'idiot'). There are no f-words or slurs in the provided subtitles, so language is at a mild level.",
+      "evidence": [
+        "Oh, bollocks!",
+        "And, incidentally, you are stupid.",
+        "Idiot!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Multiple lines explicitly reference drinking and drunkenness (beer, pints, pub, on-screen toasts; a named potent alcoholic drink with intoxicating effects). This shows characters drinking and heavy drinking depiction — moderate level.",
+      "evidence": [
+        "Workers of the Earth, I bring good tidings of peanuts and beer!",
+        "Barman, six pints of bitter and quickly.",
+        "The best drink in existence is the Pan- Galactic Gargle Blaster, the effect of which is like having your brains smashed out by a slice of lemon wrapped round a large gold brick."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2766,
+    "output_tokens": 1547,
+    "cost_usd": 0.00379
+  },
+  "seconds": 27.3
+}

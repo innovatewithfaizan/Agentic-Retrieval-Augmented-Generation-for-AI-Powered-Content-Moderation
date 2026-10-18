@@ -1,0 +1,53 @@
+{
+  "film_id": "eyes_wide_shut",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats to kill, warnings of danger, and reference to someone turning up dead — indicating realistic peril and death without graphic detail.",
+      "evidence": [
+        "I promise I'll kill you!",
+        "Do you mind telling me what kind of fucking charade...... ends with somebody turning up dead?",
+        "You are in great danger. You must get away while there's still a chance."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Strong sexual language and descriptions of nudity and sexual touching (explicit references to sex, breasts and being naked) are present, implying partial nudity and explicit sexual talk.",
+      "evidence": [
+        "Do you realize that what you ' re saying...... is that the only reason you wouldn't fuck those models...... is out of consideration for me?",
+        "Let's say, for example, you have some gorgeous woman...... standing in your office naked...... and you ' re feeling her fucking tits.",
+        "I felt wonderful. Then I was lying in a beautiful garden...... stretched out naked in the sunlight..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears (including multiple uses of the f-word) and a homophobic slur is used in dialogue, meeting the threshold for 'strong'.",
+      "evidence": [
+        "You want to take a ride in this fudge- tunnel, you stupid faggot?",
+        "Do you mind telling me what kind of fucking charade...... ends with somebody turning up dead?",
+        "Everyone was fucking."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly discusses hard drug use (speedball/heroin and coke) and rehab, plus references to pot and on-screen drinking — indicating drug/alcohol use and substance issues.",
+      "evidence": [
+        "A speedball or a snowball or whatever the hell they call it. It's heroin and coke.",
+        "You ' re going to need some rehab.",
+        "This pot is making you aggressive."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3043,
+    "output_tokens": 2021,
+    "cost_usd": 0.0048
+  },
+  "seconds": 52.6
+}

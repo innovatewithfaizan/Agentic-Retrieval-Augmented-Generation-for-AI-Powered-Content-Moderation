@@ -1,0 +1,51 @@
+{
+  "film_id": "the_sisterhood_of_the_traveling_pants",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions fantasy/peril elements (a 'Snake Room' and a dragon) and a brief startled/injury reaction ('Oh, my God, are you okay?'), but there is no graphic or realistic violence described. This supports a 'mild' rating for violence/scariness.",
+      "evidence": [
+        "See, chamber number one is the Snake Room.",
+        "See, snakes slither from the ceiling.",
+        "You don't even get to see the dragon until chamber number 23!"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Lines include flirting and sexualized compliments ('Tibby, you're a babe!') and references to marriage, but there is no explicit sexual activity or nudity. This fits the 'mild' category (kissing/flirting/crushes).",
+      "evidence": [
+        "Tibby, you're a babe!",
+        "Tibby, you look amazing. Turn around.",
+        "We're getting married."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains mild insults and colloquial coarse terms ('stupid heels', 'Get a life, Ma', and a joking coined term 'suckumentary'), but no strong profanity or slurs. This corresponds to 'mild' language.",
+      "evidence": [
+        "I will be as soon as I get out of these stupid heels.",
+        "I'm like, \"Get a life, Ma,\" you know?",
+        "I think I'm gonna start my own genre, call it the \"suckumentary.\""
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "There is a passing reference to someone's father being an alcoholic ('His dad's in a facility. He's an alcoholic.'), but no depiction of drinking, drug use, or heavy intoxication. That is an incidental/background reference, so 'mild' is appropriate.",
+      "evidence": [
+        "His dad's in a facility. He's an alcoholic."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2555,
+    "output_tokens": 1571,
+    "cost_usd": 0.00378
+  },
+  "seconds": 20.0
+}

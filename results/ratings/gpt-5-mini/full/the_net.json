@@ -1,0 +1,51 @@
+{
+  "film_id": "the_net",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references multiple murders, shootings, deaths and explicit threats (realistic violence) but no graphic gore described in the subtitles.",
+      "evidence": [
+        "They killed Dale.",
+        "I'm near where the body was found with a gangland shot to the head.",
+        "He's got no pulse."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Includes explicit sexual language and references to sex (crude sexual talk), but no on-screen sex or nudity described.",
+      "evidence": [
+        "No one leaves the house any more. No one has sex.",
+        "I'm surprised you didn't kill me, then fuck me!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Contains the f-word and other strong profanity in the dialogue.",
+      "evidence": [
+        "I'm surprised you didn't kill me, then fuck me!",
+        "Shit!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes references to narcotics, an overdose, and on-screen drinking (martini), indicating drug/alcohol-related content though not extended depiction of addiction.",
+      "evidence": [
+        "PROSTlTUTlON - LARCENY NARCOTlCS",
+        "MOTHER DEAD FROM OVERDOSE",
+        "It's a Martini. with an onion instead of a olive."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 9329,
+    "output_tokens": 1823,
+    "cost_usd": 0.00598
+  },
+  "seconds": 28.5
+}

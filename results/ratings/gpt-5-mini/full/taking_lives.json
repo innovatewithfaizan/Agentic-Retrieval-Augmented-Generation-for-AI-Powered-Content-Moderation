@@ -1,0 +1,52 @@
+{
+  "film_id": "taking_lives",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes repeated, graphic killings (strangling, hands removed, face smashed), extensive blood, and a shooting; multiple murders and graphic descriptions indicate strong violence.",
+      "evidence": [
+        "Also, there's a sexual element to all this. Strangling from behind, cutting off the hands, smashing in the face.",
+        "That man's face was half gone!",
+        "He shot Duval."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual language and descriptions of sexual intercourse (including 'fuck' used to describe sex and 'coming inside of you'), indicating explicit sexual content.",
+      "evidence": [
+        "Yeah, I did fuck you.",
+        "I mean, coming inside of you was the best moment of my life."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity (multiple uses of 'fuck' and variations) and at least one homophobic slur appear in the dialogue, meeting the highest language severity.",
+      "evidence": [
+        "Fuck people, fuck their rules.",
+        "Somebody as beautiful and powerful as you...... doesn't fall for a faggy art dealer.",
+        "Fuck you."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes incidental alcohol and cigarette use and an explicit reference to a character being 'a drug addict.' These references go beyond background mentions, indicating moderate concern.",
+      "evidence": [
+        "Do you mind if I have a cigarette?",
+        "Scotch, right?",
+        "He's a drug addict and an art thief."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 9331,
+    "output_tokens": 1805,
+    "cost_usd": 0.00594
+  },
+  "seconds": 30.4
+}

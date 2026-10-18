@@ -1,0 +1,52 @@
+{
+  "film_id": "shaun_of_the_dead",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated threats, references to attackers/zombies and how to stop them (removing the head/destroying the brain), characters arming themselves and commands to 'Fire!' — realistic violent conflict and use of weapons are implied, but no graphic gore in the subtitles.",
+      "evidence": [
+        "'... the attackers can be stopped by removing the head or destroying the brain.",
+        "Zombies to your front. Fire! Fire!",
+        "We're coming to get you, Barbara!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There is crude sexual language used as insults (e.g. 'Get fucked'), and brief references to relationships/anniversary, but no explicit sexual activity described — qualifies as crude sexual talk/innuendo.",
+      "evidence": [
+        "Get fucked, four- eyes!",
+        "Look, just fuck off!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity is present in the dialogue, including multiple uses of the f-word and other strong insults, meeting the 'strong' profanity level.",
+      "evidence": [
+        "Get fucked, four- eyes!",
+        "Look, just fuck off!",
+        "Oh, fuck. Ow! Fuck it!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference smoking, regular drinking and partying (including getting 'completely smashed'), and mention of selling/using weed — indicates regular alcohol/tobacco use and some drug reference, so moderate.",
+      "evidence": [
+        "He sells a bit of weed now and again.",
+        "You promised you'd stop smoking.",
+        "We'll have a party and get completely smashed."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2638,
+    "output_tokens": 1243,
+    "cost_usd": 0.00315
+  },
+  "seconds": 15.5
+}

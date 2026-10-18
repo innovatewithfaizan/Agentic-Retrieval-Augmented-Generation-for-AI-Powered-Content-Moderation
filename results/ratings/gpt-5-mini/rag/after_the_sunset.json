@@ -1,0 +1,53 @@
+{
+  "film_id": "after_the_sunset",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes shootings, a bullet that wounded a character, direct threats to kill, and implied deaths. These are realistic weapon-based threats and violence but not graphic.",
+      "evidence": [
+        "You're gonna shoot an FBI agent, Burdett?",
+        "The one he shot you with.",
+        "You tell anyone I tucked him in, I'll kill you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows undressing, teasing sexual behavior and spanking references, and romantic proposals — mild sexual content/innuendo rather than explicit sex or nudity.",
+      "evidence": [
+        "Why are you taking off your clothes?",
+        "Are you being naughty?",
+        "Naughty enough to spank."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple profanities and insults (e.g., 'Shit!', 'Damn', 'bastard'), stronger than mild but no F-word or racial slurs; fits the 'moderate' level.",
+      "evidence": [
+        "Damn, I got the stink on me tonight.",
+        "Shit!",
+        "No, you bastard!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Frequent dialogue about alcoholic drinks, cocktails, beer and on-screen drinking requests; shows regular alcohol consumption but no drug use or heavy addiction theme.",
+      "evidence": [
+        "Light rum, amaretto, orange juice, pineapple juice, and a splash of grenadine.",
+        "I got a boat stacked with beer. Drink it yourself.",
+        "Bartender! Give me another one!"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2677,
+    "output_tokens": 1625,
+    "cost_usd": 0.00392
+  },
+  "seconds": 19.5
+}

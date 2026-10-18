@@ -1,0 +1,98 @@
+{
+  "film_id": "bad_boys_ii",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats, chasing and physical aggression (bites/biting threatened), scuffles and mild peril (kids shouting, 'Get away from him, you punks', 'If I catch your butt, I'm gonna bite it', 'Run! Down. Mom. Dad.'). No mention of weapons, graphic injury, torture or death in the subtitles provided.",
+      "evidence": [
+        "Get away from him, you punks.",
+        "If I catch your butt, I'm gonna bite it.",
+        "Run! Down. Mom. Dad."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Only mild romantic/sexual content appears in the dialogue: requests for kisses and flirting ('Gimme a kiss good- bye, Shep.'), affectionate language and talk of 'Love?' and comments about appearance. No explicit sexual content or nudity.",
+      "evidence": [
+        "Gimme a kiss good- bye, Shep.",
+        "Owen, honey, can we just talk about how pretty I am?",
+        "Love?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Language is limited to name-calling and mild insults (e.g. 'loser', 'brats', 'punks'), childish crude words like 'butt', and one instance of 'yap'. No stronger profanity or slurs are present in the subtitle lines.",
+      "evidence": [
+        "Good morning, loser.",
+        "If I catch your butt, I'm gonna bite it.",
+        "Shut your yap!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No clear references to drinking, smoking, drug use or intoxication appear in the provided dialogue. Mentions like 'we'll all get pretty goofy in here' are ambiguous and not explicit substance use.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "crap",
+          "bitch",
+          "asshole",
+          "loser",
+          "butt",
+          "yap",
+          "brats",
+          "punks",
+          "kiss",
+          "drink",
+          "drunk",
+          "beer",
+          "wine",
+          "smoke",
+          "cigarette",
+          "drug",
+          "kill",
+          "gun",
+          "shot",
+          "blood",
+          "dead",
+          "bite",
+          "attack"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 0,
+        "damn": 0,
+        "hell": 0,
+        "crap": 0,
+        "bitch": 0,
+        "asshole": 0,
+        "loser": 2,
+        "butt": 3,
+        "yap": 1,
+        "brats": 1,
+        "punks": 1
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 5849,
+    "output_tokens": 1874,
+    "cost_usd": 0.00521
+  },
+  "seconds": 28.7
+}

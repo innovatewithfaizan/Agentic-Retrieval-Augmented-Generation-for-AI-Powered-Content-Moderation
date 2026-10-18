@@ -1,0 +1,51 @@
+{
+  "film_id": "wolf_creek",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats, torture and graphic mutilation described (mutilation, decapitation, 'head on a stick'), a shooting ('Bang!') and victims pleading — indicating graphic/very disturbing violence.",
+      "evidence": [
+        "How about I cut your tits off hey?",
+        "She lasted a good few months. We were great together you know? Till she lost her head.",
+        "This little procedure.. is called.. making a head on a stick."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Explicit sexual proposition referenced ('gang bang') and sexual-targeted mutilation threat to breasts; explicit sexual content in dialogue though no on-screen sex shown in subtitles.",
+      "evidence": [
+        "me and me mates are gonna see if your girlfriends would be interested in a little bit of a gang bang?",
+        "How about I cut your tits off hey?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity throughout, including multiple uses of the f-word and the slur 'cunt'.",
+      "evidence": [
+        "Fuck you cunt!",
+        "Fucking tool.",
+        "Get fucked."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Incidental references to alcohol and drinking (looking for booze, talk of not drinking after last night) but no depiction of heavy addiction or drug use in the dialogue.",
+      "evidence": [
+        "Where's the booze?",
+        "After last night never drinking again."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6286,
+    "output_tokens": 1472,
+    "cost_usd": 0.00452
+  },
+  "seconds": 26.0
+}

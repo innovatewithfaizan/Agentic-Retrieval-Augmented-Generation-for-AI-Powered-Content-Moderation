@@ -1,0 +1,49 @@
+{
+  "film_id": "the_last_samurai",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "The subtitles contain numerous descriptions and depictions of violent battle, killings, and culturally violent acts: scalping is described in graphic detail, references to bodies 'slit about' and rotting, decapitation, orders to 'kill' specific people, and large-scale battlefield slaughter. This indicates intense and sometimes graphic violence beyond mild or purely slapstick peril.",
+      "evidence": [
+        "Bodies slit about... literally.",
+        "I once had a dread fascination for scalp. I never understood its technique. ... And scraping a dull blade of a rusted knife on your scalp... with the soulless emotion.",
+        "Kill Katsumoto! Kill the American!"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "The subtitles contain no sexual content, implied sex, or romance beyond non-sexual interpersonal relationships and brief mentions of family; there are no sexual descriptions or nudity implied by the dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "The dialogue includes repeated profanity and insults including 'God damn you', 'son of a bitch', 'bastards', and 'shit-kick', representing stronger coarse language though not the f-word. This fits the 'moderate' category (occasional stronger words and crude insults).",
+      "evidence": [
+        "God damn you, Algren!",
+        "Son of a bitch.",
+        "or I will passionately shit- kick every one of you sad parade, let it be before my eyes."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "There are multiple, clear references to alcoholic drinks (whiskey, sake) and characters being offered or consuming them, but no depiction of addiction or drug dealing—this is incidental drinking and thus 'mild'.",
+      "evidence": [
+        "Whiskey.",
+        "May I offer you a whiskey?",
+        "Sake... Sake... Sake..."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8861,
+    "output_tokens": 1236,
+    "cost_usd": 0.00469
+  },
+  "seconds": 12.2
+}

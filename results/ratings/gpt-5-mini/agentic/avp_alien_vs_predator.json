@@ -1,0 +1,51 @@
+{
+  "film_id": "avp_alien_vs_predator",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes repeated threats, imminent peril, people saying they could die, running from danger, and an explicit bomb threat. There are potential deaths and sustained scary situations but no graphic gore described in the dialogue, so severity = moderate.",
+      "evidence": [
+        "If you rush this, people will get hurt.",
+        "When that door opens, we're dead.",
+        "It's a bomb. Well, I hope it kills every fucking one of ' em."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines include an explicit reference to condoms and flirtatious talk, indicating mild sexual content/innuendo but no explicit sexual activity or nudity in dialogue.",
+      "evidence": [
+        "Same principle as a condom.",
+        "She can't resist my animal magnetism."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains strong profanity including the f-word and insults (\"You ugly son of a bitch\" and \"fucking\"), which places language at the strong level.",
+      "evidence": [
+        "You ugly son of a bitch!",
+        "Well, I hope it kills every fucking one of ' em."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue contains incidental drinking references (bottle cap, opening a bottle of champagne, first drink at 14) but no depiction of heavy drug use or addiction; this supports a mild rating.",
+      "evidence": [
+        "What's with the bottle cap?",
+        "We reached the top, and he opened a bottle of champagne.",
+        "I had my first drink with my dad at 14, 400ft."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2673,
+    "output_tokens": 1550,
+    "cost_usd": 0.00377
+  },
+  "seconds": 21.2
+}

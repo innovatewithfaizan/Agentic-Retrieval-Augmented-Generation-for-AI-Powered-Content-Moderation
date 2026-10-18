@@ -1,0 +1,51 @@
+{
+  "film_id": "high_fidelity",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains references to playing with guns and brief scuffle cues (e.g., 'break it up'), but no explicit physical violence, injuries, graphic harm, or sustained scary scenes. The intensity is mild.",
+      "evidence": [
+        "People worry about kids playing with guns, or watching violent videos... that some sort of culture of violence will take them over.",
+        "- Uh...\n- Will you? - break it up."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Multiple lines describe sexual activity, infidelity, making love, and explicit sexual feelings ('horny and fucked up'), indicating sexual references and crude sexual talk without graphic sex scenes. This fits 'moderate.'",
+      "evidence": [
+        "One: that I slept with someone else...\n- He slept with somebody else.\n- What? while she, Laura, was pregnant.",
+        "I think it’ s okay if you feel horny and fucked up at the same time."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and insults appear (multiple uses of the f-word, 'ass-muncher', 'fuckin' asshole'), meeting the 'strong' level for language.",
+      "evidence": [
+        "Are you defending that ass- muncher?",
+        "I am a fuckin ’ asshole.",
+        "Fuck! Fuck! Fuck!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drinking (planning to 'drink a bottle of wine', arranging to 'meet me for a drink', and bartender/liquor-license context), indicating regular alcohol use in the story. No drugs shown, but alcohol presence is moderate.",
+      "evidence": [
+        "- What are you gonna do, Rob?\n- I'm gonna drink a bottle of wine, I'm gonna watch TV and go to bed.",
+        "Oh, I forgot.\nYou can’ t.\nI'm not gonna get off this phone until you agree to meet me for a drink.",
+        "The two burgeoning criminals behind this opus are standing by the bar.\nThey’ re underage, and we’ il lose our liquor license --"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2864,
+    "output_tokens": 1352,
+    "cost_usd": 0.00342
+  },
+  "seconds": 24.8
+}

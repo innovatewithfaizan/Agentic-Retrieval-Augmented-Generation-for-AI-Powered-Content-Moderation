@@ -1,0 +1,53 @@
+{
+  "film_id": "pi",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles contain threats, a direct mention of a gun, multiple screams and pleas for help, and aggressive confrontations, indicating realistic violent danger and sustained tension.",
+      "evidence": [
+        "If you won't help us, we'll comply with the laws of nature. Survival of the fittest - and we've got the fucking gun!",
+        "[ Screams in agony ] Three! Five! Nine!",
+        "Don't ever touch me!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles include audible sexual moaning and sexually explicit exclamations, indicating implied sexual activity and crude sexual language.",
+      "evidence": [
+        "[ Devi moans with pleasure ]",
+        "Hell! You fuck!",
+        "Fuck you!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the subtitles, including multiple uses of the f-word and other coarse language.",
+      "evidence": [
+        "Fuck you!",
+        "Fuck you!",
+        "I don't give a shit about you, just what's in your head!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue refers to medical injections and lists various treatments (including caffeine) and brief mentions of drinking/coffee — incidental or medical substance references rather than portrayals of misuse.",
+      "evidence": [
+        "' by subcutaneous injection.",
+        "' Failed treatments to date: ' Beta blockers, calcium channel blockers, adrenaline injections, ' high- dose ibuprofen, steroids, ... caffeine,",
+        "- I'll knock back.\n- The Torah.\n- Coffee."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2243,
+    "output_tokens": 1543,
+    "cost_usd": 0.00365
+  },
+  "seconds": 21.6
+}

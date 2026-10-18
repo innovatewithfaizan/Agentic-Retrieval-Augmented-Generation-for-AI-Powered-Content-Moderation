@@ -1,7 +1,8 @@
-"""OpenAI-compatible chat client for open-weight models, with usage and cost tracking.
+"""OpenAI-compatible chat client, with usage and cost tracking.
 
-Groq, Together AI and OpenRouter all serve the same chat-completions API, so
-one client covers them; only the base URL, key and a few request fields differ.
+OpenAI, Groq, Together AI and OpenRouter all serve the same chat-completions
+API, so one client covers them; only the base URL, key and a few request
+fields differ.
 """
 
 import json
@@ -19,6 +20,16 @@ PROVIDERS = {
         "env": "GROQ_API_KEY",
         "models": ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"],
         "key_url": "https://console.groq.com/keys",
+        # The free tier rejects requests over 8K tokens per minute, so the agent
+        # stops searching once its conversation nears this size.
+        "max_prompt_tokens": 6500,
+    },
+    "openai": {
+        "label": "OpenAI",
+        "base_url": "https://api.openai.com/v1",
+        "env": "OPENAI_API_KEY",
+        "models": ["gpt-5-mini", "gpt-5-nano", "gpt-4.1-mini"],
+        "key_url": "https://platform.openai.com/api-keys",
     },
     "together": {
         "label": "Together AI",
@@ -39,6 +50,9 @@ PROVIDERS = {
 # USD per million tokens (input, output), list prices checked October 2026.
 # Used only for reporting; the provider's bill is the source of truth.
 PRICES = {
+    "gpt-5-mini": (0.25, 2.00),
+    "gpt-5-nano": (0.05, 0.40),
+    "gpt-4.1-mini": (0.40, 1.60),
     "openai/gpt-oss-120b": (0.15, 0.60),
     "openai/gpt-oss-20b": (0.075, 0.30),
     "qwen/qwen3.8-27b": (0.80, 4.00),
@@ -74,9 +88,13 @@ class Backend:
     model: str = config.RATER_MODEL
     api_key: str | None = None
     effort: str = config.EFFORT
+    max_prompt_tokens: int | None = None  # None: provider default, 0: no limit
 
     def __post_init__(self):
         spec = PROVIDERS[self.provider]
+        if self.max_prompt_tokens is None:
+            env = config.MAX_PROMPT_TOKENS
+            self.max_prompt_tokens = env if env is not None else spec.get("max_prompt_tokens", 0)
         key = self.api_key or os.environ.get(spec["env"])
         if not key:
             raise RuntimeError(f"No API key: set {spec['env']} in .env or pass one in.")
@@ -86,7 +104,7 @@ class Backend:
         """Provider- and model-specific reasoning settings."""
         if self.provider == "openrouter":
             return {"reasoning": {"effort": self.effort}}
-        if "gpt-oss" in self.model:
+        if "gpt-oss" in self.model or self.model.startswith("gpt-5"):
             return {"reasoning_effort": self.effort}
         if self.provider == "groq" and "qwen" in self.model:
             return {"reasoning_format": "hidden"}  # required with tool calls on Groq

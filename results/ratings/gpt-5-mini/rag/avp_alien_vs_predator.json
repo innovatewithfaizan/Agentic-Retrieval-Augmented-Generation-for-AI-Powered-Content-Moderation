@@ -1,0 +1,51 @@
+{
+  "film_id": "avp_alien_vs_predator",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats, discussion of people getting hurt or dying, urgency to run and not turn backs, and an explicit bomb threat—suggesting realistic peril and lethal violence but no graphic gore in the subtitles.",
+      "evidence": [
+        "If you rush this, people will get hurt.",
+        "Maybe die.",
+        "It's a bomb. Well, I hope it kills every fucking one of ' em."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual/reproductive reference (condom) and discussion of precaution — a clear sexual reference but no scenes or nudity in the subtitles.",
+      "evidence": [
+        "Same principle as a condom.",
+        "I'd rather have one and not need it than need it and not have one."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple strong profanities including the f-word and insults (e.g. “you ugly son of a bitch”), meeting the threshold for strong language.",
+      "evidence": [
+        "Well, I hope it kills every fucking one of ' em.",
+        "You ugly son of a bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue makes incidental references to alcohol (a bottle cap, opening a bottle of champagne, anecdotal drinking). This is background/occasional drinking, not problematic drug use or heavy intoxication.",
+      "evidence": [
+        "What's with the bottle cap?",
+        "He opened a bottle of champagne.",
+        "I had my first drink with my dad at 14, 400ft."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2397,
+    "output_tokens": 1287,
+    "cost_usd": 0.00317
+  },
+  "seconds": 15.6
+}

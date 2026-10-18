@@ -1,0 +1,53 @@
+{
+  "film_id": "meet_the_fockers",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes multiple realistic physical altercations, threats and injuries (verbal threats to 'kick your ass', a shooting/stunning incident, characters bleeding and police use of a less-lethal weapon). These indicate more than slapstick but not graphic gore, fitting 'moderate'.",
+      "evidence": [
+        "I'm gonna have to kick your ass.",
+        "You shot my son.",
+        "He's bleeding."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual talk and innuendo (detailed sexual positions, a lifelike breast prosthesis used for feeding, and explicit admissions such as masturbation), though no on-screen graphic sex or nudity is described — fits 'moderate'.",
+      "evidence": [
+        "And now it's time for the ladies to get into the reverse cowgirl position.",
+        "I created a life- like latex left breast moulded from his mother's actual left breast, so this way L. J. would avoid any nipple confusion.",
+        "I still masturbate to Pam."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes repeated use of strong profanities (multiple instances of 'shit' and the word 'asshole', plus other coarse terms). No f-word appears in the subtitles provided, placing it at 'moderate'.",
+      "evidence": [
+        "Holy shit!",
+        "Oh, shit!",
+        "Asshole."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references alcohol (champagne, rum, vodka) including an instance of giving rum to a baby, and also an explicit line about smoking 'a little reefer' — indicative of depicted alcohol use and some drug use; this supports 'moderate'.",
+      "evidence": [
+        "So put a dab of rum in his milk.",
+        "I was actually out by the lagoon smoking a little reefer.",
+        "Can I interest you in a little vodka? Just kidding."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 21111,
+    "output_tokens": 2467,
+    "cost_usd": 0.01021
+  },
+  "seconds": 29.0
+}

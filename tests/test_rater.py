@@ -20,7 +20,7 @@ class FakeStore:
 
 
 class FakeBackend:
-    provider, model, effort = "groq", "openai/gpt-oss-120b", "medium"
+    provider, model, effort, max_prompt_tokens = "groq", "openai/gpt-oss-120b", "medium", 0
 
     def __init__(self, replies):
         self.replies = iter(replies)
@@ -151,7 +151,25 @@ def test_backend_reasoning_settings_per_provider(monkeypatch):
         llm.Backend("together", "openai/gpt-oss-120b")
 
 
+def test_prompt_cap_defaults_per_provider(monkeypatch):
+    monkeypatch.setattr(config, "MAX_PROMPT_TOKENS", None)
+    assert llm.Backend("groq", "openai/gpt-oss-120b", api_key="k").max_prompt_tokens == 6500
+    assert llm.Backend("openai", "gpt-5-mini", api_key="k").max_prompt_tokens == 0
+    assert llm.Backend("openai", "gpt-5-mini", api_key="k").extra_body() == {"reasoning_effort": "medium"}
+    assert llm.Backend("openai", "gpt-4.1-mini", api_key="k").extra_body() == {}
+    monkeypatch.setattr(config, "MAX_PROMPT_TOKENS", 0)
+    assert llm.Backend("groq", "openai/gpt-oss-120b", api_key="k").max_prompt_tokens == 0
+
+
 def test_usage_cost_uses_model_prices():
     u = llm.Usage(calls=1, input_tokens=1_000_000, output_tokens=100_000)
     assert u.cost("openai/gpt-oss-120b") == pytest.approx(0.15 + 0.06)
     assert u.cost("unknown/model") == 0.0
+
+
+def test_prompt_size_guard_forces_submit(monkeypatch):
+    backend = FakeBackend([reply([call("find_words", {"words": ["gun"]}, "t1")]), submit()])
+    backend.max_prompt_tokens = 10  # any real prompt is bigger
+    rec = rater.rate(ctx(), "agentic", backend)
+    assert backend.sent[0]["tool_choice"] == llm.force(rater.SUBMIT)
+    assert rec["tool_calls"][0]["error"] == "budget"  # the search was refused, not run

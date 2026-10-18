@@ -1,0 +1,52 @@
+{
+  "film_id": "the_bone_collector",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references multiple deaths, burial of a victim, and explicitly mentions \"surgically-removed flesh exposing bone,\" plus a character describing severe prison brutalization. These lines imply graphic injury and disturbing violence, so rate as strong.",
+      "evidence": [
+        "Old gun. Buries his victim in a vintage CiviI War railroad bed.",
+        "We got a dead kid on our hands...... and I, for one, am not taking the heat for that.",
+        "See if there\" s been any homicides in the Iast 1 2 months...... involving surgicaIly-removed flesh exposing bone."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains mild, non-sexual romantic gestures and brief kisses (familial/platonic), and references like 'Bed mode' but no explicit sexual content or nudity. This supports a mild rating.",
+      "evidence": [
+        "What are you doing here? - Merry Christmas, Uncle Linc. - Give me a kiss. - Merry Christmas, Kimmy.",
+        "Can I get you a drink? No, thanks. I\" m fine. Bed mode."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the dialogue, including multiple uses of the f-word and other strong expletives and insults. That meets the 'strong' threshold.",
+      "evidence": [
+        "Shit! Oh, my God. Son of a bitch!",
+        "Fuck him. Fuck him.",
+        "Fuck you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes repeated requests for vodka, characters asking for alcohol, and explicit mentions/listing of drugs (marijuana, barbiturates, amphetamines, cocaine). These indicate notable drinking and drug references — rating as moderate.",
+      "evidence": [
+        "How about some juice? How about two fingers of vodka?",
+        "He asked for a vodka again.",
+        "Marijuana. How\" d you Iike to get your hands on that briefcase? Barbiturates. Amphetamines."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2840,
+    "output_tokens": 2096,
+    "cost_usd": 0.0049
+  },
+  "seconds": 29.7
+}

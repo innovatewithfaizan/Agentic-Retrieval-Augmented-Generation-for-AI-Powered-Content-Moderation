@@ -1,0 +1,51 @@
+{
+  "film_id": "saw",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitle dialogue repeatedly contains direct threats to kill, references to poisoning as a weapon and a timed murder game, and hostage/family-death threats. There are mentions of shooting and people screaming, but no graphic gore in the dialogue, so this matches 'moderate'.",
+      "evidence": [
+        "Your aim in this game is to kill Adam",
+        "If you do not kill Adam by six then Alison and Diana will die Dr Gordon",
+        "I'll kill you, you motherfucker!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual references and crude sexual talk (mention of lubricant and 'fuck' used in a sexual context), but no on-screen nudity described in the subtitles; this fits 'moderate'.",
+      "evidence": [
+        "This is the most fun I've had without lubricant.",
+        "I get paid to take pictures of rich guys like you, who go to seedy motels to fuck their secretaries."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain frequent strong profanity including multiple uses of the f-word and other strong insults, so the language severity is 'strong'.",
+      "evidence": [
+        "Get your fucking hands off my daughter!",
+        "I'll fucking kill you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drugging/poisoning, tranquility drugs and states a character is a 'drug addict' (addiction as a theme), plus incidental alcohol and smoking references — this meets the 'strong' level.",
+      "evidence": [
+        "You are, in fact, a drug addict. Isn't that right, Mandy?",
+        "I need more- powerful tranquillizers next time.",
+        "We're gonna go down to get a beer."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2771,
+    "output_tokens": 1786,
+    "cost_usd": 0.00426
+  },
+  "seconds": 23.0
+}

@@ -1,0 +1,49 @@
+{
+  "film_id": "zathura",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes realistic peril and threats (boarding, harpoons), talk of being killed, and preparing to fight off creatures — non-graphic but sustained danger and weapons mentioned.",
+      "evidence": [
+        "All right, they're arming the harpoons.",
+        "They're gonna board us.",
+        "I could have been killed."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains implied sexual activity ('hooking up'), which is an implied-sex reference beyond simple flirting.",
+      "evidence": [
+        "I can't.",
+        "I have a date tonight.",
+        "We're hooking up at, like, 8."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Only mild profanity and name-calling appear (use of 'God' as expletive, 'Shut up', 'You're such a baby'), consistent with mild language.",
+      "evidence": [
+        "Shut up.",
+        "God, I suck.",
+        "You're such a baby."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No dialogue indicates drinking, smoking, or drug use; only incidental mentions of eating/food and shopping.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2399,
+    "output_tokens": 1854,
+    "cost_usd": 0.00431
+  },
+  "seconds": 27.9
+}

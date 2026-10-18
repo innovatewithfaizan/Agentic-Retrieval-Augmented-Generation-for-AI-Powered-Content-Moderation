@@ -1,0 +1,49 @@
+{
+  "film_id": "alfie",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "No dialogue indicates physical violence, gore, threats, or frightening scenes. References are to illness, vomiting, or regret, not violent acts.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "sex": {
+      "rationale": "Dialogue contains frequent sexual references, crude talk about sex, flirting, and implied sexual activity (multiple partners, 'shagging', body-focused talk) but no explicit, graphic sex or nudity described in the subtitles.",
+      "evidence": [
+        "For us boys, it's all about F. B. B. Face. Boobs. Bum.",
+        "When it comes to shagging birds, it's all about one thing: Location, location, location.",
+        "I've never had sex with two people in one night."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitle dialogue includes explicit strong profanity (use of the f-word) and other coarse expletives.",
+      "evidence": [
+        "I fucked up egregiously.",
+        "How fucking crazy.",
+        "Oh, shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple explicit references to alcohol use, drunkenness and spiked drinks (characters admit heavy drinking, vomiting, stolen bottle), and an offer to 'abuse a little substance' — indicates on-screen/central drinking and intoxication.",
+      "evidence": [
+        "I nicked half a bottle of Stoli from the limo.",
+        "I drank a lot last night.",
+        "Maybe it's the heavily spiked eggnog."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7458,
+    "output_tokens": 1208,
+    "cost_usd": 0.00428
+  },
+  "seconds": 22.6
+}

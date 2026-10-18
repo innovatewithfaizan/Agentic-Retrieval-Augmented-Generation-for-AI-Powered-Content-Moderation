@@ -1,0 +1,53 @@
+{
+  "film_id": "silver_city",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats to kill (arrow through his neck), multiple references to murder and bodies, and talk of cutting throats and cleaning blood from a body — indicating violent deaths and gruesome disposal. This suggests graphic/brutal violence beyond slapstick.",
+      "evidence": [
+        "You send anybody else after me, I swear I'll put an arrow through his neck.",
+        "Puts his head into the sand ' cause they don't wanna see when they cut his throat.",
+        "He asked them to put the body in a garbage barrel... and to clean his blood with the blood of the animals."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains crude sexual talk and references to sexual scandals and adultery; a line explicitly states a character had sex with another ('I just fucked your messenger boy'), which is sexual/crude but not depicting sex on-screen.",
+      "evidence": [
+        "I just fucked your messenger boy.",
+        "\" Senator's Daughter In College Sex Scandal \"",
+        "Daddy paid him off so he wouldn't file adultery charges."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple strong profanities including the f-word and other crude language (e.g. 'Oh, shit', 'fuck', 'step on your own dick'), meeting the rubric for strong language.",
+      "evidence": [
+        "You do not want to fuckwith Vicente Esparza, my friend.",
+        "- Oh, shit.",
+        "I just fucked your messenger boy."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drug and alcohol use (smoking dope, a bottle of tequila, painkillers and being 'drug-addled'), indicating on-screen substance use and impairment references—more than incidental but not prolonged depiction of addiction.",
+      "evidence": [
+        "It depends on how much dope I've smoked.",
+        "A bottle oftequila byyour left leg.",
+        "Painkillers, man. I'm flying."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2792,
+    "output_tokens": 1496,
+    "cost_usd": 0.00369
+  },
+  "seconds": 25.5
+}

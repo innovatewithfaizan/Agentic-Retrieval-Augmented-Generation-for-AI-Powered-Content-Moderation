@@ -1,0 +1,47 @@
+{
+  "film_id": "avp_alien_vs_predator",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes ritual sacrifice, removal of hearts, bodies that something 'broke out of', creatures that 'bite', multiple people killed or trapped and a plan to bomb creatures — indicates realistic and sustained violent peril and deaths though not graphically described, so 'moderate'.",
+      "evidence": [
+        "It was common in ritual sacrifice to take the heart of the victim.",
+        "Something broke out of this body.",
+        "They bite."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There is no sexual content, romance, or nudity in the provided dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes explicit strong profanity (the f-word) and harsh insults, which meets the 'strong' threshold.",
+      "evidence": [
+        "Well, I hope it kills every fucking one of ' em.",
+        "You ugly son of a bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes incidental references to drinking (champagne, first drink), but no depiction of addiction or heavy drug use, so 'mild'.",
+      "evidence": [
+        "He opened a bottle of champagne.",
+        "I had my first drink with my dad at 14, 400ft."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 5110,
+    "output_tokens": 1042,
+    "cost_usd": 0.00336
+  },
+  "seconds": 16.3
+}

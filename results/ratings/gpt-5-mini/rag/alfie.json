@@ -1,0 +1,53 @@
+{
+  "film_id": "alfie",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats, references to someone dying and being tortured, and a sudden death described — implying realistic peril and non-graphic violence.",
+      "evidence": [
+        "Change your nature, you're a dead man.",
+        "I mean, the poor guy, he's dying. ... You've tortured him long enough.",
+        "Yells, \"Soup's on,\" and slumps to the kitchen floor. Just like that. Dead as disco."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Frequent sexual references, crude talk about body parts, mention of sex with multiple partners and explicit anatomical reference — sexual content and innuendo beyond mild flirting.",
+      "evidence": [
+        "For us boys, it's all about F. B. B. Face. Boobs. Bum.",
+        "I've never had sex with two people in one night.",
+        "I thought I felt a lump...... on your penis."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Contains stronger profanity (e.g., \"bullshit\", \"shitty\") and casual use of expletives, beyond mild swearing.",
+      "evidence": [
+        "Oh, bullshit.",
+        "You? - Shitty. Yeah, me too.",
+        "Jesus, I'm sorry."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple references to alcohol use (stealing vodka, being drunk, vomiting, repeated drinking) and invitation to \"abuse a little substance\" — portrays regular drinking/drunkenness.",
+      "evidence": [
+        "I nicked half a bottle of Stoli from the limo.",
+        "I drank a lot last night. - Drunk.",
+        "Level of inebriation? - Vomiting."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2592,
+    "output_tokens": 993,
+    "cost_usd": 0.00263
+  },
+  "seconds": 12.9
+}

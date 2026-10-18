@@ -1,0 +1,52 @@
+{
+  "film_id": "high_fidelity",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue only mentions concerns about kids playing with guns and brief scuffling ('break it up'), with no descriptions of injuries, gore, threats, or graphic violence. This aligns with mild (discussion/brief scuffle, no graphic harm).",
+      "evidence": [
+        "People worry about kids playing with guns, or watching violent videos... that some sort of culture of violence will take them over.",
+        "- Will you? - break it up."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "There are explicit sexual references, talk of sleeping together, wanting to 'make love', being 'horny' and admissions of having slept with others. These are sexual references and implied sex rather than explicit scenes or nudity, matching moderate.",
+      "evidence": [
+        "I think it’ s okay if you feel horny and fucked up at the same time.",
+        "We’ ve slept together, but we haven’ t made love.",
+        "One: that I slept with someone else..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of the f-word and strong insults appear in the dialogue (explicit profanity). Per the rubric, presence of the f-word elevates language to strong.",
+      "evidence": [
+        "I knew it! Fuck! Fuck! Fuck!",
+        "I am a fuckin ’ asshole.",
+        "Fuckin ’ asshole."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters explicitly plan to drink alcohol (a bottle of wine), arrange multiple meetups for drinks, and there is mention of underage drinking/liquor-license issues. This shows recurring, central drinking references — moderate.",
+      "evidence": [
+        "- What are you gonna do, Rob?",
+        "- I'm gonna drink a bottle of wine, I'm gonna watch TV and go to bed.",
+        "I'm not gonna get off this phone until you agree to meet me for a drink."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3140,
+    "output_tokens": 1686,
+    "cost_usd": 0.00416
+  },
+  "seconds": 35.9
+}

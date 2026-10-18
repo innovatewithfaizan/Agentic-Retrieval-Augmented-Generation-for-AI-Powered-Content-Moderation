@@ -1,0 +1,53 @@
+{
+  "film_id": "closer",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic threats of murder, references to physical injury and encouragement of being hit — non-graphic but explicit violent threats and implied assault. This supports a 'moderate' rating.",
+      "evidence": [
+        "If you go near her again, I swear...",
+        "I will kill you.",
+        "Are you dressed because you thought I might hit you?"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit descriptions of sexual acts (including 'fucked me from behind'), oral sex references, solicitation to strip and perform sexual acts — explicit sexual content in dialogue. This supports a 'strong' rating.",
+      "evidence": [
+        "I was on top, then he fucked me from behind.",
+        "You enjoy sucking him off?",
+        "You're gonna turn around very slowly, and you're gonna bend over... and you're gonna touch the fucking floor for my viewing pleasure."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Numerous strong profanities and slurs appear in the dialogue (f‑words, 'cunt', 'whore', 'slag', 'piece of shit'), indicating frequent strong language. This supports a 'strong' rating.",
+      "evidence": [
+        "Now fuck off and die... you fucked- up slag.",
+        "What does your cunt taste like?",
+        "You're a piece of shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly shows characters smoking and drinking (ordering vodka tonics, Guinness, explicit offers of vodka), and mentions alcohol poisoning/hospitalization — frequent drinking and serious drunkenness are present. This supports a 'moderate' rating.",
+      "evidence": [
+        "I have some vodka in the fridge.",
+        "Vodka tonic and a Guinness, please.",
+        "Alcohol poisoning. I sat with him for a week in the hospital."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2778,
+    "output_tokens": 1339,
+    "cost_usd": 0.00337
+  },
+  "seconds": 19.3
+}

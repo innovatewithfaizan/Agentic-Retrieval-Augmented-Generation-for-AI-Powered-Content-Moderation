@@ -1,0 +1,50 @@
+{
+  "film_id": "narc",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes brutal killings, beatings, shootings, stabbings and graphic injuries (e.g., shattered mandible, blown-out head, multiple stabbings). Threats of murder and on-screen violence are prominent in the subtitles.",
+      "evidence": [
+        "They beat him up, they put a gun to his fucking head, and put a bullet through it.",
+        "Instead... they took the gun, and they blew half his head off, okay?",
+        "So they peeled him back and they shanked his bitch ass 56 times."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Explicit sexual acts and sexual exploitation are referenced in the dialogue, including oral sex and the sexual abuse/pimping of a ten-year-old girl; sexual content involves minors and explicit language.",
+      "evidence": [
+        "I think I might've let him suck on my dick once or twice.",
+        "It was a little ten- year- old girl... naked."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity is present throughout the subtitles, including many uses of the f-word and other harsh slurs/insults.",
+      "evidence": [
+        "Well, then, generally speaking, Ms. Detmer, you don't know what the fuck you're talking about.",
+        "I'm going to bag the motherfuckers that killed Mike."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Drug use and dealing are central to the dialogue: repeated references to 'smack', glue sniffing, addicts/junkies, and drug distribution/dealing. Addiction and drug-related crimes are major themes.",
+      "evidence": [
+        "They found smack at the murder scene.",
+        "Are you still sniffing glue, Deacon?"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 15575,
+    "output_tokens": 1975,
+    "cost_usd": 0.00784
+  },
+  "seconds": 21.3
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "50_first_dates",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats to kill, references to a meat cleaver, kidnapping and an emergency/resuscitation situation. No graphic descriptions or gore are present, so this is realistic threatening violence and peril.",
+      "evidence": [
+        "She said that if I talk to Lucy, you'll kill me with a meat cleaver.",
+        "I'm gonna kill you!",
+        "You're a dead man."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple explicit sexual references and crude sexual talk (e.g., 'Try to bang our women', discussion of sex and 'we made love') are present but no explicit/graphic sex scenes described in dialogue.",
+      "evidence": [
+        "Try to bang our women.",
+        "Do we have sex? No, we don't. Just so everybody knows that.",
+        "We made love tonight!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong insults and profanity appear (e.g., 'You asshole', 'shit', 'You sick bastard'), but no use of the f-word or slurs that would push to the highest level.",
+      "evidence": [
+        "Shit!",
+        "You asshole!",
+        "You sick bastard!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drinking and drunkenness ('we got a little drunk', 'I'm getting kind of drunk') and mentions smoking weed, but there's no depiction of heavy addiction or drug dealing, so level is moderate.",
+      "evidence": [
+        "Well, we got a little drunk.",
+        "I don't smoke weed.",
+        "I think I'm getting kind of drunk."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2602,
+    "output_tokens": 1245,
+    "cost_usd": 0.00314
+  },
+  "seconds": 13.7
+}

@@ -1,0 +1,117 @@
+{
+  "film_id": "master_and_commander_the_far_side_of_the_world",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes weapons, orders to 'Get your weapons', threats to destroy opponents, battle commands and corporal punishment—realistic combat and physical punishment without graphic gore, consistent with moderate violence.",
+      "evidence": [
+        "[00:11:39] Get your weapons.",
+        "[01:48:34] This is your last warning.\nStop now.\nOr we will destroy you.\nLets fight!",
+        "[01:13:13] Stand for.\nTake that man.\nMr. Polink, punish him with 8 belt."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains references to wives, sweethearts and expressions of love and romantic interest; no explicit sex or nudity—consistent with mild romantic content.",
+      "evidence": [
+        "[00:30:38] To wives and to sweethearts.\nTo wives and to sweethearts.\nMay them never meet.",
+        "[01:58:49] Can you help me?\nAmen.\nI will be done.\nOur love.",
+        "[00:25:37] how bout this?\nFor you in the mood for more aggressive?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles contain explicit profanity including the f-word, as well as 'shit' and multiple uses of 'damn'—meets the rubric for strong language.",
+      "evidence": [
+        "[01:04:09] We are rob by the fucking pirates.",
+        "[01:12:04] They found out the shit, and one of the men defending their god is the cold of the bad luck.",
+        "[00:15:41] Damn it was good, it came out of nowhere.... cut through of our tail, to get our..."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue shows incidental alcohol use and a smoking reference (a line about buying a drink and a line mentioning smoking). No sustained drunkenness or drug use—mild.",
+      "evidence": [
+        "[00:42:37] We gonna spent it, and that money bought me a drink.",
+        "[00:36:11] Run like smoking..."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "crap",
+          "bitch",
+          "stupid",
+          "asshole",
+          "bloody",
+          "sonofabitch",
+          "damnit",
+          "hells"
+        ]
+      },
+      "counts": {
+        "fuck": 1,
+        "shit": 1,
+        "damn": 6,
+        "hell": 0,
+        "crap": 0,
+        "bitch": 0,
+        "stupid": 0,
+        "asshole": 0,
+        "bloody": 2,
+        "sonofabitch": 0,
+        "damnit": 0,
+        "hells": 0
+      }
+    },
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "drink",
+          "drunk",
+          "drinks",
+          "wine",
+          "rum",
+          "beer",
+          "toast",
+          "toast*",
+          "smoke",
+          "smoking",
+          "cigarette"
+        ]
+      },
+      "counts": {
+        "drink": 1,
+        "drunk": 0,
+        "drinks": 0,
+        "wine": 0,
+        "rum": 0,
+        "beer": 0,
+        "toast": 0,
+        "toast*": 0,
+        "smoke": 0,
+        "smoking": 1,
+        "cigarette": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 3,
+    "input_tokens": 9117,
+    "output_tokens": 4090,
+    "cost_usd": 0.01046
+  },
+  "seconds": 65.7
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "final_destination",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated deaths, threats, a plane explosion, and a vivid line referencing blood ('The fire caramelized her blood'), indicating disturbing/deadly events and some graphic description.",
+      "evidence": [
+        "They died, and we lived.",
+        "The fire caramelized her blood.",
+        "You're dead... and you ain't taking me with you!"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Very little sexual content in the subtitles — mostly mild flirtation/terms of endearment and excitement ('You're so sweet', 'Gives me a rush', 'Come on, baby'). No explicit sexual acts or nudity.",
+      "evidence": [
+        "You're so sweet.",
+        "Gives me a rush.",
+        "Come on, baby."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity, including multiple uses of 'fuck' and an explicit death threat with 'I'll fucking kill you', meeting the rubric for strong language.",
+      "evidence": [
+        "Fuck off, dude.",
+        "Get the fuck off me!",
+        "Because if you say another word, I'll fucking kill you."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes references to smoking ('...went into a 7-Eleven for cigarettes'), questions about sedatives/drugs, and an on-screen/social drink ('Cheers'), indicating repeated substance references beyond incidental background only.",
+      "evidence": [
+        "When I was ten... my dad went into a 7- Eleven for cigarettes.",
+        "Do you take any drugs?",
+        "To all of our friends that can't be here. Cheers."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2850,
+    "output_tokens": 2014,
+    "cost_usd": 0.00474
+  },
+  "seconds": 73.7
+}

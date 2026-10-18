@@ -1,0 +1,50 @@
+{
+  "film_id": "broken_flowers",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references physical assault and an altercation (someone told to 'grab' another, and mention of someone having been 'beat up'). No graphic or explicit weapon references in dialogue, so this fits moderate violence.",
+      "evidence": [
+        "Danny, grab that fucker.",
+        "Look, I'm really sorry that you got beat up and everything."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains clear sexual/romantic references including someone describing themselves as a 'mistress' and discussion of relationships; implied sexual relationships but no explicit sex or nudity in the dialogue.",
+      "evidence": [
+        "I mean, I'm like your mistress, except you're not even married.",
+        "He loved you so much that he went straight from you to another woman."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of the f-word and strong profanity in the dialogue (including directed insults), which meets the 'strong' threshold.",
+      "evidence": [
+        "Fuck you, Donny!",
+        "What the hell's your fuckin' problem?",
+        "Man, you're fucked up."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly names cannabis and repeatedly references smoking/cigarettes; this is explicit drug/tobacco references but not shown as heavy addiction, so rates as moderate.",
+      "evidence": [
+        "It's just cannabis sativa.",
+        "No cigarettes."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3199,
+    "output_tokens": 1386,
+    "cost_usd": 0.00357
+  },
+  "seconds": 24.4
+}

@@ -1,0 +1,52 @@
+{
+  "film_id": "stir_of_echoes",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic violence with guns and at least one death (shooting of a babysitter), threats of murder and descriptions of handling a dead body. No graphic gore is described in the subtitles.",
+      "evidence": [
+        "They were gonna kill you, Tommy. You and Maggie both.",
+        "Is she dead?",
+        "No shit, she's dead!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple crude sexual references and explicit sexual question in the dialogue (references to having sex, crude talk, and talk of sexual anatomy). No explicit sex scenes or graphic nudity in the subtitles.",
+      "evidence": [
+        "Did you fuck her?",
+        "I just liked the way your ass looked in jeans."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and at least one derogatory slur appear in the subtitles (multiple uses of the f-word and the slur 'retard'), indicating strong language.",
+      "evidence": [
+        "Lisa, I swear to God,..... start with the Dionne Warwick stuff, I'll throw you out the fuckin ' window.",
+        "Oh, you mean the retard.",
+        "What the fuck did you do that for?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references marijuana smoking and repeated drinking/alcohol use and intoxication at parties. Substance use is shown in dialogue but not portrayed as addiction or dealing.",
+      "evidence": [
+        "we just smoked this great big fatty a few minutes before you walked in,",
+        "Well, your beer- addled sperm still work.",
+        "Drink, motherfucker, drink!"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11622,
+    "output_tokens": 2531,
+    "cost_usd": 0.00797
+  },
+  "seconds": 64.3
+}
