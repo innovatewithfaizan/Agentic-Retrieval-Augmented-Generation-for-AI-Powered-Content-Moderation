@@ -1,0 +1,48 @@
+{
+  "film_id": "ladder_49",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes real peril, injuries and at least one death/burn (fire-related rescue, 'burned trying to save people', medical transport), indicating realistic danger and fatalities without graphic detail.",
+      "evidence": [
+        "Calm down, or you'll kill us!",
+        "Will you do me a favor? You tell July Custer, that Alex's dad got burned trying to save people.",
+        "We'll never forget you, Jack."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content or romantic/inexplicit sexual behavior is present in the provided dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Contains mild profanity/insulting phrasing such as 'hell' and 'ass' but no strong f-word or slurs in the subtitles provided.",
+      "evidence": [
+        "What a hell is wrong with you?",
+        "I kicked his ass too.",
+        "I swear to god, I drop you!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue includes brief references to drinking ('Been drinking?', 'I had a few drinks with boys'), indicating incidental alcohol use but not heavy or problematic use.",
+      "evidence": [
+        "Been drinking?",
+        "Yes, I had a few drinks with boys."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2571,
+    "output_tokens": 1431,
+    "cost_usd": 0.0035
+  },
+  "seconds": 15.5
+}

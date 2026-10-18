@@ -1,0 +1,49 @@
+{
+  "film_id": "the_andromeda_strain",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions guns and knives, explicit deaths and suicide, threats/shouting, a biological bomb/automatic activation and talk of extermination and cutting off oxygen. These indicate realistic peril, weapons and non-graphic deaths—consistent with moderate violence.",
+      "evidence": [
+        "Does that man have a gun?",
+        "Give me that knife.",
+        "Most of them died instantly, but a few had time to go quietly nuts."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content, romance or nudity is indicated in the dialogue provided.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue contains mild profanity and insults (e.g., 'damn', 'Idiots!') and general exclamations but no strong profanity.",
+      "evidence": [
+        "Let's find the damn satellite.",
+        "Idiots!",
+        "Get outta here."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "There are incidental references to smoking and to someone being a 'Sterno drinker' — background smoking/drinking references rather than shown addiction or heavy drug use.",
+      "evidence": [
+        "I'd like a cigarette right now.",
+        "Anyone care to join me for a smoke?",
+        "So you're a Sterno drinker, huh?\nWorks good."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2812,
+    "output_tokens": 1374,
+    "cost_usd": 0.00345
+  },
+  "seconds": 30.5
+}

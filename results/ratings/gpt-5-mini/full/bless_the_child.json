@@ -1,0 +1,50 @@
+{
+  "film_id": "bless_the_child",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles describe multiple kidnappings and child murders, ritualistic killings, threats with guns, and at least one on-screen shooting and car crash. These are realistic violent crimes and killings but not described as graphic or gory in the dialogue, so level is moderate.",
+      "evidence": [
+        "The body of six- year- old Tania Riley, the fourth victim in a series of kidnap murders, was discovered last night near a residential area in Queens.",
+        "Kill the girl! Shoot her!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes references to breastfeeding and questions about the child's paternity and multiple sexual partners, but no explicit sexual scenes or graphic sexual content are described in the subtitles.",
+      "evidence": [
+        "Are you breast feeding?",
+        "Beats me. It could have been a couple of guys."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "The subtitles include strong profanity (the f-word) and an explicit insult, which meets the rubric for 'strong' language.",
+      "evidence": [
+        "Hey, I don't give a fuck if we gotta call in... the French Foreign Legion if that's what it takes to stop this guy.",
+        "You son of a bitch."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There are multiple direct references to drug use, overdoses, being 'shot up', and addiction as a theme affecting characters, which indicates moderate substance use content.",
+      "evidence": [
+        "You gave birth on drugs?",
+        "Some friends shot me up.",
+        "I was an addict by 15."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11558,
+    "output_tokens": 1370,
+    "cost_usd": 0.00563
+  },
+  "seconds": 21.4
+}

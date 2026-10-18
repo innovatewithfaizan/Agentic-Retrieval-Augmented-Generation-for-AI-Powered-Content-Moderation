@@ -1,0 +1,95 @@
+{
+  "film_id": "passion_of_mind",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows physical struggle and frightened screams (a man shouting “Get off of me!”, characters screaming, and a character saying “See, I can be dangerous too.”). There is peril and brief physical confrontation but no graphic injury or gore in the subtitles, so level is mild.",
+      "evidence": [
+        "( Man ) Get off of me!",
+        "( Screams ) - No, no, no.",
+        "See, I can be dangerous too."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Direct discussion of sex and making love appears multiple times in the dialogue (“Make love?”, “I want to make love to you,” and reflections on sex). These are explicit sexual references and implied sexual activity but non-graphic, so rate as moderate.",
+      "evidence": [
+        "Make love?",
+        "I want to make love to you.",
+        "All my life, sex never really brought me closer to --"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles include multiple stronger curse words (examples include “Shit.” and “Damn it!”) and an instance of “Kiss their ass.” Presence of ‘shit’ and ‘bitch’ in the dialogue moves this to the moderate level under the rubric.",
+      "evidence": [
+        "Shit.",
+        "Damn it!",
+        "Kiss their ass."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Characters request and take cigarettes in dialogue (“I really need to smoke today,” “Do you mind if I have a cigarette?”, “Just one more puff.”). This is incidental smoking/background tobacco use rather than heavy or problematic substance use, so rate as mild.",
+      "evidence": [
+        "I really need to smoke today.",
+        "Do you mind if I have a cigarette?",
+        "Just one more puff."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "ass",
+          "bitch",
+          "stupid",
+          "crap",
+          "idiot",
+          "drunk",
+          "suck",
+          "whore"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 2,
+        "damn": 2,
+        "hell": 3,
+        "ass": 1,
+        "bitch": 1,
+        "stupid": 0,
+        "crap": 0,
+        "idiot": 0,
+        "drunk": 0,
+        "suck": 0,
+        "whore": 0
+      }
+    },
+    {
+      "tool": "search_subtitles",
+      "input": {
+        "category": "violence",
+        "query": "kill"
+      },
+      "new_chunks": 6
+    }
+  ],
+  "usage": {
+    "calls": 3,
+    "input_tokens": 10553,
+    "output_tokens": 2960,
+    "cost_usd": 0.00856
+  },
+  "seconds": 54.1
+}

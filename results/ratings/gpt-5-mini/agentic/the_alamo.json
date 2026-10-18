@@ -1,0 +1,52 @@
+{
+  "film_id": "the_alamo",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes battle, cannon fire, orders to fire, screams and deaths (“They're dead, all of them!”). The content indicates realistic armed conflict and casualties but no graphic or gory detail in the dialogue.",
+      "evidence": [
+        "They're dead, all of them!",
+        "Fire the cannon.",
+        "( man ) Get down! Get down!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Contains explicit references to adultery and a man leaving his pregnant wife — sexual behavior referenced and implied, but no explicit sexual description or nudity in the dialogue.",
+      "evidence": [
+        "( Travis ) Well, the choices are abandonment, adultery, or cruel and barbarous treatment.",
+        "' Cause it's gonna be a cold day in hell anybody takes orders from a debtor who leaves his pregnant wife in the middle of the night."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitle dialogue includes profanity such as 'son-of-a-bitch' and 'shit' and repeated mild curses ('damn'). Strong f-word usage is not present in the dialogue excerpts.",
+      "evidence": [
+        "Well, I, for one, ain't swearin ' allegiance to no son- of- a- bitch dictator.",
+        "Dyin' for nothin ' means shit to me.",
+        "Damn if you ain't gonna die for ' em, too."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drunkenness and whiskey, and characters are described as drinking too much. This indicates on-screen drinking/drunkenness rather than just incidental background mention.",
+      "evidence": [
+        "- Colonel.\n- Buck.\nDrunken Hottentot.\nTwo- bit dandy.",
+        "Try to get him to drink something not whiskey.",
+        "Don't give him too much water.\nHe's just like me.\nHe drinks too much, he ain't worth a damn."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3008,
+    "output_tokens": 2331,
+    "cost_usd": 0.00541
+  },
+  "seconds": 34.7
+}

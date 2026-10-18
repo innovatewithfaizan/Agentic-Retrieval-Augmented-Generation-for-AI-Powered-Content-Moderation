@@ -1,0 +1,52 @@
+{
+  "film_id": "the_bone_collector",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references buried victims, a dead child, surgically-removed flesh exposing bone, and descriptions of prison brutalization — indicating graphic and disturbing violence.",
+      "evidence": [
+        "Old gun. Buries his victim in a vintage CiviI War railroad bed.",
+        "We got a dead kid on our hands...... and I, for one, am not taking the heat for that.",
+        "See if there\" s been any homicides in the Iast 1 2 months...... involving surgicaIly- removed flesh exposing bone."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Only mild, non-graphic sexual content (a request for a kiss and references to 'bed mode'); no explicit sexual activity or nudity in the dialogue.",
+      "evidence": [
+        "Give me a kiss.",
+        "Bed mode."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple instances of strong profanity including repeated use of the f-word and other coarse expletives in the dialogue.",
+      "evidence": [
+        "Shit! Oh, my God. Son of a bitch! Stop the goddamn car!",
+        "Let\" s hurry the fuck up!",
+        "Fuck you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Frequent references to alcohol (characters asking for vodka) and explicit listing of drugs (marijuana, barbiturates, amphetamines, cocaine), implying drug-related content and on-screen drinking.",
+      "evidence": [
+        "How about two fingers of vodka?",
+        "A Iittle early for vodka, don\" t you think?",
+        "Marijuana. How\" d you Iike to get your hands on that briefcase? Barbiturates. Amphetamines."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2564,
+    "output_tokens": 1719,
+    "cost_usd": 0.00408
+  },
+  "seconds": 22.2
+}

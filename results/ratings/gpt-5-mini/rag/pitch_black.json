@@ -1,0 +1,48 @@
+{
+  "film_id": "pitch_black",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles contain repeated threats, orders to kill, references to hunting and deaths, and active combat commands. The violence described is realistic and involves killing and being hunted but is non-graphic.",
+      "evidence": [
+        "You'll just die.",
+        "If I kill them first, not really.",
+        "Kill the beast while he's wounded!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No explicit sexual content, romance, or nudity appears in the dialogue. References to harm are non-specific and do not explicitly indicate sexual content.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes strong profanity (the f-word) and crude insults, meeting the threshold for 'strong' language.",
+      "evidence": [
+        "Fuck you!",
+        "Get that ass moving!",
+        "Shit.!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental mentions of beverages/consumables (tea, water) appear; no depiction of drinking, smoking, or drug use. This is best classified as mild incidental references.",
+      "evidence": [
+        "Tea, actually.",
+        "And your water. All of it!"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2537,
+    "output_tokens": 1600,
+    "cost_usd": 0.00383
+  },
+  "seconds": 19.5
+}

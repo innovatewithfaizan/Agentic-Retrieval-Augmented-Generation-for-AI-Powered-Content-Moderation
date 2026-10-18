@@ -1,0 +1,82 @@
+{
+  "film_id": "spawn",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated explicit threats of killing, slaughter, decapitation and apocalypse (e.g. \"cut off your head\", \"slaughter each and every one of you\", \"you will die\"). There are references to corpses and hostile combat orders (\"shoot on sight\", \"bring me Spawn's head\") implying sustained, intense violent peril rather than merely slapstick. This level of explicit violent threat and corpse imagery supports a \"strong\" rating.",
+      "evidence": [
+        "If you fail me, you will die.",
+        "All I got to do is cut off your head.",
+        "But first... first, I want to slaughter each and every one of you."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes crude sexual talk and explicit references to body parts and sexual arousal (puberty remarks, \"feel that butt\", \"It feels... so good\"), which are more than innocent kissing or flirting but are non-graphic sexual content and innuendo. This fits the \"moderate\" level.",
+      "evidence": [
+        "Pretty soon you'll get hair in funny places, and you'll start thinking about girls.",
+        "It feels... so good.",
+        "And feel that butt."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple instances of strong swear words and insults (e.g. \"Holy shit!\", \"You son of a bitch.\"), along with frequent use of \"hell\" and \"damn.\" The presence of \"shit\" and \"bitch\" places the film at the \"moderate\" profanity level under the rubric.",
+      "evidence": [
+        "Holy shit!",
+        "You son of a bitch."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "No dialogue indicates drinking, smoking, drug use or intoxication. Searches for common substance words returned no mentions of drinking, smoking or drugs in the subtitles. There is no evidence in the provided lines to suggest substance use.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "bitch",
+          "hell",
+          "damn",
+          "crap",
+          "drunk",
+          "smoke",
+          "cigarette",
+          "beer",
+          "wine",
+          "drug"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 1,
+        "bitch": 2,
+        "hell": 25,
+        "damn": 7,
+        "crap": 4,
+        "drunk": 0,
+        "smoke": 0,
+        "cigarette": 0,
+        "beer": 0,
+        "wine": 0,
+        "drug": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 6270,
+    "output_tokens": 3286,
+    "cost_usd": 0.00814
+  },
+  "seconds": 41.1
+}

@@ -1,0 +1,45 @@
+{
+  "film_id": "bad_boys_ii",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows scuffles, rock-throwing, dog-chasing and repeated threats of biting or harm (taunts like “You’re dead meat” and “I’m gonna bite it”), but no graphic injury or gore. This fits mild violence/peril.",
+      "evidence": [
+        "They were throwing rocks at you.",
+        "If I catch your butt, I'm gonna bite it.",
+        "You're really dead meat."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "No sexual content, romance is very mild and non-sexual (petting/kissing the dog); nothing explicit.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Contains insults and name-calling (e.g., “freak,” “loser,” “stupid”), but no strong profanity or slurs.",
+      "evidence": [
+        "What a freak.",
+        "What a mental.",
+        "Stupid thing."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No on-screen drinking, drug use, or smoking described in the dialogue. (A garbled news line briefly mentions beer but there's no depiction or discussion of drinking.)",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 9466,
+    "output_tokens": 893,
+    "cost_usd": 0.00415
+  },
+  "seconds": 18.7
+}

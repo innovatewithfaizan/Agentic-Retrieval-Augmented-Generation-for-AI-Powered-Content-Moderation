@@ -1,0 +1,51 @@
+{
+  "film_id": "what_lies_beneath",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly accuses a character of murder, describes someone as dead, and includes threats/attempted killings and a possibly malevolent presence in the house. These indicate realistic deaths and threatening actions but no graphic gore described in the dialogue.",
+      "evidence": [
+        "Is that so ridiculous? She was terrified...... and now she doesn't answer the door, but her car's in the garage.",
+        "You know damn well who's dead. The Feur thing. Listen to me. He killed her and I'm not crazy.",
+        "Well, I know you killed her, you murdering son of a bitch!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes implied nudity and sexual relationships (references to being naked and to sleeping with someone), indicating partial nudity/sexual activity without explicit sex scenes in the subtitles.",
+      "evidence": [
+        "The first time I met you...... all I ever wanted was to spend the rest of my life with you.",
+        "Too cold. I almost froze to death laying here...... wet, naked, pretending to be electrocuted."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain strong profanity including the f-word and other coarse terms, meeting the rubric threshold for 'strong' language.",
+      "evidence": [
+        "So you slept with a fucking student?",
+        "Don't give me that shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue references prescription sedatives (Valium) as regular nighttime use and several instances of drinking (white wine, wine given to neighbors), which are more than incidental background mentions.",
+      "evidence": [
+        "Well, Valium. For sleeping.",
+        "No, I only take Valium at night. For sleeping.",
+        "White wine, please."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2658,
+    "output_tokens": 1342,
+    "cost_usd": 0.00335
+  },
+  "seconds": 21.2
+}

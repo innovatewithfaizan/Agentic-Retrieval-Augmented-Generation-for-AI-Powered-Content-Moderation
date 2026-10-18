@@ -1,0 +1,53 @@
+{
+  "film_id": "terminator_3_rise_of_the_machines",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats, mentions of murder/killing, weapons and rounds fired — indicating realistic violence and shootings but no graphic gore in the subtitles.",
+      "evidence": [
+        "They tried to murder me, before I was born.",
+        "Move or I'll do sware... or I will shoot you!",
+        "ROUNDS FlRED... 50 VEHlCLES DESTROYED... 002"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines show expressions of love and references to 'sexy' but no sexual acts or nudity; this is mild romantic content.",
+      "evidence": [
+        "I love you.",
+        "I love you, too.",
+        "WHAT IS SEXY? VlCTORlA'S SECRET"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include multiple strong profanities (including the f-word) and insults, meeting the threshold for strong language.",
+      "evidence": [
+        "Fuck you!",
+        "Fucking machine!",
+        "Son of bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes hiding beer and references to 'junkies,' indicating alcohol and drug-related content mentioned; not graphic or central but present — rated moderate.",
+      "evidence": [
+        "My mom's in house. Here! Hide a beer. Hide a beer...",
+        "That gotta be sick and get off from him.",
+        "Junkies!"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2334,
+    "output_tokens": 1771,
+    "cost_usd": 0.00413
+  },
+  "seconds": 23.9
+}

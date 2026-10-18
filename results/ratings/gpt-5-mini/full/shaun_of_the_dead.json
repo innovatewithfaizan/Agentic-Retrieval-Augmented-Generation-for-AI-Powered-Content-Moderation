@@ -1,0 +1,52 @@
+{
+  "film_id": "shaun_of_the_dead",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes attacks, biting, dismemberment and shootings (references to limbs/head being removed, people being eaten alive, and plans to kill infected loved ones). These indicate graphic and brutal violence in the story.",
+      "evidence": [
+        "He's got an arm off!",
+        "Did you see his head go?",
+        "'... people who are being... ' '... eaten alive. '"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and mentions of pornographic work (oral sex referenced and a line about starring in a hardcore loop), indicating explicit sexual content in dialogue.",
+      "evidence": [
+        "Liz rang back to see if I wanted to eat her out tonight.",
+        "They say she starred in the world's first interracial hardcore loop."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and insults appear throughout the subtitles (multiple uses of the f-word and slurs).",
+      "evidence": [
+        "Can I get any of you cunts a drink?",
+        "Get fucked, four- eyes!",
+        "It's fucking Sunday and I've got to go to fucking work in four fucking hours"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters refer to selling and using drugs (weed, 'white lines' lyrics implying cocaine), frequent drinking and smoking are mentioned and shown to be part of characters' behaviour.",
+      "evidence": [
+        "He sells a bit of weed now and again.",
+        "We stayed up all night drinking apple schnapps and playing Tekken 2.",
+        "You promised you'd stop smoking."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 13933,
+    "output_tokens": 1497,
+    "cost_usd": 0.00648
+  },
+  "seconds": 23.7
+}

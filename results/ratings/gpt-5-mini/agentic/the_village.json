@@ -1,0 +1,47 @@
+{
+  "film_id": "the_village",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes multiple realistic violent deaths and disturbing assaults (rape and murder, a man shot through the eye, a body stuffed in a Dumpster, a hanging). These are non-graphic but very disturbing and indicate serious violence and traumatic deaths.",
+      "evidence": [
+        "A group of men raped and killed her.",
+        "They stuffed her in a Dumpster... three blocks from our apartment.",
+        "He pulled a gun from his jacket... then he shot my brother through his left eye."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue explicitly describes sexual violence (rape) and a victim found robbed and naked, which is sexual assault content and is severe even though it's described rather than shown.",
+      "evidence": [
+        "A group of men raped and killed her.",
+        "He was found robbed and naked in the filthy river, two days later."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "There are no instances of profanity or strong insults in the provided dialogue excerpts; language is polite or neutral even when discussing grim events.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "substances": {
+      "rationale": "Dialogue contains passing references to medicines and a mention of 'a drug addict', but there is no depiction of drug use, heavy drinking, or addiction as a central theme in the subtitles provided.",
+      "evidence": [
+        "A drug addict came in with a wound to his ribs.",
+        "Lvy has returned with medicines from the towns."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3290,
+    "output_tokens": 1401,
+    "cost_usd": 0.00362
+  },
+  "seconds": 28.9
+}

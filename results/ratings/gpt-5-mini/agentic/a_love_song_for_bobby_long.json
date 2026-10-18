@@ -1,0 +1,53 @@
+{
+  "film_id": "a_love_song_for_bobby_long",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles describe a realistic physical assault where a character 'cracked Bobby's face wide open' and 'beat up that kid pretty bad', indicating non-graphic but serious fighting and injury.",
+      "evidence": [
+        "He took a swing.",
+        "Bobby stepped in... and he cracked Bobby's face wide open.",
+        "He beat up that kid pretty bad."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes flirting, lecherous looks and obsessive romantic language (crush/consumption of another person) but no explicit sex or nudity.",
+      "evidence": [
+        "You keep your lecherous eyes off our girl.",
+        "I've seen him with a woman that he can't get enough of.",
+        "A woman that's crawled into every molecule of his being... that consumed his every thought..."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple occurrences of the f-word and strong profanity appear in the dialogue (e.g. 'fucking', 'Fuck you'), which meets the 'strong' threshold.",
+      "evidence": [
+        "Now, why don't you come out and fucking say what you really mean?",
+        "Nine fucking years.",
+        "Fuck you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Several lines reference drinking, drunkenness and repeated alcohol use ('You're drunk', 'one drink became two, and then three', 'Why do you keep drinking that shit?'), indicating regular alcohol use/drunkenness.",
+      "evidence": [
+        "You're drunk.",
+        "Somehow one drink became two, and then three.",
+        "Why do you keep drinking that shit?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3245,
+    "output_tokens": 1187,
+    "cost_usd": 0.00319
+  },
+  "seconds": 17.0
+}

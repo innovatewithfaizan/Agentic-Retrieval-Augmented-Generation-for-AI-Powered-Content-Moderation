@@ -1,0 +1,52 @@
+{
+  "film_id": "pi",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats involving a gun, multiple screams, calls for help and lines like \"Don't ever touch me!\", indicating realistic violent threats and physical assault. No graphic gore is indicated in the subtitles.",
+      "evidence": [
+        "If you won't help us, we'll comply with the laws of nature.\nSurvival of the fittest - and we've got the fucking gun!",
+        "Don't ever touch me!",
+        "[ Screams in agony ] Three!\nFive!\nNine!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles contain explicit sexual vocalizations and crude sexual language (moaning and the line \"You fuck!\"), indicating sexual activity or explicit sexual dialogue without graphic description.",
+      "evidence": [
+        "[ Devi moans with pleasure ]\n[ Drilling whine ]\nHell!\nYou fuck!",
+        "Fuck you!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the dialogue, including multiple uses of the f-word and insults like \"bastard(s)\" and \"I don't give a shit\", which meets the rubric for strong language.",
+      "evidence": [
+        "[ Wails ]\nFuck you!\nFuck you!\nFuck you!",
+        "You bastard.",
+        "You bastards!\nHow could you be so stupid?\nMax, you just don't get it.\nI don't give a shit about you, just what's in your head!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "References are mostly incidental or medical: someone says \"I'll put it out\" (likely extinguishing a cigarette), a line about drinking/\"I'll knock back\" and mentions of coffee and medical treatments (beta blockers, adrenaline injections, caffeine). No depiction of heavy drinking, drug use or dealing.",
+      "evidence": [
+        "I'm sorry, I'll put it out.",
+        "- I'll knock back.\n- The Torah.\n- Coffee.",
+        "' Failed treatments to date:\n' Beta blockers, calcium channel blockers, adrenaline injections,\n' high- dose ibuprofen, steroids,"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2519,
+    "output_tokens": 1854,
+    "cost_usd": 0.00434
+  },
+  "seconds": 25.1
+}

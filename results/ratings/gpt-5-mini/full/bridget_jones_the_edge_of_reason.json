@@ -1,0 +1,53 @@
+{
+  "film_id": "bridget_jones_the_edge_of_reason",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes sustained life-threatening wildlife attacks, injuries and deaths (bear attacks, broken leg, men killed) and plans to kill the bear with spears/deadfalls. Several deaths and gore-adjacent peril are explicitly referenced, though not graphically described in the subtitles — this fits 'moderate.'",
+      "evidence": [
+        "And the one's killed a man, man- hunter for the rest of his life.",
+        "We're gonna kill him.",
+        "They died...... saving my life."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There are crude sexual references and innuendo in the dialogue (references to 'screwing the maid', snorting cocaine off a girl's hipbones, and sexualized comparisons), but no explicit sex scenes described in the subtitles — this fits 'moderate.'",
+      "evidence": [
+        "Differentfrom snorting coke off the girls ' hipbones.",
+        "screwing the maid",
+        "I like my coffee like I like my women. Bitter and murk y."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain frequent strong profanity including multiple uses of the f-word and explicit insults (e.g., 'motherfucker', 'fucking'), which falls under 'strong.'",
+      "evidence": [
+        "It's afucking pair of shoes.",
+        "Youfuckin ' make me sick!",
+        "Come here, you motherfucker!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references recreational drug use ('snorting coke') and also shows incidental alcohol consumption (champagne, drinking). The explicit mention of cocaine use puts this at 'strong.'",
+      "evidence": [
+        "Differentfrom snorting coke off the girls ' hipbones.",
+        "A glass of champagne.",
+        "Drinking the otherfellow's supplies?"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10225,
+    "output_tokens": 1484,
+    "cost_usd": 0.00552
+  },
+  "seconds": 21.8
+}

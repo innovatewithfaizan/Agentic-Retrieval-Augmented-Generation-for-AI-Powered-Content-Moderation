@@ -1,0 +1,50 @@
+{
+  "film_id": "in_the_cut",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "The subtitles describe multiple brutal murders and dismemberment in graphic detail (strangulation, throat cutting through windpipe/jugular/tongue, vertebrae) and forensic discovery of body parts, which indicates strong, graphic violence and gore.",
+      "evidence": [
+        "He strangled her...... till she lost consciousness, probably in the bedroom...... then dragged her into the bathroom and cut her throat.",
+        "Cut through the windpipe, the jugular, the epiglottis, the hyoid, the tongue.",
+        "When he got to the vertebrae...... he needed a bigger knife to cut through that, and he had one."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual descriptions and requests (detailed masturbation instructions, oral sex references and repeated crude sexual language), constituting frequent explicit sexual dialogue.",
+      "evidence": [
+        "Put your hand between your legs. lnside your panties. That pussy that I like. And you slip your middle finger in. It's deep. It's soaking wet. You run your finger up, and your clit's right there.",
+        "Getting a blowjob? Isn't that your line of work? No such thing as a bad blowjob."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity (multiple uses of 'fuck' and 'fucking' and other crude terms) appears throughout the subtitles, meeting the 'strong' threshold.",
+      "evidence": [
+        "It's so fucking noisy I can't sleep.",
+        "Let's get the fuck out of here."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Subtitles include characters taking sleeping pills and multiple admissions or references to drunkenness (\"I'm drunk\", \"I hate to drink alone\", offers of wine), indicating on-screen or central-character drunkenness rather than incidental background drinking.",
+      "evidence": [
+        "I'm gonna take a sleeping pill. Two, in fact.",
+        "I'm drunk."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 5212,
+    "output_tokens": 1187,
+    "cost_usd": 0.00368
+  },
+  "seconds": 18.3
+}

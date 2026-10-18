@@ -1,0 +1,53 @@
+{
+  "film_id": "21_grams",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated realistic threats to kill and shoot people, explicit threats to shoot in the head, discussion of letting two little girls die, and a gunshot is recorded. These indicate non-graphic lethal violence and weapons use.",
+      "evidence": [
+        "I'll shoot you in the head.",
+        "We have to kill him!",
+        "You... murderer.\nYou just let them lie there on the street.\nThose two little girls, you just let them die like dogs."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows flirting, requests for a kiss and references to sex/safe sex, but no explicit sexual activity or nudity described in the subtitles.",
+      "evidence": [
+        "Please, kiss me.",
+        "Hey, babe.\nHow's my queen?",
+        "Okay, what is the most important question for safe sex?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include frequent strong profanity including multiple uses of the f-word and other insults, which meets the 'strong' threshold.",
+      "evidence": [
+        "Fuck you!",
+        "What the fuck?",
+        "Get the fuck out of my house!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes smoking referenced as necessary, offers of beer, a character saying 'I don't drink' and explicit reference to a drug/pill ('This shit is all the rage. You take two of these, you go straight to heaven'), indicating drug references and substance use beyond incidental background drinking.",
+      "evidence": [
+        "If I don't smoke, I'll go fuckin' nuts.",
+        "This shit is all the rage.\nYou take two of these,\n- you go straight to heaven.",
+        "No.\nYou know, I don't drink.\nI don't steal.\nI'm clean."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2965,
+    "output_tokens": 1224,
+    "cost_usd": 0.00319
+  },
+  "seconds": 14.1
+}

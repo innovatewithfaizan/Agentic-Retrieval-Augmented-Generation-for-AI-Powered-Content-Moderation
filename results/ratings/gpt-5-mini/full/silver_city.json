@@ -1,0 +1,52 @@
+{
+  "film_id": "silver_city",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes multiple murders, a body dumped and buried, threats with guns/arrows, and organized intimidation — realistic, non-graphic violent crime and sustained peril.",
+      "evidence": [
+        "They told Lázaro he shouldn't shoot the steam full pressure... when he's turning it on.",
+        "He asked them to put the body in a garbage barrel... and to clean his blood with the blood of the animals.",
+        "I swear I'll put an arrow through his neck."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Explicit sexual acts and crude sexual references appear in the dialogue (direct sexual language, references to oral sex and past pregnancy/abortion), but no explicit sex scenes described.",
+      "evidence": [
+        "I just fucked your messenger boy.",
+        "They catch one president getting a BJ in the Oval Office."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity includes multiple uses of the f-word and other crude language in the subtitles.",
+      "evidence": [
+        "You do not want to fuckwith Vicente Esparza, my friend.",
+        "What the fuck is it to you?",
+        "Mywhole life is a fucking grudge."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters mention smoking dope, being stoned and using painkillers; drug/alcohol use is incidental rather than a central or addictive theme.",
+      "evidence": [
+        "It depends on how much dope I've smoked.",
+        "She got me stoned.",
+        "Painkillers, man."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7379,
+    "output_tokens": 1362,
+    "cost_usd": 0.00457
+  },
+  "seconds": 17.7
+}

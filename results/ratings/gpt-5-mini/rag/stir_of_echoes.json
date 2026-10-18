@@ -1,0 +1,53 @@
+{
+  "film_id": "stir_of_echoes",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats to kill, multiple gunshot cues and orders to 'Kill her!', screams and a reference to 'cold-blooded murder' — indicating realistic, non-graphic deadly violence and sustained peril.",
+      "evidence": [
+        "They're gonna kill you, Tommy.",
+        "Kill her! Kill her!",
+        "Cold- blooded murder."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and innuendo (reference to sperm), sexual moaning and invitations/kissing — sexual content beyond mild flirting or kisses.",
+      "evidence": [
+        "Well, your beer- addled sperm still work.",
+        "Don't stop.",
+        "Momma, you are hot!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple instances of strong profanity including repeated use of the f-word and other strong curses; language meets the 'strong' threshold.",
+      "evidence": [
+        "Agh! Fuck! Fuck!",
+        "Goddammit, Lenny, shut your fuckin ' pie hole!",
+        "( softly ) Shit! Shit! Shit! Shit!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references smoking a large marijuana 'fatty', offers of beer, repeated prompts to drink and drunkenness — drug use and heavy alcohol use are present.",
+      "evidence": [
+        "we... we just smoked this great big fatty a few minutes before you walked in,...",
+        "D' you want a beer?",
+        "Drink, motherfucker, drink!"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2406,
+    "output_tokens": 1926,
+    "cost_usd": 0.00445
+  },
+  "seconds": 27.8
+}

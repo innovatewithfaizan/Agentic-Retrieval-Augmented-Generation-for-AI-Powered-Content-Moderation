@@ -1,0 +1,53 @@
+{
+  "film_id": "a_love_song_for_bobby_long",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes realistic physical assaults and a child's death/accident (no graphic gore). References to someone having their face cracked open and being beaten indicate moderate, non-graphic violence and peril.",
+      "evidence": [
+        "he cracked Bobby's face wide open.",
+        "Bobby went crazy. He beat up that kid pretty bad.",
+        "He was just a little boy, and it was so dark."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and mentions of nudity (\"peter\", \"ass\") and questions about sexual relationships; implied/partial nudity and sexual talk fit a moderate rating.",
+      "evidence": [
+        "Everybody's seen my peter.",
+        "And my ass.",
+        "Are you sleeping with her, Lawson?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple instances of the f-word and strong profanity appear in the subtitles (explicit \"fuck\"/\"fucking\" and repeated 'goddamn', 'shit'), so language is strong.",
+      "evidence": [
+        "Now, why don't you come out and fucking say what you really mean?",
+        "Nine fucking years.",
+        "Fuck you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Frequent drinking and drunkenness are referenced in dialogue (characters are openly drunk, encouraged to dry out, critiques of ongoing heavy drinking). This indicates regular alcohol use rather than mere incidental background drinking.",
+      "evidence": [
+        "You're drunk.",
+        "I really am.",
+        "Why do you keep drinking that shit? Don't you know it's gonna kill you?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6705,
+    "output_tokens": 1051,
+    "cost_usd": 0.00378
+  },
+  "seconds": 10.4
+}

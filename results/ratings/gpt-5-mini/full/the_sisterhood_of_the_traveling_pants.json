@@ -1,0 +1,50 @@
+{
+  "film_id": "the_sisterhood_of_the_traveling_pants",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions deaths (a car accident that killed characters' parents), near-drowning and peril (almost drowned and plucked onto a fishing boat), and references to someone committing 'such an act' (implying suicide). No graphic or brutal detail is present.",
+      "evidence": [
+        "What measure of despair compels one to commit such an act?",
+        "They were killed in a car accident...... when I was 1 2.",
+        "The one time I wore them I almost drowned...... and then got plucked onto a fishing boat...... by a guy who made me touch a live fish."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains flirting and references to nudity (beaches being nude) and 'flings' with coaches, but no explicit sexual scenes or graphic descriptions.",
+      "evidence": [
+        "Don't you know all the beaches in Greece are nude?",
+        "It's against the rules to have flings with the coaches."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Contains insults and crude phrasing (e.g., 'pain in the ass', 'rat-faced manager', and other name-calling). No use of the f-word or explicit slurs observed, but occasional stronger crude language is present.",
+      "evidence": [
+        "No, you seem like a pain in the ass.",
+        "I spilled a Sprite...... and my rat- faced manager accused me of receipt withholding.",
+        "They are liars! They are thieves! They are barbarians!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references alcoholism as a character/plot element (addiction is part of the story). This is an addiction theme rather than incidental background drinking.",
+      "evidence": [
+        "His dad's in a facility. He's an alcoholic."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8364,
+    "output_tokens": 2181,
+    "cost_usd": 0.00645
+  },
+  "seconds": 40.1
+}

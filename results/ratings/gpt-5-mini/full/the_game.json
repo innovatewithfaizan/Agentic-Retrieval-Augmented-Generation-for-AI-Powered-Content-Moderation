@@ -1,0 +1,47 @@
+{
+  "film_id": "the_game",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes realistic threats, guns and at least one shooting and a death (non-graphic), plus break-ins and attempted murder — indicating moderate, realistic violence and peril.",
+      "evidence": [
+        "They shot that guy",
+        "You shot him",
+        "He's dead"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains crude explicit sexual references (sexual acts referenced explicitly) though no on-screen sex described — fits moderate sexual content.",
+      "evidence": [
+        "You could have pictures of me... wearing nipple rings butt fucking captain kangaroo..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity is used throughout the subtitles (multiple uses of the f-word and other strong expletives), so language is strong.",
+      "evidence": [
+        "What the fuck are you looking at?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue contains explicit references to illegal drug use (crystal‑meth) and mentions of medication/rehab, supporting a moderate rating for substances.",
+      "evidence": [
+        "No I used to buy crystal- meth from the maitre d '"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 12526,
+    "output_tokens": 1335,
+    "cost_usd": 0.0058
+  },
+  "seconds": 30.7
+}

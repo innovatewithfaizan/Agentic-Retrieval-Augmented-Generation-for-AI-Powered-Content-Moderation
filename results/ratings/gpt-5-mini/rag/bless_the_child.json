@@ -1,0 +1,52 @@
+{
+  "film_id": "bless_the_child",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic threats and use of firearms, explicit commands to shoot, and a gunshot with cries and injuries implied (no graphic gore). This indicates moderate violence/peril.",
+      "evidence": [
+        "Are you really gonna shoot me, Maggie?",
+        "They're trying to kill us.",
+        "[ Gunshot ]"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines reference honeymoon and affectionate terms (sweetheart, bedtime, mi angelito) indicating mild romantic/affectionate content but no explicit sexual material.",
+      "evidence": [
+        "Good night, sweetheart.",
+        "Part honeymoon, part healing process for Jenna.",
+        "Okay. It's bedtime, mi angelito."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes strong profanity (the f-word) and harsh insults, meeting the threshold for strong language.",
+      "evidence": [
+        "Hey, I don't give a fuck if we gotta call in... the French Foreign Legion if that's what it takes to stop this guy.",
+        "You son of a bitch."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines refer to drug use and addiction (being born on drugs, needing to get off drugs, wasting half a life on drugs), making substance use and addiction a clear theme (strong).",
+      "evidence": [
+        "You gave birth on drugs? Are you insane?",
+        "I don't know what I'm gonna do. I'm gonna help you, but first you have to get off the drugs.",
+        "I wasted half my life on drugs."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2560,
+    "output_tokens": 1154,
+    "cost_usd": 0.00295
+  },
+  "seconds": 13.9
+}

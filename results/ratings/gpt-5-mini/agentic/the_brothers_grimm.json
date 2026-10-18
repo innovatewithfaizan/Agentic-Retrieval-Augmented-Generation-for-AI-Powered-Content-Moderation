@@ -1,0 +1,112 @@
+{
+  "film_id": "the_brothers_grimm",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats, orders to kill or execute, references to burning and slaughter, and characters dying or being captured. These indicate realistic, non-graphic violence and executions — enough to be more than mild but not graphic.",
+      "evidence": [
+        "And I shall raze every tree demolish every building..",
+        "Slaughter every innocent in search for you",
+        "Execute them"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes kissing prompts, romantic lines and references to couples/’my love’. There is no explicit sexual description or nudity in the dialogue — content aligns with mild romantic content.",
+      "evidence": [
+        "Go on, kiss her!",
+        "Soonwe shall be 1, my love",
+        "12 cribs, 11 girls.."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains mild profanity/insults such as “damn,” “hell,” “stupid” and “fool.” No strong swearing (no f-word) or slurs are present in the dialogue.",
+      "evidence": [
+        "Damn it! Everytime!",
+        "Let's send it right into the belly of hell",
+        "You're a fool!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No dialogue evidence of drinking, smoking, or drug use or references to substance abuse; searches for common substance words returned no hits.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "bitch",
+          "asshole",
+          "bastard",
+          "crap",
+          "stupid",
+          "fool"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 0,
+        "damn": 1,
+        "hell": 2,
+        "bitch": 0,
+        "asshole": 0,
+        "bastard": 0,
+        "crap": 0,
+        "stupid": 1,
+        "fool": 1
+      }
+    },
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "drink",
+          "drunk",
+          "wine",
+          "smoke",
+          "cigarette",
+          "alcohol",
+          "beer",
+          "drug",
+          "drugs",
+          "hash",
+          "cocaine",
+          "marijuana"
+        ]
+      },
+      "counts": {
+        "drink": 0,
+        "drunk": 0,
+        "wine": 0,
+        "smoke": 0,
+        "cigarette": 0,
+        "alcohol": 0,
+        "beer": 0,
+        "drug": 0,
+        "drugs": 0,
+        "hash": 0,
+        "cocaine": 0,
+        "marijuana": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 3,
+    "input_tokens": 8568,
+    "output_tokens": 3224,
+    "cost_usd": 0.00859
+  },
+  "seconds": 46.0
+}

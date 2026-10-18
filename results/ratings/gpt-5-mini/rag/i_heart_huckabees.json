@@ -1,0 +1,50 @@
+{
+  "film_id": "i_heart_huckabees",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats and an assault, characters calling someone a 'murderer', and audible grunting/screaming indicating physical struggle. No graphic gore is present, so content is realistic but non-graphic.",
+      "evidence": [
+        "Beat it, you little pussy.",
+        " - Murderer.\nA murderer?",
+        " - Hey, he assaulted me, man.\nHe tried to attack me."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple lines explicitly discuss 'sex' and quantity vs. quality; crude sexual discussion is present though non-graphic and without explicit sexual acts described.",
+      "evidence": [
+        "- How's the sex?\n- How is the sex?\n- The sex?",
+        "- Were you joking...\n- when you said quantity and not quality?\n- In regards to sex?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent explicit strong profanity (multiple f-words, 'cocksucker', 'bitch') appears in the dialogue, meeting the threshold for strong language.",
+      "evidence": [
+        "Motherfucking cocksucker.\nMotherfucking shit fucker.!",
+        "Cocksucker!\nMotherfucking bitch ass motherfucking cocksucker!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Brief, casual references to alcohol (margaritas, pina coladas) and remarks about someone 'after a couple margaritas' indicate light drinking is discussed; no drug use or heavy drunkenness shown.",
+      "evidence": [
+        "- You oughta see her after a couple margaritas.\n- Oh, my God!",
+        "Bermuda.\nJet Skis. \nPina coladas.\nAll right?"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3054,
+    "output_tokens": 1273,
+    "cost_usd": 0.00331
+  },
+  "seconds": 14.1
+}

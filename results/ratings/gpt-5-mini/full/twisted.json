@@ -1,0 +1,51 @@
+{
+  "film_id": "twisted",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes multiple brutal murders, beatings, postmortem abuse, dismemberment/body parts and threats/assaults — descriptions indicate graphic, brutal violence and intense peril.",
+      "evidence": [
+        "I mean, what kind of moron tries to flush body parts down a toilet, especially when he's got a perfectly good furnace out back?",
+        "But at first glance, I'd say he was beaten to death.",
+        "Although this guy was definitely beaten postmortem as well."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references, multiple instances of the protagonist having sex with victims and a discussion of necrophilic arousal — sexual content and crude sexual talk present but not explicit sex scenes in the subtitles.",
+      "evidence": [
+        "And they get turned on by fucking corpses, remember that.",
+        "I picked up a stranger in a bar and had sex with him."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears throughout the dialogue (multiple f-words and other insults).",
+      "evidence": [
+        "I'm on my fucking knees.",
+        "You're so fucking full of shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Frequent references to alcohol and party drugs, and evidence that the protagonist was drugged with Rohypnol (date rape drug) appear in the dialogue — drugging and heavy drinking are explicit.",
+      "evidence": [
+        "Rohypnol.",
+        "Who wants a beer?",
+        "Heroin, cocaine, illegal pharmaceuticals, party drugs."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10486,
+    "output_tokens": 1417,
+    "cost_usd": 0.00546
+  },
+  "seconds": 15.2
+}

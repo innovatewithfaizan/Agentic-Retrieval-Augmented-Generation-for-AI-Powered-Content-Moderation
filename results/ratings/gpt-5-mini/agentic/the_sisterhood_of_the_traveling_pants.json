@@ -1,0 +1,87 @@
+{
+  "film_id": "the_sisterhood_of_the_traveling_pants",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "No explicit fights, gore or weapons appear in the dialogue. The subtitles include mild peril/concern (warnings, someone checking if another is okay, mention of a 'Snake Room' and a dragon in a fantasy context) — suggestive of brief/fantastical peril rather than realistic or graphic violence.",
+      "evidence": [
+        "- Be careful.",
+        "Oh, my God, are you okay? Oh, my gosh! Are you okay?",
+        "See, chamber number one is the Snake Room."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Dialogue shows flirting and romantic references (compliments, talk of marriage) but no sexual descriptions or explicit content — consistent with mild romance/flirting.",
+      "evidence": [
+        "Tibby, you're a babe!",
+        "We're getting married.",
+        "Say, you're a real natural with that thing."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Only mild profanity and insults appear in the dialogue (words like 'stupid' and informal crude terms like 'suck' used playfully). No strong swear words or slurs are present.",
+      "evidence": [
+        "I will be as soon as I get out of these stupid heels.",
+        "I think I'm gonna start my own genre, call it the \" suckumentary. \"",
+        "It sucks."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "There is an explicit reference to alcoholism ('He's an alcoholic') and a character described as visiting a father in a facility. This is a clear mention of addiction/drinking issues in dialogue, but no on-screen heavy drug use or detailed portrayals are shown in the subtitles provided.",
+      "evidence": [
+        "He's in Atlanta, honey. Visiting his father. His dad's in a facility. He's an alcoholic."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "crap",
+          "bitch",
+          "asshole",
+          "stupid",
+          "suck",
+          "damn*",
+          "drunk",
+          "alcoholic",
+          "kill",
+          "murder"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 0,
+        "damn": 0,
+        "hell": 0,
+        "crap": 0,
+        "bitch": 0,
+        "asshole": 0,
+        "stupid": 1,
+        "suck": 3,
+        "damn*": 0,
+        "drunk": 0,
+        "alcoholic": 1
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 5893,
+    "output_tokens": 2553,
+    "cost_usd": 0.00658
+  },
+  "seconds": 43.9
+}

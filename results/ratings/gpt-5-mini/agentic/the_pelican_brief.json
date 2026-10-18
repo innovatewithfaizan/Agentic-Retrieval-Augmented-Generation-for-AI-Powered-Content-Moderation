@@ -1,0 +1,50 @@
+{
+  "film_id": "the_pelican_brief",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly refers to realistic killings and violent incidents: murders, someone shot in a crowd, a car explosion, a bullet in a victim's head and characters saying \"They killed him!\"—these are realistic, non-graphic deaths and threats, fitting 'moderate'.",
+      "evidence": [
+        "He was shot...... in broad daylight in a crowd.",
+        "His body was found in a lonely cottage, near the bayou he so loved.\nThere was a bullet in his head...... and a gun beside him.",
+        "Callahan was killed in a car explosion."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual innuendo and references to affairs and casual sexual conquest (e.g., 'finish up in the morning?', 'punch notches in your belt', 'They had an affair') but no explicit sexual description or nudity—this fits 'mild'.",
+      "evidence": [
+        "Maybe we could...... finish up in the morning?",
+        "This is a hell of a time to punch notches in your belt.",
+        "They had an affair."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Contains at least one instance of a stronger insult ('You son- of- a- bitch!'), which falls under the rubric's 'moderate' level for occasional stronger words.",
+      "evidence": [
+        "You son- of- a- bitch! Mr. Coal?"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue mentions drinking (characters 'sipping on some bourbon') and references to detoxification ('He's being detoxified'), indicating alcohol use and treatment—this goes beyond incidental drinking and fits 'moderate'.",
+      "evidence": [
+        "In it, the President and Mattiece are in front of Mattiece's hunting lodge...... sipping on some bourbon, having a good laugh.",
+        "He's being detoxified."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2998,
+    "output_tokens": 1242,
+    "cost_usd": 0.00323
+  },
+  "seconds": 21.0
+}

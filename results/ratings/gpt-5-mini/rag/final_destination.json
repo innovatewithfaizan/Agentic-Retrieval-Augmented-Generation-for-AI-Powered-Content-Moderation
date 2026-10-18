@@ -1,0 +1,53 @@
+{
+  "film_id": "final_destination",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions deaths, a plane explosion, a graphic reference to blood ('The fire caramelized her blood.'), threats and characters saying 'You're dead' and frightening peril — indicating graphic/serious violence and disturbing deaths.",
+      "evidence": [
+        "The fire caramelized her blood.",
+        "They died, and we lived.",
+        "You're dead... and you ain't taking me with you!"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Lines show mild romantic/sexual undertones and flirting (terms of endearment like 'baby', 'You're so sweet') but no explicit sexual activity or nudity.",
+      "evidence": [
+        "You're so sweet.",
+        "Come on, baby.",
+        "Come on, baby."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity including repeated use of the f-word and threats ('Fuck off, dude.'; 'Get the fuck off me!'; 'I'll fucking kill you.'), which meets the 'strong' level.",
+      "evidence": [
+        "Fuck off, dude.",
+        "Get the fuck off me!",
+        "Because if you say another word, I'll fucking kill you."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes direct references to sedatives, narcotics and hallucinogens, mentions of cigarettes, and a drinking toast — indicating drug/tobacco use and alcohol references (but not prolonged portrayal of addiction), consistent with 'moderate'.",
+      "evidence": [
+        "Did you take any sedatives before boarding? On board, did you take any sleeping pills... narcotics, hallucinogens?",
+        "When I was ten... my dad went into a 7- Eleven for cigarettes.",
+        "To all of our friends that can't be here. Cheers."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2574,
+    "output_tokens": 1152,
+    "cost_usd": 0.00295
+  },
+  "seconds": 23.2
+}

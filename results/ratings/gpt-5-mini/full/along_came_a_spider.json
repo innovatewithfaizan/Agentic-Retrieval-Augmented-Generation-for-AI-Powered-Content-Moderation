@@ -1,0 +1,51 @@
+{
+  "film_id": "along_came_a_spider",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes multiple killings, strangulation, shootings, threats, kidnappings, and references to bodies and being buried/placed in water. These are realistic, non-graphic violent crimes and sustained peril.",
+      "evidence": [
+        "He strangled her.",
+        "One bullet in the driver's head.",
+        "Open the fucking door!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Contains crude sexual language and explicit sexual insult and brief references to something being 'sexy' — sexual references/crude sexual talk rather than romantic or nudity.",
+      "evidence": [
+        "I think you're a natural- born cocksucker.",
+        "Do you think it's sexy?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity including the f-word and sexual slurs/insults in multiple lines of dialogue.",
+      "evidence": [
+        "What the fuck is this?",
+        "You fucking bitch!",
+        "Open the fucking door!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes explicit reference to a victim being drugged ('doped up') and casual references to smoking; drugging of a victim is spoken about though not extensively shown visually in the subtitles.",
+      "evidence": [
+        "She was so doped up.",
+        "You could smoke a can' ton a day."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 20498,
+    "output_tokens": 1433,
+    "cost_usd": 0.00799
+  },
+  "seconds": 28.2
+}

@@ -1,0 +1,52 @@
+{
+  "film_id": "maria_full_of_grace",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes a disturbing death with the victim's stomach 'cut open' and includes threats and forced detention/coercion (e.g., being forced to expel swallowed pellets). These are graphic/disturbing and include violent threats, so severity is strong.",
+      "evidence": [
+        "They found the body of a woman yesterday.",
+        "The stomach had been cut open... and they think it was a mule.",
+        "We'll go and have a little conversation... with your grandmother, your mother... your sister... and little Pachito."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue contains crude sexual references and implied sexual activity (discussion of 'sleeping with another woman' and saying someone 'screwed the first guy that walked by'), but no explicit sex scenes described, so severity is moderate.",
+      "evidence": [
+        "How many months or days before you're sleeping with another woman?",
+        "Sorry, but your sister was an idiot who screwed the first guy that walked by."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity including several uses of the f-word and other explicit insults in the dialogue, so severity is strong.",
+      "evidence": [
+        "You're not fucking with me, right?",
+        "How fucking stupid... swallowing drugs when you're pregnant.",
+        "Shut the fuck up, bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "The entire plot thread centers on drug smuggling (people instructed to swallow many pellet/rolls, explicit instructions about pellets and risk, and organized distribution). This shows drug dealing/use and related danger, so severity is strong.",
+      "evidence": [
+        "We've known people who swallow drugs... and bring them in like that.",
+        "For your size, maybe 60 or 70 pellets.",
+        "If just one opens up you'll die."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7693,
+    "output_tokens": 2124,
+    "cost_usd": 0.00617
+  },
+  "seconds": 21.3
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "saw",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes torture devices, graphic injuries and gore (e.g. ripped-open jaws, massive blood loss, razor-wire cuts), explicit threats to kill, and scenes of people being forced to harm themselves — indicates strong violence/scariness.",
+      "evidence": [
+        "When the timer on the back goes off your mouth will be permanently ripped open",
+        "Died of massive blood loss mostly through the femoral artery",
+        "Cut himself so deep we found traces of stomach acid on the floor"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "No explicit sex scenes, but there are repeated crude sexual references and explicit sexual language (infidelity, prostitution, sexual misconduct) — fits moderate.",
+      "evidence": [
+        "He liked to play with kids a bit too much.",
+        "who go to seedy motels to fuck their secretaries.",
+        "I don't give a crap if you covered yourself in peanut butter and had a 15- hooker gangbang."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity (multiple uses of the f-word and other insults) throughout the dialogue — strong.",
+      "evidence": [
+        "What the fuck is going on?",
+        "You fucking bastard!",
+        "I'll fucking kill you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes drug use and overdose (opiate overdose), identifies a character as a drug addict, and references smoking; addiction/drug use is a clear theme — strong.",
+      "evidence": [
+        "He'd been injected with an opiate overdose",
+        "You are, in fact, a drug addict.",
+        "Give me that sweet cancer"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8287,
+    "output_tokens": 2089,
+    "cost_usd": 0.00625
+  },
+  "seconds": 28.3
+}

@@ -1,0 +1,52 @@
+{
+  "film_id": "50_first_dates",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows realistic threats, physical assaults and scuffles (beating/kicking, crowd attack, explicit threats). No graphic gore described, so level is moderate.",
+      "evidence": [
+        "I'm gonna kill you!",
+        "Take that! And that! And that! And that!",
+        "Help me!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple explicit sexual references and crude sexual language (descriptions of having sex, 'pounded me like a mallard duck', discussion of breasts/genitals). No explicit on-screen sex scene in dialogue, so level is moderate.",
+      "evidence": [
+        "It wasn't just about the sex.",
+        "He pounded me like a mallard duck."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent profanity and insults including 'shit', 'asshole', 'bitch' and other crude name-calling appear in the subtitles; no f-word noted but stronger profanities present, so level is moderate.",
+      "evidence": [
+        "Shit.",
+        "You asshole!",
+        "I hope you shot the stupid tramp."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue includes drinking and drunkenness, references to smoking weed/joints and 'special brownies' (drug edibles). These are recurring and explicitly discussed, so level is moderate.",
+      "evidence": [
+        "We got a little drunk.",
+        "Lung problems because he smoked too much turtle weed...... which is bad for you.",
+        "If that's one of your special brownies, don't let any of the dolphins eat that."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 13532,
+    "output_tokens": 1432,
+    "cost_usd": 0.00625
+  },
+  "seconds": 38.7
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "layer_cake",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles contain repeated realistic threats, guns pointed, talk of murder and a character calling someone a 'murdering bastard.' No graphic gore is indicated but weapons, murder and explicit threats are frequent.",
+      "evidence": [
+        "\"You murdering bastard!\"",
+        "\"Murder? Who's dead?\"",
+        "\"I usually kill for less.\""
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes references to nudity and sexual body parts (nipples), people lying naked in bed and sexual invitation/solicitation — non-graphic but explicit partial nudity and sexual situations.",
+      "evidence": [
+        "\"You lying there naked?\"",
+        "\"I've got a little T- shirt on.\"",
+        "\"Look at my nipples, standing up like little soldiers.\""
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears throughout the subtitles, including multiple uses of the f-word and other explicit insults.",
+      "evidence": [
+        "\"I ain't fucking touching ' em.\"",
+        "\"Fuck off!\"",
+        "\"Fuck me, he's loaded.\""
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Substantial and explicit drug-related dialogue: dealing, cocaine as the commodity, pills, and characters using/smoking crack are mentioned. This is active drug use and dealing.",
+      "evidence": [
+        "\"I'm a businessman whose commodity happens to be cocaine.\"",
+        "\"You smoke too much of that fucking crack!\"",
+        "\"Do you have the pills?\""
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2677,
+    "output_tokens": 967,
+    "cost_usd": 0.0026
+  },
+  "seconds": 14.2
+}

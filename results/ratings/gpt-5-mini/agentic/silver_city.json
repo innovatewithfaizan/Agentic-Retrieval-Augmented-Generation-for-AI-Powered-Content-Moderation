@@ -1,0 +1,53 @@
+{
+  "film_id": "silver_city",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats to kill (arrow through his neck), references to murder, vehicular homicide, bodies, illegal burial, and cutting throats/cleaning blood — indicating realistic lethal violence and homicide but no graphic gore described in the subtitles.",
+      "evidence": [
+        "You send anybody else after me, I swear I'll put an arrow through his neck.",
+        "It was vehicular homicide, man.",
+        "Puts his head into the sand ' cause they don't wanna see when they cut his throat."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles contain explicit sexual activity references and crude sexual talk (adultery, a sex scandal, and an explicit line about having sex with a messenger), which is more than mild innuendo but not explicit sexual scenes described visually in dialogue.",
+      "evidence": [
+        "\"Senator's Daughter In College Sex Scandal\"",
+        "Daddy paid him off so he wouldn't file adultery charges.",
+        "I just fucked your messenger boy."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of strong profanity (the f-word) and other coarse language appear in the dialogue; a single f-word pushes the rating to the strongest language level.",
+      "evidence": [
+        "You do not want to fuckwith Vicente Esparza, my friend.",
+        "I just fucked your messenger boy.",
+        "Oh, shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references illegal drugs (dope, painkillers) and alcohol (bottle of tequila), including first-person admissions of use; this indicates active substance use but not explicit depiction of dealing or addiction treatment, matching a moderate level.",
+      "evidence": [
+        "It depends on how much dope I've smoked.",
+        "A bottle oftequila byyour left leg.",
+        "Painkillers, man. I'm flying."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3068,
+    "output_tokens": 1363,
+    "cost_usd": 0.00349
+  },
+  "seconds": 26.2
+}

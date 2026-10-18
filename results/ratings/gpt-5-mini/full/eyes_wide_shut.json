@@ -1,0 +1,51 @@
+{
+  "film_id": "eyes_wide_shut",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes real-world threats, forced undressing and coercion, and a death (overdose) shown/mentioned — non-graphic but realistic and disturbing.",
+      "evidence": [
+        "I promise I'll kill you!",
+        "Remove your clothes.",
+        "Miss Curran died this afternoon."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Frequent explicit sexual dialogue, references to prostitution and multiple explicit descriptions of sexual acts (\"fuck\" used repeatedly).",
+      "evidence": [
+        "Just wanted to fuck my wife.",
+        "I was fucking other men."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity including repeated uses of the f-word and derogatory slurs in the dialogue.",
+      "evidence": [
+        "Why can't you ever give me a straight fucking answer?",
+        "Hey, watch it, you faggot!",
+        "I was fucking other men."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Explicit drug use and overdose are described in dialogue (shooting up, heroin and cocaine), and alcohol is mentioned; addiction/overdose is a plot point.",
+      "evidence": [
+        "She was shooting up and she had a bad reaction.",
+        "It's heroin and coke."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11264,
+    "output_tokens": 1489,
+    "cost_usd": 0.00579
+  },
+  "seconds": 28.2
+}

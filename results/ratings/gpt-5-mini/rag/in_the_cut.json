@@ -1,0 +1,53 @@
+{
+  "film_id": "in_the_cut",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "The subtitles contain explicit, graphic descriptions of murder and mutilation (strangling, throat-cutting with details of windpipe/jugular/epiglottis/hyoid/tongue) and references to guns/killings, indicating strong/graphic violence.",
+      "evidence": [
+        "He strangled her...... till she lost consciousness, probably in the bedroom...... then dragged her into the bathroom and cut her throat.",
+        "Cut through the windpipe, the jugular, the epiglottis, the hyoid, the tongue.",
+        "He held her by her hair and cut all around."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual acts and language (instructions to touch inside panties and inserting a finger), repeated explicit references to having sex and to fucking, indicating strong sexual content in dialogue.",
+      "evidence": [
+        "Put your hand between your legs.",
+        "lnside your panties.",
+        "And you slip your middle finger in."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Frequent use of the f-word and other strong profanity appears in the subtitles (multiple instances of 'fuck', 'fuck yourself', 'Get your fucking ass...'), meeting the rubric's threshold for strong language.",
+      "evidence": [
+        "Fuck that man, all right.",
+        "No. No. Go on, fuck yourself. I wanna watch you fuck yourself.",
+        "Get your fucking ass out the goddamn street, bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Subtitles explicitly mention drunkenness ('I'm drunk') and drinking (offers of wine and 'I got wine'), indicating on-screen drunkenness/consumption rather than mere incidental background reference; this fits 'moderate'.",
+      "evidence": [
+        "I'm drunk. I didn't want to fuck you anyways.",
+        "You want wine?",
+        "I got wine."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2397,
+    "output_tokens": 1880,
+    "cost_usd": 0.00436
+  },
+  "seconds": 29.3
+}

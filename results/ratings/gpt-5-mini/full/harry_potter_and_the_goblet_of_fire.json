@@ -1,0 +1,51 @@
+{
+  "film_id": "harry_potter_and_the_goblet_of_fire",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes murder, torture, death, graveyard resurrection ritual, threats to kill and vivid references to bones and blood—content is graphic and intensely violent.",
+      "evidence": [
+        "Oh, by God! I killed Potter!",
+        "I go to matarte, Harry Potter.",
+        "The bone of the father...... taken without permission."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Contains flirting, dancing invitations and romantic interest but no explicit sexual content or nudity.",
+      "evidence": [
+        "I will not go single, because créanlo or no, somebody invited to me.",
+        "It wanted to know if you would like to go to the dance with me."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Mild profanity and insults appear (e.g. 'damn', name-calling) but no strong profanity.",
+      "evidence": [
+        "- the name, déme the damn name.",
+        "you are not idiot."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "References to drinking and magical potions (Polyjuice / truth potion, punch) and a disturbing instruction to drink blood; substance use is present but not depicted as addiction.",
+      "evidence": [
+        "Potion multi- juice.",
+        "Víctor was by ponche.",
+        "Bébela!"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6648,
+    "output_tokens": 2148,
+    "cost_usd": 0.00596
+  },
+  "seconds": 24.2
+}

@@ -1,0 +1,52 @@
+{
+  "film_id": "cradle_2_the_grave",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles show repeated armed violence, shootings, kidnapping, machine guns, an M-60, and a helicopter being shot down. No graphic gore is described in the dialogue, but there is intense weapon-based violence and threats to kill.",
+      "evidence": [
+        "Fire the M- 60!",
+        "Shoot him down!",
+        "We shot down the damn helicopter."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains flirting, sexual innuendo and crude sexual talk (references to rubbing someone's ass naked and explicit sexual boasting), but no explicit sex scenes or nudity in the subtitles.",
+      "evidence": [
+        "I have such a weakness for a man in uniform.",
+        "I can be pretty rough.",
+        "I had to rub that ass naked when I was a teenager."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and multiple f-words plus racial slurs appear in the subtitles.",
+      "evidence": [
+        "Who the fuck are you?",
+        "Give me the stones, you fat cracker motherfucker.",
+        "Don't waste my fucking time, nigga."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Subtitles include incidental alcohol consumption (champagne) and references to drinking; no sustained drunkenness or drug use is described in the dialogue.",
+      "evidence": [
+        "Champagne?",
+        "Them motherfuckers got faces like walls, but they love to drink and look at naked girls."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10777,
+    "output_tokens": 1475,
+    "cost_usd": 0.00564
+  },
+  "seconds": 17.7
+}

@@ -1,0 +1,52 @@
+{
+  "film_id": "the_game",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles include active threats to shoot/kill, a gun present, someone is shot and people are being ordered down/cuffed — realistic weapon use and threats, but no graphic gore described.",
+      "evidence": [
+        "You tell them I'm gonna shoot somebody",
+        "He's got a gun get back from the door",
+        "You shot him"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue references sexual/entertainment services and mentions of a bra, implying sexual content or services but no explicit sex scenes or nudity in the subtitles.",
+      "evidence": [
+        "We provide...",
+        "whatevers lacking",
+        "Well um... the bra, The red bra"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple occurrences of strong profanity including the f-word and related forms in the subtitles.",
+      "evidence": [
+        "Don't explain, just fuck off",
+        "Where the fuck is he?",
+        "Oh, I'm so fucked"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly mentions buying crystal meth in the past and references to smoking/medication — clear drug use references but not shown as an ongoing addiction scene.",
+      "evidence": [
+        "No I used to buy crystal- meth from the maitre d '",
+        "I thought you quit - I did."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2795,
+    "output_tokens": 2277,
+    "cost_usd": 0.00525
+  },
+  "seconds": 37.8
+}

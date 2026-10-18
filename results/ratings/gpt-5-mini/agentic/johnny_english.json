@@ -1,0 +1,53 @@
+{
+  "film_id": "johnny_english",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes guns being cocked, explicit threats to kill, gunshots, physical fights, screams and falls — realistic weapons and peril but no graphic gore shown in the dialogue.",
+      "evidence": [
+        "[ Guns Cocking ]",
+        "If I told you that, I'm afraid I'd have to kill you.",
+        "[ Gunshot ]"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitle dialogue contains explicit sexual talk and innuendo (references to making love, sexual hunger, 'stallion in the sack', moans and suggestive lines) — sexual references and crude innuendo.",
+      "evidence": [
+        "I suppose you've made love to lots of women, haven't you, Johnny?",
+        "I wanted to say things to you, I wanted to do things to you...",
+        "Things... involving plastic toys and soft cheese?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes insults and stronger colloquial profanity such as 'ass' and 'asshole' and expletives (merde) — occasional stronger words but no f-word shown in subtitles.",
+      "evidence": [
+        "Spent, my ass.",
+        "...kicking you in the backside for being such a pompous, know- nothing asshole.",
+        "My fragrant French ass, it can! Merde!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Subtitles explicitly mention use of a drug (a 'super-strength muscle relaxant') and characters talk about the drug's effects wearing off — references to drugging a character.",
+      "evidence": [
+        "Super- strength muscle relaxant.",
+        "When he wakes up, he'll be as floppy as a damp old sock.",
+        "The effect of the drug has practically worn off."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3022,
+    "output_tokens": 1198,
+    "cost_usd": 0.00315
+  },
+  "seconds": 17.0
+}

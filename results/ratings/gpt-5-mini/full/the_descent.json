@@ -1,0 +1,51 @@
+{
+  "film_id": "the_descent",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles describe multiple killings, creature attacks, and graphic injury (bone protruding, emergency re-insertion), sustained terror and deaths — this meets the strongest violence level.",
+      "evidence": [
+        "I need to push it back in.",
+        "They took Holly.",
+        "Beth's dead."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Contains sexual innuendo/jokes (explicit orgasm joke) and brief references to romantic/sexual relationships — mild sexual content.",
+      "evidence": [
+        "How do you give a lemon an orgasm?",
+        "You tickle its citrus."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity including multiple uses of the f-word and insults throughout the dialogue.",
+      "evidence": [
+        "I'm calling you a fucking cheater.",
+        "It's fucking freezing!",
+        "You fuckers!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Occasional drinking references and offers (brandy shot, drinking/get wasted comments) but no depiction of heavy addiction or drug use — mild level.",
+      "evidence": [
+        "Brandy shot?",
+        "Get wasted, go to a barn dance."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7473,
+    "output_tokens": 1092,
+    "cost_usd": 0.00405
+  },
+  "seconds": 13.0
+}

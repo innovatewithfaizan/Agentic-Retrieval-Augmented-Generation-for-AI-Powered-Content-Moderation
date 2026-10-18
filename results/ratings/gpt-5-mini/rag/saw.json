@@ -1,0 +1,52 @@
+{
+  "film_id": "saw",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats to kill, instructions to murder a named person, poisoning and a time-limited murder plot, and a line explicitly asking the listener to 'murder a mother and her child.' These indicate realistic lethal threats, weapons/poison and sustained peril but no graphic gore described in the subtitles.",
+      "evidence": [
+        "Your aim in this game is to kill Adam",
+        "When there's that much poison in your blood the only thing heft to do is shoot yourself",
+        "Will you murder a mother and her child to save yourself?"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and crude sexual talk (references to 'fucking' and lubricant and affairs). There is no mention of nudity or explicit sex scenes in the subtitles, but the language and context are sexually explicit.",
+      "evidence": [
+        "This is the most fun I've had without lubricant.",
+        "I get paid to take pictures of rich guys like you, who go to seedy motels to fuck their secretaries."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple instances of strong profanity including repeated use of the f-word and other strong insults ('motherfucker', 'son of a bitch', 'I'll fucking kill you'). This meets the 'strong' threshold.",
+      "evidence": [
+        "Fuck.",
+        "Get your fucking hands off my daughter!",
+        "I'll fucking kill you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drugging/kidnapping victims, tranquilizers, and labels a character as a 'drug addict' — indicating drug use/abuse and drugging as a plot element. This supports a 'strong' rating for substance-related themes.",
+      "evidence": [
+        "Man, they kidnap you and drug you.",
+        "You are, in fact, a drug addict. Isn't that right, Mandy?",
+        "I need more- powerful tranquillizers next time."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2495,
+    "output_tokens": 1831,
+    "cost_usd": 0.00429
+  },
+  "seconds": 37.3
+}

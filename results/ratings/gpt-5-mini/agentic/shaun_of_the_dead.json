@@ -1,0 +1,53 @@
+{
+  "film_id": "shaun_of_the_dead",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references multiple violent threats and combat with the undead: explicit instructions to disable attackers by removing the head/destroying the brain, characters arming themselves and ordering 'Fire!', and lines like 'Zombies to your front.' The content implies realistic weapon use, deaths and sustained peril but no graphic gore described in the subtitles, so level is moderate.",
+      "evidence": [
+        "'... the attackers can be stopped by removing the head or destroying the brain.",
+        "Ready. Zombies to your front.",
+        "Fire!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains romantic/relationship references (anniversary, love) and brief crude sexual expletives, but no explicit sexual activity, nudity, or graphic sexual content. This fits mild.",
+      "evidence": [
+        "- It's your anniversary soon.",
+        "You go out with her, you love her so much.",
+        "- Did you do anything special?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple uses of the f-word and other strong profanity appear in the dialogue (explicit 'fuck' uses and insults), which meets the 'strong' level.",
+      "evidence": [
+        "Look, just fuck off!",
+        "Oh, fuck.",
+        "Come on, you pasty‑faced fuckers, let's go!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drinking (double vodka, getting completely smashed), smoking, and selling/using weed (selling puff, dealing drugs). There is on-screen substance use implied and dealing referenced, so this meets 'strong'.",
+      "evidence": [
+        "He sells a bit of weed now and again.",
+        "Ed, get me a double vodka.",
+        "Right, great, fuck it. We'll have a party and get completely smashed."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2914,
+    "output_tokens": 1206,
+    "cost_usd": 0.00314
+  },
+  "seconds": 15.6
+}

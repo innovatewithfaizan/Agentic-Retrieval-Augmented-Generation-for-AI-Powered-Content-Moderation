@@ -1,0 +1,50 @@
+{
+  "film_id": "the_english_patient",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes bombs, booby-traps, explosions, wartime injuries and deaths (suicide, plane crash, wounded characters) — realistic wartime peril and casualties without graphic gore.",
+      "evidence": [
+        "The fuse has snapped!",
+        "Sergeant Hardy, Sir. It was booby- trapped.",
+        "It just went off, Sir."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Mostly romantic declarations and emotional intimacy (love, promises); no explicit sexual activity or nudity in the dialogue.",
+      "evidence": [
+        "He was shouting, \" I love you, Katharine. I love you so much. \"",
+        "I've always loved you."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Strong profanity present in the dialogue (use of the f-word).",
+      "evidence": [
+        "Just give me the fucking car!",
+        "Count Fuckin ' Asshole Von Bismarck!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes explicit request for morphine and mention of gasoline used for travel; medical drug use referenced (not depicted as abuse) — more than incidental background.",
+      "evidence": [
+        "And I need morphine.",
+        "with German gasoline."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3956,
+    "output_tokens": 1033,
+    "cost_usd": 0.00305
+  },
+  "seconds": 11.1
+}

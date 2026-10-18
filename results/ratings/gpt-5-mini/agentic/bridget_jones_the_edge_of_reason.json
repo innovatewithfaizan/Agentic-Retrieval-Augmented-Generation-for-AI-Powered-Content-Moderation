@@ -1,0 +1,53 @@
+{
+  "film_id": "bridget_jones_the_edge_of_reason",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated threats of killing, talk of dying in the wilderness, and a direct plan to 'kill the bear' and to 'kill him', implying realistic peril and violent confrontation. No graphic or gory descriptions appear in the dialogue, so this is moderate violence.",
+      "evidence": [
+        "We're going to die out here!",
+        "What are we gonna do? We're gonna kill him.",
+        "I'm gonna kill the bear!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes requests to sunbathe nude, crude sexual language ('fucking' used in a sexual/colloquial context), and explicit references to 'screwing the maid' — sexual references and nudity implied but no explicit sex scenes described. This fits the 'moderate' level.",
+      "evidence": [
+        "Officer... can I sunbathe on this beach nude?",
+        "Let's stopfucking about, shall we, and getthe guy warm.",
+        "Sit upthere, drinks and golf, screwing the maid, but getyou in an emergency..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains multiple instances of strong profanity including the f-word and coarse insults ('youfucking idiot', 'Fucking shithole of a world'), which meets the 'strong' threshold.",
+      "evidence": [
+        "Look, even if I wanted to kill you, I need you to get home, youfucking idiot.",
+        "Come on. Oh, God. Oh, shit.",
+        "Fucking shithole of a world, eh, Charles?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly mentions snorting cocaine ('snorting coke off the girls' hipbones') and references to drinking and inability to perform 'sober'. This indicates explicit drug use and alcohol consumption, warranting 'strong'.",
+      "evidence": [
+        "Differentfrom snorting coke off the girls ' hipbones.",
+        "Can't do it sober?",
+        "Drinking the otherfellow's supplies?"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2731,
+    "output_tokens": 2676,
+    "cost_usd": 0.00603
+  },
+  "seconds": 33.6
+}

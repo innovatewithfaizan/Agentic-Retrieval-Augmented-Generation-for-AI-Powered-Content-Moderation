@@ -1,0 +1,53 @@
+{
+  "film_id": "eternal_sunshine_of_the_spotless_mind",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats, talk of killing and burying, characters saying \"You're dead,\" \"I didn't kill anybody!\", and tense chase/hide lines — indicating realistic peril and implied violence but no graphic gore shown in dialogue.",
+      "evidence": [
+        "I didn't kill anybody!",
+        "You can run, but you can't hide.",
+        "One, two, three. You're dead."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains flirting/sexual desire and references to sex and fantasies (seduction, \"I so want what's in your suit\", fantasies of marriage/sex), but no explicit sexual acts or nudity described in the subtitles.",
+      "evidence": [
+        "I so want what's in your suit.",
+        "I had these fantasies of us being married... and having kids and... just...",
+        "No, I don't think her sex is... motivated."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Strong profanity and homophobic slur appear in the subtitles (multiple uses of the f-word and the word \"faggot\"), which meets the \"strong\" threshold.",
+      "evidence": [
+        "Fuck it.",
+        "Get out of my face, faggot!",
+        "Get the fuck away from me!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference drinking and drug use (requests for vodka, searching the liquor cabinet, lines stating someone is \"stoned\" and mentions of pot), indicating on-screen substance use or clear references to it.",
+      "evidence": [
+        "I would die for a vodka.",
+        "Now I can look for... candles, matches... and the liquor cabinet.",
+        "You're stoned, and you're driving."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3282,
+    "output_tokens": 934,
+    "cost_usd": 0.00269
+  },
+  "seconds": 12.4
+}

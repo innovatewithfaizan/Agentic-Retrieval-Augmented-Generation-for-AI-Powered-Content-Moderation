@@ -1,0 +1,49 @@
+{
+  "film_id": "the_brothers_grimm",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats to raze and slaughter innocents, references to torture and killings of ancestors, execution orders, physical combat and deaths. These indicate realistic, non-graphic violence and peril.",
+      "evidence": [
+        "I shall raze every tree demolish every building.. Slaughter every innocent in search for you",
+        "They tortured and killed her ancestors",
+        "Execute them"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows romantic possession, proposals and kissing attempts (requests to kiss), but no explicit sexual content or nudity.",
+      "evidence": [
+        "Be mine.. for now and forever",
+        "Don't kiss her!",
+        "Soonwe shall be 1, my love"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Contains mild profanity and insults (e.g. \"Damn it!\", \"stupid\", \"You're a fool!\"). No strong slurs or f-word usage.",
+      "evidence": [
+        "Damn it! Everytime!",
+        "Give me that stupid book!",
+        "You're a fool!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No dialogue references to drinking, smoking, or drug use.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3205,
+    "output_tokens": 1093,
+    "cost_usd": 0.00299
+  },
+  "seconds": 22.7
+}

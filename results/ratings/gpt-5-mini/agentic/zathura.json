@@ -1,0 +1,113 @@
+{
+  "film_id": "zathura",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains threats, weapons and mentions of people being killed or almost killed, and scenes of boarding/armed harpoons and urgent rescue lines, indicating realistic peril and non-graphic deaths or danger.",
+      "evidence": [
+        "I killed her.",
+        "I could have been killed.",
+        "All right, they're arming the harpoons."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "References to dating and 'hooking up' plus mentions of having a girlfriend indicate mild romantic/sexual content but no explicit sex or nudity in the dialogue.",
+      "evidence": [
+        "I can't. I have a date tonight.\nWhat time?\nWe're hooking up at, like, 8.",
+        "I'm in fourth grade, I have a girlfriend."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes mild profanity and insults such as 'hell', 'shut up', 'you're such a baby' and frequent uses of 'God', but no strong expletives or slurs.",
+      "evidence": [
+        "- Who the hell are you?",
+        "Shut up.",
+        "You're such a baby."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "No dialogue evidence of drinking, smoking or drug use in the subtitles provided.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "kill",
+          "killed",
+          "die",
+          "dead",
+          "blood",
+          "gore",
+          "gun",
+          "harpoon",
+          "shot",
+          "stab",
+          "fight",
+          "scream"
+        ]
+      },
+      "counts": {
+        "kill": 7,
+        "killed": 3,
+        "die": 0,
+        "dead": 4,
+        "blood": 1,
+        "gore": 0,
+        "gun": 0,
+        "harpoon": 1,
+        "shot": 2,
+        "stab": 0,
+        "fight": 2,
+        "scream": 0
+      }
+    },
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "fucking",
+          "shit",
+          "damn",
+          "hell",
+          "crap",
+          "God",
+          "shut up",
+          "stupid",
+          "bastard",
+          "bitch"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "fucking": 0,
+        "shit": 0,
+        "damn": 0,
+        "hell": 1,
+        "crap": 0,
+        "God": 7,
+        "shut up": 4,
+        "stupid": 1,
+        "bastard": 0,
+        "bitch": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 3,
+    "input_tokens": 8760,
+    "output_tokens": 1750,
+    "cost_usd": 0.00569
+  },
+  "seconds": 32.1
+}

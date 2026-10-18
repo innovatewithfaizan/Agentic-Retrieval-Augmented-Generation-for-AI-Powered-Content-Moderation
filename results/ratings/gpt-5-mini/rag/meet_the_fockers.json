@@ -1,0 +1,53 @@
+{
+  "film_id": "meet_the_fockers",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes realistic threats of death, fighting/combat references, someone being shot/stunned and a detailed description of electrical incapacitation — indicating non-graphic but realistic violence and peril.",
+      "evidence": [
+        "This is Capoeira, man. This is hardcore shit. Bernard, if you continue, you will force me to engage you. And once I begin the sequence of combat, it can only end with your demise.",
+        "You shot my son.",
+        "Your son has merely been stunned by a less than lethal weapon. Remain calm. 50, 000 volts of electricity are now passing into your skeletal muscle tissue. Your central nervous system has been incapacitated but you will regain motor functions momentarily."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple explicit sexual lines, references to having had sex, sexualized comments about bodies and breasts and crude sexual talk — beyond mild innuendo but no explicit on-screen sex described in dialogue alone.",
+      "evidence": [
+        "You're so beautiful. You are the sexiest woman alive I know. Mmm. You're just trying to get me back into bed.",
+        "No, I just don't want you to break his RV, Dad, and -- and -- and reveal that I had sex with Isabel and play weird sex games that everybody can hear in the house.",
+        "Look at those boobs. Man! I just wanna -- I just wanna lather them up with soap and just..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Repeated use of the insult 'asshole' and other strong insults/spelled-out profanity in dialogue — stronger than mild but no frequent explicit f-word usage shown.",
+      "evidence": [
+        "Asshole.",
+        "Asshole.",
+        "F - O- C- K- E- R."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple references to drinking and alcohol (wine, rum, vodka), giving alcohol to soothe a baby, and characters getting drunk — indicates regular drinking and drunkenness in dialogue.",
+      "evidence": [
+        "Oh! So sweet. Hey, do you guys want some more, uh, wine?",
+        "I told Greg to give him some rum to ease the pain.",
+        "Well, you got drunk and told my dad I'm pregnant."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2533,
+    "output_tokens": 3049,
+    "cost_usd": 0.00673
+  },
+  "seconds": 39.8
+}

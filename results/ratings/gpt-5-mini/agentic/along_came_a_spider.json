@@ -1,0 +1,50 @@
+{
+  "film_id": "along_came_a_spider",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains multiple shootings, explicit threats, a reported death and discussion of a kill shot — indicating realistic gun violence, deaths and sustained peril though no graphic gore is shown in the subtitles.",
+      "evidence": [
+        "- [ Gunshots ]",
+        "That man is dead.",
+        "Kill shot tapped him crown of the head."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes crude sexual language and repeated references to a possible \"sex maniac,\" showing explicit sexual insults and sexualized threats/implications but no depiction of sexual activity or nudity in the subtitles.",
+      "evidence": [
+        "I think you're a natural- born cocksucker.",
+        "Is he. Um... Are we dealing with a sex maniac?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain frequent strong profanity including multiple uses of the f-word and explicit insults, indicating strong coarse language throughout.",
+      "evidence": [
+        "- You fucking bitch!",
+        "I want you to look inside here and tell me what the fuck you see!",
+        "Oh.\nShit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental references to smoking appear in the dialogue (\"You could smoke a can' ton a day\"), with no evidence of heavy drinking, drug use, or addiction themes in the subtitles provided.",
+      "evidence": [
+        "You could smoke a can' ton a day."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2484,
+    "output_tokens": 1456,
+    "cost_usd": 0.00353
+  },
+  "seconds": 20.3
+}

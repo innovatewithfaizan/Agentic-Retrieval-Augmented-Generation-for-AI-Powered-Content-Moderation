@@ -1,0 +1,53 @@
+{
+  "film_id": "terminator_3_rise_of_the_machines",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles include threats of murder and shooting, explicit gun-related commands and outcomes (rounds fired, many vehicles destroyed), bombs and references to killing. These are realistic violent threats and actions but not graphic or gory, so 'moderate'.",
+      "evidence": [
+        "They tried to murder me, before I was born.",
+        "Move or I'll do sware... or I will shoot you!",
+        "ROUNDS FlRED... 50 VEHlCLES DESTROYED... 002"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains expressions of love/romance and references to 'sexy' (Victoria's Secret) but no sexual acts, explicit sexual talk or nudity in the subtitles — fits 'mild'.",
+      "evidence": [
+        "I love you.",
+        "I love you, too.",
+        "WHAT IS SEXY?\nVlCTORlA'S SECRET"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple strong profanities and insults, including the f-word and repeated insults (e.g. 'Fuck you!', 'Son of bitch!', 'asshole'), which meets the 'strong' level.",
+      "evidence": [
+        "Fuck you!",
+        "Son of bitch!",
+        "This is my company car, asshole!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes incidental alcohol references ('Hide a beer') and name-calling such as 'Junkies!' indicating drug-related language, but no depiction of heavy drinking, addiction or dealing — 'mild'.",
+      "evidence": [
+        "Hide a beer.",
+        "Hide a beer...",
+        "Junkies!"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2610,
+    "output_tokens": 1582,
+    "cost_usd": 0.00382
+  },
+  "seconds": 24.7
+}

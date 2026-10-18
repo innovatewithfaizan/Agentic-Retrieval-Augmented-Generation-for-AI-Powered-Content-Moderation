@@ -1,0 +1,53 @@
+{
+  "film_id": "the_descent",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitle dialogue includes repeated screams, growling/crawler noises, people shouting orders to move and stay safe, and scenes of peril and pursuit. There is sustained scary/threatening action implied but no graphic gore in the dialogue.",
+      "evidence": [
+        "Don't move!",
+        "( Screams ) No!",
+        "( Crawler squeals and whimpers )"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual joking and flirting (e.g., a joke about giving a lemon an orgasm and references to 'Sexy'), but no explicit sex or nudity described.",
+      "evidence": [
+        "How do you give a lemon an orgasm?",
+        "You tickle its citrus.",
+        "Sexy!"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple instances of strong profanity appear in the subtitles, including the f-word and repeated use of 'Fuck', as well as insults like 'dick' and 'bitch'. One explicit f-word sets the category to strong.",
+      "evidence": [
+        "l'm calling you a fucking cheater.",
+        "Fuck, fuck, fuck.",
+        "Oh, you're a dick."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue shows characters drinking (offers of drinks and brandy shots) and explicit lines about getting 'wasted', plus a line about searching for the 'next big high' — indicating on-screen drinking and a reference to drug-seeking. This goes beyond incidental background drinking.",
+      "evidence": [
+        "Get wasted, go to a barn dance.",
+        "Who wants a drink?",
+        "- Brandy shot?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2266,
+    "output_tokens": 2013,
+    "cost_usd": 0.00459
+  },
+  "seconds": 29.7
+}

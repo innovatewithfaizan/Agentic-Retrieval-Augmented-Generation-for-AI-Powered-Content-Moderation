@@ -1,0 +1,53 @@
+{
+  "film_id": "twisted",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes guns, threats to kill, references to capacity to kill and killing sprees, and characters struggling over a gun — realistic violent threats and peril but no graphic gore shown in dialogue.",
+      "evidence": [
+        "It's my gun.",
+        "When did you realize that you had the capacity to kill? To take a human life?",
+        "Give me the gun. Everyone who kisses me...... turns up dead."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit references to sexual activity, sleeping with people, being seen naked, and crude sexual language (\"fucking\"), indicating sexual content beyond mild flirting.",
+      "evidence": [
+        "Listen, brother, it is none of your business who I sleep with.",
+        "Now, is that any kind of welcome for a man who's seen you naked?",
+        "I told him she was fucking that hippie scum!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent use of strong profanity including multiple uses of the f-word and other coarse expletives in the dialogue.",
+      "evidence": [
+        "Fuck you, Mike.",
+        "Every fucking time!",
+        "Jesus fucking..."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue shows repeated alcohol use (beer, shots) and explicitly discusses/identifies 'roofies' (a date-rape drug) and someone putting something in wine — clear drugging and drinking references.",
+      "evidence": [
+        "Who wants a beer?",
+        "Yeah, of course. Roofies. It's a date rape drug.",
+        "You put something in my wine."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2615,
+    "output_tokens": 1693,
+    "cost_usd": 0.00404
+  },
+  "seconds": 18.2
+}

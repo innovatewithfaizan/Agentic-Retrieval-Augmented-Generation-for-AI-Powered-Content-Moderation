@@ -1,0 +1,53 @@
+{
+  "film_id": "dracula_2000",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats to kill, characters saying someone meant to kill them, and references to deaths and blood—indicating sustained peril and lethal violence though not graphically described.",
+      "evidence": [
+        "I know what it takes",
+        "I'll kill everything",
+        "He meant to kill us."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Contains explicit sexual language and crude references (visible genital outline) and repeated talk of giving pleasure—sexual content beyond mild flirting or kissing.",
+      "evidence": [
+        "I can even see the outline of your cock... through your pants.",
+        "Everything I am is yours.",
+        "All the pleasure you would deny them... forever."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of the f-word and other crude profanity/insults appear in the dialogue, meeting the threshold for strong language.",
+      "evidence": [
+        "Fuck.",
+        "The fuck?",
+        "Never, ever fuck with an antiques dealer."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references Xanax (prescription drug) and also contains talk of drinking blood as part of supernatural activity; there is a reference to addiction—more than incidental mentions but not detailed drug-dealing or heavy addiction scenes.",
+      "evidence": [
+        "Father Devereaux says I should go back to Xanax... and your bartender friend Ray...",
+        "My unholy addiction has corrupted Mary's blood...",
+        "Now... I drink the blood of your children... but I give them more than just eternal life."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2337,
+    "output_tokens": 1490,
+    "cost_usd": 0.00356
+  },
+  "seconds": 19.1
+}

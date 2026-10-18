@@ -1,0 +1,53 @@
+{
+  "film_id": "high_fidelity",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains references to real-world shootings and threats/physical aggression (a historical shooting referenced, threats to 'sock your nose', and crowd shouts 'Get him!' indicating physical confrontation). No graphic gore is described, so this fits moderate violence.",
+      "evidence": [
+        "John Dillinger was shot dead behind that theatre in a hail of FBl gunfire.",
+        "I swear to God, if you tore this thing, it’s vintage, and I would fuckin’ sock your nose.",
+        "Get him!\n- Come on!\nGet him!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There are multiple explicit sexual references and descriptions (attempting to touch breasts and between her legs, explicit talk of sex and orgasms, references to making love and an abortion). Content is explicit but non-graphic, so it is moderate.",
+      "evidence": [
+        "Sometimes I got so bored of trying to touch her breasts that I would try to touch her between her legs.",
+        "You are as abandoned and noisy as any character in a porn film, Laura.",
+        "We make love."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the subtitles, including multiple uses of the f-word and other strong insults, which meets the 'strong' level.",
+      "evidence": [
+        "What the fuck is that?",
+        "You fucking asshole!",
+        "I am a fuckin’ asshole."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly mentions drinking (e.g., planning to drink a bottle of wine, 'drinking lunch') and smoking (references to cigarettes), but no drug use or addiction theme is described. This matches mild.",
+      "evidence": [
+        "I'm gonna drink a bottle of wine, I'm gonna watch TV and go to bed.",
+        "A drinking lunch on a school day.",
+        "I only have a few left. I’ve been saving them for later."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 20932,
+    "output_tokens": 1445,
+    "cost_usd": 0.00812
+  },
+  "seconds": 22.4
+}

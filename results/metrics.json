@@ -1,0 +1,797 @@
+{
+  "films_with_labels": 75,
+  "films_compared": 75,
+  "ratings_available": {
+    "full": 75,
+    "rag": 75,
+    "agentic": 75
+  },
+  "label_model": "qwen/qwen3.8-27b",
+  "label_distribution": {
+    "violence": {
+      "counts": {
+        "none": 2,
+        "mild": 12,
+        "moderate": 24,
+        "strong": 37
+      },
+      "from_empty_field": 2
+    },
+    "sex": {
+      "counts": {
+        "none": 5,
+        "mild": 17,
+        "moderate": 41,
+        "strong": 12
+      },
+      "from_empty_field": 6
+    },
+    "language": {
+      "counts": {
+        "none": 3,
+        "mild": 13,
+        "moderate": 24,
+        "strong": 35
+      },
+      "from_empty_field": 3
+    },
+    "substances": {
+      "counts": {
+        "none": 7,
+        "mild": 18,
+        "moderate": 29,
+        "strong": 21
+      },
+      "from_empty_field": 7
+    }
+  },
+  "majority_baseline": {
+    "overall": {
+      "n": 300,
+      "exact": 0.47333333333333333,
+      "within_one": 0.86,
+      "kappa_qw": 0.1693548387096775,
+      "mean_signed_error": 0.4633333333333333,
+      "confusion": [
+        [
+          0,
+          0,
+          12,
+          5
+        ],
+        [
+          0,
+          0,
+          35,
+          25
+        ],
+        [
+          0,
+          0,
+          70,
+          48
+        ],
+        [
+          0,
+          0,
+          33,
+          72
+        ]
+      ]
+    },
+    "categories": {
+      "violence": {
+        "n": 75,
+        "exact": 0.49333333333333335,
+        "within_one": 0.8133333333333334,
+        "kappa_qw": 0.0,
+        "mean_signed_error": 0.72,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            24
+          ],
+          [
+            0,
+            0,
+            0,
+            37
+          ]
+        ],
+        "predicts": "strong"
+      },
+      "sex": {
+        "n": 75,
+        "exact": 0.5466666666666666,
+        "within_one": 0.9333333333333333,
+        "kappa_qw": 0.0,
+        "mean_signed_error": 0.2,
+        "confusion": [
+          [
+            0,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            17,
+            0
+          ],
+          [
+            0,
+            0,
+            41,
+            0
+          ],
+          [
+            0,
+            0,
+            12,
+            0
+          ]
+        ],
+        "predicts": "moderate"
+      },
+      "language": {
+        "n": 75,
+        "exact": 0.4666666666666667,
+        "within_one": 0.7866666666666666,
+        "kappa_qw": 0.0,
+        "mean_signed_error": 0.7866666666666666,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            13
+          ],
+          [
+            0,
+            0,
+            0,
+            24
+          ],
+          [
+            0,
+            0,
+            0,
+            35
+          ]
+        ],
+        "predicts": "strong"
+      },
+      "substances": {
+        "n": 75,
+        "exact": 0.38666666666666666,
+        "within_one": 0.9066666666666666,
+        "kappa_qw": 0.0,
+        "mean_signed_error": 0.14666666666666667,
+        "confusion": [
+          [
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            18,
+            0
+          ],
+          [
+            0,
+            0,
+            29,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0
+          ]
+        ],
+        "predicts": "moderate"
+      }
+    }
+  },
+  "labeler_agreement": {
+    "second_labeler": "openai/gpt-oss-20b",
+    "n": 300,
+    "exact": 0.7433333333333333,
+    "within_one": 0.99,
+    "kappa_qw": 0.8163831755746922,
+    "mean_signed_error": -0.05333333333333334,
+    "confusion": [
+      [
+        16,
+        0,
+        1,
+        0
+      ],
+      [
+        3,
+        42,
+        14,
+        1
+      ],
+      [
+        1,
+        18,
+        85,
+        14
+      ],
+      [
+        0,
+        0,
+        25,
+        80
+      ]
+    ]
+  },
+  "modes": {
+    "full": {
+      "mode": "full",
+      "model": "gpt-5-mini",
+      "films": 75,
+      "overall": {
+        "n": 300,
+        "exact": 0.52,
+        "within_one": 0.9166666666666666,
+        "kappa_qw": 0.46037358751633484,
+        "mean_signed_error": -0.02,
+        "confusion": [
+          [
+            3,
+            8,
+            5,
+            1
+          ],
+          [
+            5,
+            21,
+            27,
+            7
+          ],
+          [
+            3,
+            23,
+            71,
+            21
+          ],
+          [
+            2,
+            7,
+            35,
+            61
+          ]
+        ],
+        "exact_ci95": [
+          0.45666666666666667,
+          0.58
+        ]
+      },
+      "categories": {
+        "violence": {
+          "n": 75,
+          "exact": 0.52,
+          "within_one": 0.96,
+          "kappa_qw": 0.4251405212059275,
+          "mean_signed_error": -0.12,
+          "confusion": [
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              2,
+              9,
+              0
+            ],
+            [
+              0,
+              2,
+              20,
+              2
+            ],
+            [
+              0,
+              1,
+              19,
+              17
+            ]
+          ]
+        },
+        "sex": {
+          "n": 75,
+          "exact": 0.56,
+          "within_one": 0.92,
+          "kappa_qw": 0.37219730941704043,
+          "mean_signed_error": -0.16,
+          "confusion": [
+            [
+              1,
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              9,
+              5,
+              1
+            ],
+            [
+              2,
+              8,
+              29,
+              2
+            ],
+            [
+              1,
+              1,
+              7,
+              3
+            ]
+          ]
+        },
+        "language": {
+          "n": 75,
+          "exact": 0.6,
+          "within_one": 0.92,
+          "kappa_qw": 0.48940269749518295,
+          "mean_signed_error": 0.38666666666666666,
+          "confusion": [
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              5,
+              4,
+              4
+            ],
+            [
+              0,
+              1,
+              7,
+              16
+            ],
+            [
+              0,
+              1,
+              1,
+              33
+            ]
+          ]
+        },
+        "substances": {
+          "n": 75,
+          "exact": 0.4,
+          "within_one": 0.8666666666666667,
+          "kappa_qw": 0.3258426966292134,
+          "mean_signed_error": -0.18666666666666668,
+          "confusion": [
+            [
+              2,
+              3,
+              2,
+              0
+            ],
+            [
+              2,
+              5,
+              9,
+              2
+            ],
+            [
+              1,
+              12,
+              15,
+              1
+            ],
+            [
+              1,
+              4,
+              8,
+              8
+            ]
+          ]
+        }
+      },
+      "evidence_grounded": 0.9463087248322147,
+      "evidence_quotes": 745,
+      "cost_usd": 0.4287,
+      "mean_tool_calls": 0.0
+    },
+    "rag": {
+      "mode": "rag",
+      "model": "gpt-5-mini",
+      "films": 75,
+      "overall": {
+        "n": 300,
+        "exact": 0.4766666666666667,
+        "within_one": 0.9166666666666666,
+        "kappa_qw": 0.4116058950578072,
+        "mean_signed_error": -0.16333333333333333,
+        "confusion": [
+          [
+            3,
+            5,
+            8,
+            1
+          ],
+          [
+            7,
+            24,
+            26,
+            3
+          ],
+          [
+            4,
+            27,
+            75,
+            12
+          ],
+          [
+            2,
+            7,
+            55,
+            41
+          ]
+        ],
+        "exact_ci95": [
+          0.4166666666666667,
+          0.5366666666666666
+        ]
+      },
+      "categories": {
+        "violence": {
+          "n": 75,
+          "exact": 0.36,
+          "within_one": 0.96,
+          "kappa_qw": 0.26204039357845654,
+          "mean_signed_error": -0.3333333333333333,
+          "confusion": [
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              2,
+              2,
+              8,
+              0
+            ],
+            [
+              0,
+              2,
+              21,
+              1
+            ],
+            [
+              0,
+              1,
+              32,
+              4
+            ]
+          ]
+        },
+        "sex": {
+          "n": 75,
+          "exact": 0.48,
+          "within_one": 0.8933333333333333,
+          "kappa_qw": 0.2165898617511519,
+          "mean_signed_error": -0.24,
+          "confusion": [
+            [
+              0,
+              3,
+              2,
+              0
+            ],
+            [
+              3,
+              7,
+              6,
+              1
+            ],
+            [
+              2,
+              12,
+              27,
+              0
+            ],
+            [
+              1,
+              2,
+              7,
+              2
+            ]
+          ]
+        },
+        "language": {
+          "n": 75,
+          "exact": 0.68,
+          "within_one": 0.96,
+          "kappa_qw": 0.651077375122429,
+          "mean_signed_error": 0.13333333333333333,
+          "confusion": [
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              9,
+              3,
+              1
+            ],
+            [
+              0,
+              3,
+              11,
+              10
+            ],
+            [
+              0,
+              1,
+              4,
+              30
+            ]
+          ]
+        },
+        "substances": {
+          "n": 75,
+          "exact": 0.38666666666666666,
+          "within_one": 0.8533333333333334,
+          "kappa_qw": 0.26367461430575034,
+          "mean_signed_error": -0.21333333333333335,
+          "confusion": [
+            [
+              2,
+              1,
+              4,
+              0
+            ],
+            [
+              2,
+              6,
+              9,
+              1
+            ],
+            [
+              2,
+              10,
+              16,
+              1
+            ],
+            [
+              1,
+              3,
+              12,
+              5
+            ]
+          ]
+        }
+      },
+      "evidence_grounded": 0.9789864029666254,
+      "evidence_quotes": 809,
+      "cost_usd": 0.2969,
+      "mean_tool_calls": 0.0
+    },
+    "agentic": {
+      "mode": "agentic",
+      "model": "gpt-5-mini",
+      "films": 75,
+      "overall": {
+        "n": 300,
+        "exact": 0.5,
+        "within_one": 0.9166666666666666,
+        "kappa_qw": 0.4373681331562086,
+        "mean_signed_error": -0.15333333333333332,
+        "confusion": [
+          [
+            5,
+            4,
+            7,
+            1
+          ],
+          [
+            5,
+            27,
+            23,
+            5
+          ],
+          [
+            3,
+            30,
+            73,
+            12
+          ],
+          [
+            2,
+            7,
+            51,
+            45
+          ]
+        ],
+        "exact_ci95": [
+          0.44333333333333336,
+          0.56
+        ]
+      },
+      "categories": {
+        "violence": {
+          "n": 75,
+          "exact": 0.4266666666666667,
+          "within_one": 0.96,
+          "kappa_qw": 0.2833517089305402,
+          "mean_signed_error": -0.29333333333333333,
+          "confusion": [
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              8,
+              0
+            ],
+            [
+              0,
+              3,
+              21,
+              0
+            ],
+            [
+              0,
+              1,
+              29,
+              7
+            ]
+          ]
+        },
+        "sex": {
+          "n": 75,
+          "exact": 0.5066666666666667,
+          "within_one": 0.8933333333333333,
+          "kappa_qw": 0.32671081677704206,
+          "mean_signed_error": -0.28,
+          "confusion": [
+            [
+              1,
+              2,
+              2,
+              0
+            ],
+            [
+              3,
+              10,
+              3,
+              1
+            ],
+            [
+              2,
+              13,
+              25,
+              1
+            ],
+            [
+              0,
+              3,
+              7,
+              2
+            ]
+          ]
+        },
+        "language": {
+          "n": 75,
+          "exact": 0.7066666666666667,
+          "within_one": 0.9466666666666667,
+          "kappa_qw": 0.6409721369829385,
+          "mean_signed_error": 0.17333333333333334,
+          "confusion": [
+            [
+              2,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              7,
+              4,
+              2
+            ],
+            [
+              0,
+              2,
+              13,
+              9
+            ],
+            [
+              0,
+              1,
+              3,
+              31
+            ]
+          ]
+        },
+        "substances": {
+          "n": 75,
+          "exact": 0.36,
+          "within_one": 0.8666666666666667,
+          "kappa_qw": 0.2547425474254741,
+          "mean_signed_error": -0.21333333333333335,
+          "confusion": [
+            [
+              2,
+              2,
+              3,
+              0
+            ],
+            [
+              2,
+              6,
+              8,
+              2
+            ],
+            [
+              1,
+              12,
+              14,
+              2
+            ],
+            [
+              2,
+              2,
+              12,
+              5
+            ]
+          ]
+        }
+      },
+      "evidence_grounded": 0.9770700636942675,
+      "evidence_quotes": 785,
+      "cost_usd": 0.343,
+      "mean_tool_calls": 0.4
+    }
+  }
+}

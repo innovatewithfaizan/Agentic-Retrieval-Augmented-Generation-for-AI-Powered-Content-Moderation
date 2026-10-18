@@ -1,0 +1,49 @@
+{
+  "film_id": "the_last_samurai",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly references guns, killing, battle commands and threats (explicit threats to kill, repeated 'fire' orders, references to 'gruesome death' and 'plenty of killing'). This indicates realistic wartime violence and lethal threats though no graphic gore is described in the subtitles.",
+      "evidence": [
+        "I will kill Jappos.",
+        "This, ladies and gents, is the gun that's winning the west. I... many's the time, I found myself... surrounded by a squad of wrath...... angry hostiles. with nothing but this rifle, between me and their certain and gruesome death.",
+        "Fire! Fire at will! Bring up the new guns! Prepare the new guns!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual activity, nudity or explicit romantic/sexual dialogue appears in the provided subtitles. Occasional private or personal lines occur but do not indicate sexual content.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "The dialogue contains multiple insults and coarse words (e.g. 'bastards', 'shit- kick', 'ass', 'what the hell'), which are stronger than mild but do not include the f-word or repeated strongest profanity.",
+      "evidence": [
+        "All right, you little bastards, you should stand up straight in a line... or I will passionately shit- kick every one of you sad parade, let it be before my eyes.",
+        "No disrespecting intended, Sir, we should look up our ass.",
+        "What the hell am I doing here?"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple explicit mentions of alcohol (whiskey, sake), offers of drinks and characters drinking are present in the dialogue; this is incidental/social drinking rather than depictions of heavy addiction or drug use.",
+      "evidence": [
+        "Whiskey.",
+        "Sake... Sake? Sake... Sake...",
+        "May I offer you a whiskey? No, thank you."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2846,
+    "output_tokens": 1837,
+    "cost_usd": 0.00439
+  },
+  "seconds": 21.7
+}

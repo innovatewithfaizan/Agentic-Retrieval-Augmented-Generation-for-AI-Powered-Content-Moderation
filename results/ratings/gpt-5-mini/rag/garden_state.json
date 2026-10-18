@@ -1,0 +1,49 @@
+{
+  "film_id": "garden_state",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats of beheading, kidnapping and murder, references to someone being dead, and talk of ‘blow away’ — realistic violent threats and deaths are mentioned though not graphic.",
+      "evidence": [
+        "\" Wypieprzaj from my house before I will chop off you head. \"",
+        "Do not it try me to kidnap only, because my uncle is in mafia and he would tell you to track down and to kill.",
+        "Spietra³eœ you, would like to to blow away, does not it harm."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There is no sexual activity, nudity or explicit sexual content in the dialogue. Occasional crude insults appear but no sexual scenes or descriptions.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes multiple insults and crude terms (e.g. “prick,” “whore,” “ass- hole”), but no f‑word; this corresponds to occasional stronger profanity and slurs without the strongest-level expletives.",
+      "evidence": [
+        "I thought, that are prick, so...",
+        "Whore, so.",
+        "That you are ass- hole."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Characters discuss drinking (vodka mixed with energy drinks) and explicit use of illicit drugs (lines of cocaine), plus long‑term prescription medications — clear substance use and references to drug use but not depicted graphically as addiction treatment or dealing.",
+      "evidence": [
+        "We will take four Red Bulle from vodka and...",
+        "There now, Kenny, I saw ostatni once when you you did on chamber pot the lines of cocaine.",
+        "You take lithium since? Under different figures since dust ten years. And paxil, zoloft, celexa? Depakote?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2838,
+    "output_tokens": 1290,
+    "cost_usd": 0.00329
+  },
+  "seconds": 14.8
+}

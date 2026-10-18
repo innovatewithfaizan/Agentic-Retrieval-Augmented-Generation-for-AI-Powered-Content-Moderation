@@ -1,0 +1,53 @@
+{
+  "film_id": "after_the_sunset",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains gun threats, explicit threats to kill, a shooting referenced and at least one reported death; non-graphic but realistic violent peril and weapons are present.",
+      "evidence": [
+        "You're gonna shoot an FBI agent, Burdett?",
+        "Put down the weapon.",
+        "You tell anyone I tucked him in, I'll kill you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows sexualized behavior and flirting (undressing, spanking suggestion) and romantic proposals — suggestive but not explicit sexual activity or nudity.",
+      "evidence": [
+        "Why are you taking off your clothes?",
+        "Are you being naughty?",
+        "Naughty enough to spank."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include profanity stronger than mild (\"shit\") and insults (\"bastard\", \"screw me\"), but no f-word or slurs.",
+      "evidence": [
+        "Damn, I got the stink on me tonight.",
+        "Shit!",
+        "No, you bastard!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Multiple references to drinking and alcohol (cocktails named, characters asking for more drinks, a boat \"stacked with beer\"). This indicates recurring on-screen drinking.",
+      "evidence": [
+        "I got a boat stacked with beer. Drink it yourself.",
+        "Bartender! Give me another one!",
+        "I'll drink to that."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2953,
+    "output_tokens": 1330,
+    "cost_usd": 0.0034
+  },
+  "seconds": 21.8
+}

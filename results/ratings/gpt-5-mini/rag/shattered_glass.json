@@ -1,0 +1,51 @@
+{
+  "film_id": "shattered_glass",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit threats to kill and characters saying someone is \"set on killing me\", plus a character saying \"I'm afraid of what I'm going to do,\" indicating realistic threat and potential self-harm. No graphic or gory detail is present, so this fits moderate violence/peril.",
+      "evidence": [
+        "I'll probably just kill it.",
+        "That's why he's so set on killing me now.",
+        "I'm afraid of what I'm going to do."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue references sexual magazines (Playboy, Penthouse) and discusses \"pictures\" as a potentially compromising sexual element. These are sexual references/innuendo rather than explicit sex scenes or nudity, so rated moderate.",
+      "evidence": [
+        "I want \" X- Men \" comic book No. 1. \"... a lifetime subscription to Playboy. \" - And throw in Penthouse.",
+        "You think you might have something for her?",
+        "Pictures."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The subtitles contain several insults and stronger coarse words (e.g., \"asshole\") and disparaging adjectives (\"pissy\"). This occasional stronger profanity places language at the moderate level.",
+      "evidence": [
+        "He's so political. And stiff, and humorless. And pissy.",
+        "Typical. He's being such an asshole."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly mentions delegates \"getting loaded\" and lists \"Drugs, binge drinking,\" indicating drug use and heavy drinking are discussed. This is more than incidental background drinking but does not portray addiction as a central theme, so rated moderate.",
+      "evidence": [
+        "Every delegate under the age of 25 was on the fifth floor getting loaded. Drugs, binge drinking, hookers -- it gets pretty ugly.",
+        "Alphabetized beer, that's perfect."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2772,
+    "output_tokens": 2120,
+    "cost_usd": 0.00493
+  },
+  "seconds": 33.7
+}

@@ -1,0 +1,84 @@
+{
+  "film_id": "i_heart_huckabees",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains accusations of murder, an on-screen assault/attack reported by a character, and sounds of pain and screaming. These indicate realistic, non-graphic violence and at least one referenced death, but no graphic gore—moderate.",
+      "evidence": [
+        "Murderer.",
+        "A murderer?",
+        "Hey, he assaulted me, man. He tried to attack me."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Characters directly discuss sex (questions about \"How's the sex?\", debate of \"quantity and not quality\"). This is explicit sexual talk but not graphic or describing sex acts or nudity—moderate.",
+      "evidence": [
+        "- How's the sex?",
+        "- Were you joking... when you said quantity and not quality? - In regards to sex?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple lines contain very strong profanity and slurs (including repeated use of f-word derivatives and words like \"cocksucker\"), meeting the threshold for strong language.",
+      "evidence": [
+        "Motherfucking cocksucker.",
+        "Cocksucker! Motherfucking bitch ass motherfucking cocksucker!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes incidental references to alcohol (\"margaritas\", \"pina coladas\") and joking about drinking behavior, but no depiction of heavy substance use or drugs—mild.",
+      "evidence": [
+        "You oughta see her after a couple margaritas.",
+        "Pina coladas."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "kill",
+          "murder",
+          "dead",
+          "die",
+          "shoot",
+          "gun",
+          "stab",
+          "blood",
+          "bleed",
+          "assault",
+          "attack",
+          "killin"
+        ]
+      },
+      "counts": {
+        "kill": 8,
+        "murder": 3,
+        "dead": 2,
+        "die": 7,
+        "shoot": 0,
+        "gun": 0,
+        "stab": 0,
+        "blood": 1,
+        "bleed": 0,
+        "assault": 1,
+        "attack": 1,
+        "killin": 1
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 6970,
+    "output_tokens": 3001,
+    "cost_usd": 0.00774
+  },
+  "seconds": 42.3
+}

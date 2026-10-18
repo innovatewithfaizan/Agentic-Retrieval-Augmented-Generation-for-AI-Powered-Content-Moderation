@@ -1,0 +1,53 @@
+{
+  "film_id": "21_grams",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated explicit threats to kill and shoot people, orders to walk/keep hands up, accusations about letting children die, and a gunshot is heard — indicating realistic, non-graphic violence and lethal peril.",
+      "evidence": [
+        "I wanna kill him.\nWe have to kill him.",
+        "I'll shoot you in the head.",
+        "[ Gunshot ]\n[ Panting ]"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines show flirting, kissing requests and affectionate terms (e.g., 'babe', 'queen'), and mention of safe sex; no explicit sexual activity or nudity in the dialogue.",
+      "evidence": [
+        "Hey, babe.\nHow's my queen?",
+        "Please, kiss me.",
+        "Okay, what is the most important question for safe sex?"
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple uses of the f-word and other strong profanity appear in the dialogue, including direct expletives and phrases with 'fuck' and 'fucking'.",
+      "evidence": [
+        "Fuck you!",
+        "Call a fucking ambulance!",
+        "What the fuck are you doing?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes smoking (craving), references to drugs/pills ('You take two of these...'), and mentions of alcoholism/drinking — clear drug and alcohol references though not shown as heavy addiction on screen in the dialogue alone.",
+      "evidence": [
+        "If I don't smoke, I'll go fuckin' nuts.",
+        "This shit is all the rage.\nYou take two of these, you go straight to heaven.",
+        "Car thief, small-time crook, drugs, bad checks, alcoholism."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2689,
+    "output_tokens": 1063,
+    "cost_usd": 0.0028
+  },
+  "seconds": 13.3
+}

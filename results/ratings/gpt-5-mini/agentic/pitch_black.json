@@ -1,0 +1,44 @@
+{
+  "film_id": "pitch_black",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly includes explicit threats to kill, commands to \"kill\" and references to people being hunted or dead, suggesting realistic lethal violence and deaths but no graphic descriptions — fits 'moderate'.",
+      "evidence": [
+        "Kill the beast while he's wounded!",
+        "You'll just die.",
+        "You killed everything I know."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content, romance, or nudity is evident in the provided dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "The dialogue contains an instance of the f-word, which meets the threshold for 'strong' language.",
+      "evidence": [
+        "Give me your soul.\n- Fuck you!\nYou're not the one to bring me down.\nNow!",
+        "Get that ass moving!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "No references to drinking, smoking or drug use appear in the subtitles provided; mentions of 'tea' and 'water' are non-substance-use context.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2813,
+    "output_tokens": 997,
+    "cost_usd": 0.0027
+  },
+  "seconds": 14.9
+}

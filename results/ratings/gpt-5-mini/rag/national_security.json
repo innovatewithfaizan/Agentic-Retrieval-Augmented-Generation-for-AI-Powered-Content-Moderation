@@ -1,0 +1,53 @@
+{
+  "film_id": "national_security",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly references shootings, armed suspects, someone being shot, threats to kill and commands to shoot — realistic gun violence and peril without graphic description.",
+      "evidence": [
+        "A- six- seven, my partner's down! Request paramedics. I have four suspects, armed!",
+        "He's trying to kill me!\n- Help!\nHelp!\nHe's trying to kill me!",
+        "Pain in the ass!\nAre you okay?\nHell, no, I ain't okay, man.\nI been shot!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows flirting, sexual teasing, mention of underwear/thong and strip-search implications — sexual content is non-graphic and suggestive.",
+      "evidence": [
+        "- Want to take a peek?",
+        "- Is this a thong?\n- What?\nIs this a thong?!\nAre you gonna strip- search me?",
+        "Earl?\nYou're not wearing any underwear.\nI don't like to wear drawers, okay? Makes me feel constricted."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "The subtitles include the f-word and multiple instances of strong insults and other profanity.",
+      "evidence": [
+        "You're...... a...... fucking...... pig.",
+        "Bitch!",
+        "- Are you okay?\n- Yeah.\n- Shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines explicitly reference beer kegs and smuggling alcohol (including claims the CIA is smuggling alcohol), indicating alcohol-related criminal activity rather than merely incidental background drinking.",
+      "evidence": [
+        "We're talking beer kegs, bitch!",
+        "The ClA, they're smuggling alcohol...... into the inner city in an effort to further subjugate the black man.",
+        "Please be guns.\nPlease be guns.\nWhat the hell is that?\nThis is a beer keg."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2480,
+    "output_tokens": 1040,
+    "cost_usd": 0.0027
+  },
+  "seconds": 15.5
+}

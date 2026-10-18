@@ -1,0 +1,83 @@
+{
+  "film_id": "shattered_glass",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains threats to kill, a first-person suicide line, and references to someone being set on killing another — non-graphic but realistic violent threats and self-harm talk. No graphic gore is present in the dialogue, so this is moderate.",
+      "evidence": [
+        "[00:06:48] I may have to kill myself.",
+        "[01:09:46] That's why he's so set on killing me now."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual references and innuendo (kissing/forced kissing), mentions of hookers and porn magazines — implied sexual activity and crude sexual references but no explicit sex scenes described in the dialogue, so this is moderate.",
+      "evidence": [
+        "[00:13:05] ...he somehow managed to slip his tongue down my throat.",
+        "[00:30:03] \"... a lifetime subscription to Playboy.\" - And throw in Penthouse."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes strong insults (\"asshole\") and crude descriptors (\"pissy\"); no f-word or slurs were found in the dialogue excerpts, so this falls in the moderate level.",
+      "evidence": [
+        "[00:56:09] - Typical. He's being such an asshole.",
+        "[00:25:59] He's so political. And stiff, and humorless. And pissy."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly mentions binge drinking, drugs and people \"getting loaded,\" plus references to beer and party drinking — clear references to substance use and heavy drinking, so this is moderate.",
+      "evidence": [
+        "[00:11:31] Every delegate under the age of 25 was on the fifth floor getting loaded. Drugs, binge drinking, hookers -- it gets pretty ugly.",
+        "[00:18:10] Alphabetized beer, that's perfect."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "kill",
+          "suicide",
+          "gun",
+          "shot",
+          "stab",
+          "dead",
+          "die",
+          "murder",
+          "blood",
+          "kill*",
+          "shoot",
+          "knife"
+        ]
+      },
+      "counts": {
+        "kill": 4,
+        "suicide": 0,
+        "gun": 0,
+        "shot": 1,
+        "stab": 0,
+        "dead": 4,
+        "die": 0,
+        "murder": 0,
+        "blood": 0,
+        "kill*": 4,
+        "shoot": 0,
+        "knife": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 6357,
+    "output_tokens": 2506,
+    "cost_usd": 0.0066
+  },
+  "seconds": 31.8
+}

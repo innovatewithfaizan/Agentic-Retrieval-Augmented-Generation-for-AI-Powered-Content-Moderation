@@ -1,0 +1,52 @@
+{
+  "film_id": "the_alamo",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitle dialogue shows an active armed siege: repeated orders to fire, cannon use, screams, and explicit statements that people are dead. These indicate realistic gun/cannon combat and deaths, non-graphic but intense.",
+      "evidence": [
+        "They're dead, all of them!",
+        "Fire the cannon.",
+        "Get down! Get down! ! Fuego!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains references to adultery and leaving a pregnant wife, but no explicit sexual description or nudity—sexual content is conversational and suggestive.",
+      "evidence": [
+        "Well, the choices are abandonment, adultery, or cruel and barbarous treatment.",
+        "' Cause it's gonna be a cold day in hell anybody takes orders from a debtor who leaves his pregnant wife in the middle of the night."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include strong insults and profanity such as “son- of- a- bitch,” repeated uses of “shit,” and “damn.” No f-word appears, but language is stronger than mild.",
+      "evidence": [
+        "Well, I, for one, ain't swearin ' allegiance to no son- of- a- bitch dictator.",
+        "Dyin' for nothin ' means shit to me.",
+        "Damn if you ain't gonna die for ' em, too."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drunkenness and whiskey drinking (characters called drunken, lines about drinking too much), indicating overt alcohol use and intoxication.",
+      "evidence": [
+        "Drunken Hottentot.",
+        "He drinks too much, he ain't worth a damn.",
+        "Try to get him to drink something not whiskey."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2732,
+    "output_tokens": 1964,
+    "cost_usd": 0.00461
+  },
+  "seconds": 23.4
+}

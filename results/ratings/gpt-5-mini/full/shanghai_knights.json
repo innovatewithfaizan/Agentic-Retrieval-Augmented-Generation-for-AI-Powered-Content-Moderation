@@ -1,0 +1,53 @@
+{
+  "film_id": "shanghai_knights",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles include multiple references to murder, assassination attempts, and physical fights with weapons and gunfire, but no graphic gore. This indicates realistic violence and peril consistent with 'moderate'.",
+      "evidence": [
+        "My father's been killed.",
+        "Pearl handles blazing. Lead flying everywhere.",
+        "She tried to assassinate Lord Rathbone whilst he was taking afternoon tea."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains sexual innuendo, references to sleeping with women for money, and flirtatious talk, but no explicit sex scenes or nudity described in the subtitles.",
+      "evidence": [
+        "She wants me to sleep with her.",
+        "I will not sleep with women for money!",
+        "I told her the Great Wall ain't the only big thing coming out of China."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "The subtitles contain mild profanity/crude language (e.g. 'ass', 'piss off', 'bloody', exclamations like 'Jesus Christ!') but no f-word or strong slurs, so language is 'mild'.",
+      "evidence": [
+        "I hear England is ass soup.",
+        "So piss off!",
+        "Jesus Christ!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Characters drink and reference alcohol several times (bubbly, whiskey, drinking with a savage). It's incidental to scenes rather than depicting addiction or heavy drug use, so rated 'mild'.",
+      "evidence": [
+        "Who's up for some more bubbly?",
+        "you're drinking with a savage.",
+        "I'm gonna get some whiskey and wash my mouth out."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 6692,
+    "output_tokens": 1832,
+    "cost_usd": 0.00534
+  },
+  "seconds": 27.8
+}

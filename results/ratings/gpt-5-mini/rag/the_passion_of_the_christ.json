@@ -1,0 +1,48 @@
+{
+  "film_id": "the_passion_of_the_christ",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains physical coercion (orders to carry a cross), threats/harassment, and explicit mention of death ('He's dead! Make sure!'). These imply non-graphic but serious violence and lethal harm.",
+      "evidence": [
+        "This criminal can't carry his cross by himself anymore.",
+        "If you don't stop, I won't carry that cross one more step.",
+        "He's dead! Make sure!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content, romance, or nudity is present in the provided dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes insults and name-calling (e.g. 'stupid', 'mongrels', 'idiots', 'Are you blind?') but no strong profanity.",
+      "evidence": [
+        "Are you blind?",
+        "Impossible people!",
+        "Stupid mongrels!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "There are explicit references to 'take this and drink' and 'this is my blood' (ritual drinking) — incidental/ritual drinking implied, not portrayal of heavy substance misuse.",
+      "evidence": [
+        "Take this and eat. This is my body which is given up for you.",
+        "Take this and drink. This is my blood of the new covenant...... which is given for you and for many, for the forgiveness of sins."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2579,
+    "output_tokens": 1585,
+    "cost_usd": 0.00381
+  },
+  "seconds": 26.3
+}

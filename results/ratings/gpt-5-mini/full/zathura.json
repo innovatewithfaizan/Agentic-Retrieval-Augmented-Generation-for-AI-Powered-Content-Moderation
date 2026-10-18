@@ -1,0 +1,48 @@
+{
+  "film_id": "zathura",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes repeated peril and attacks (alien/Zorgon assaults, boarding, fires, threats to destroy, near-fatal falls and a character saying 'I killed her'), indicating sustained scary scenes and realistic danger without graphic gore—fits 'moderate'.",
+      "evidence": [
+        "Alien life form. Must destroy.",
+        "They're gonna board us.",
+        "I killed her."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No explicit sexual activity or nudity; there are references to dating and 'hooking up' and mild flirting—fits 'mild'.",
+      "evidence": [
+        "I have a date tonight.",
+        "We're hooking up at, like, 8."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple insults and crude terms appear in the dialogue (e.g. 'dick', slang 'beyotch', 'you suck'), occasional stronger language though no f-word—fits 'moderate'.",
+      "evidence": [
+        "You're such a dick.",
+        "Get me a juice box, beyotch.",
+        "You suck."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "No dialogue indicating drinking, smoking, or drug use.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8737,
+    "output_tokens": 1220,
+    "cost_usd": 0.00462
+  },
+  "seconds": 21.8
+}

@@ -1,0 +1,52 @@
+{
+  "film_id": "taking_lives",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes killings, beatings with a rock, a knife murder, shooting, and explicit threats/torture (\"I'm not gonna kill you. I'm gonna do this until you pass out\"). These lines indicate graphic/violent acts and torture, so severity is strong.",
+      "evidence": [
+        "And then...... he started beating this guy's face in....",
+        "And I grabbed a knife and I ran towards him.",
+        "I'm not gonna kill you. I'm gonna do this until you pass out."
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue notes a sexual element tied to violent acts (\"Strangling from behind, cutting off the hands...\") and includes forceful demands for a kiss and possessive romantic lines. There are references to sexualized violence but no explicit sex scenes—this supports a moderate rating.",
+      "evidence": [
+        "Also, there's a sexual element to all this.",
+        "Strangling from behind, cutting off the hands, smashing in the face.",
+        "Give me a kiss. Kiss me."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The dialogue contains the f-word and other profanity (e.g. \"Fuck you.\", \"Oh, shit.\"), which meets the threshold for a strong language rating.",
+      "evidence": [
+        "Fuck you.",
+        "- Oh, shit."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Characters explicitly talk about drinking, toasts and scotch (\"I'll drink to that\", \"Scotch, right?\", \"Have a drink.\"), but there is no indication of heavy drinking, drug use, or addiction in the dialogue—so mild.",
+      "evidence": [
+        "Well, I'll drink to that, brother.",
+        "- Scotch, right?",
+        "- Have a drink."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2816,
+    "output_tokens": 2566,
+    "cost_usd": 0.00584
+  },
+  "seconds": 32.6
+}

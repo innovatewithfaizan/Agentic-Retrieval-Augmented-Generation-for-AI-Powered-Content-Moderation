@@ -1,0 +1,48 @@
+{
+  "film_id": "charlie_and_the_chocolate_factory",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct references to peril and potential drowning (instructions to search a chocolate-mixing barrel for a missing child and lines saying \"He'll drown. He can't swim.\") — non-graphic, child-endangering peril consistent with mild violence/slapstick/fantasy danger.",
+      "evidence": [
+        "He'll drown. He can't swim.",
+        "I want you to take Mrs. Gloop up to the Fudge Room, okay? Help her find her son."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Dialogue contains mild romantic language and affectionate terms (\"darling\", \"Gives one the feeling of being in love.\") and a benign use of the word \"fling\" in a non-explicit context — indicates mild romantic content only.",
+      "evidence": [
+        "Hi, Dad. Soup's almost ready, darling.",
+        "You and I are going to have one more fling...... at finding that last ticket.",
+        "Gives one the feeling of being in love."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Lines include mild insults and name-calling (\"dummy\", \"loser\", \"little devil\") but no strong profanity or slurs, consistent with a mild language level.",
+      "evidence": [
+        "Only a dummy would give this up for something as common as money.",
+        "Are you a dummy?",
+        "I'd be a loser, like you."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue mentions eating candy and Wonka bars but contains no references to drinking alcohol, smoking, or drug use; therefore no substance use present in the subtitles.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2827,
+    "output_tokens": 1374,
+    "cost_usd": 0.00345
+  },
+  "seconds": 21.1
+}

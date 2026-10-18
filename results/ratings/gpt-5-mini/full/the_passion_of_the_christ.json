@@ -1,0 +1,47 @@
+{
+  "film_id": "the_passion_of_the_christ",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes a crucifixion, carrying a cross, people tormenting him, and his death — realistic, non-graphic violence and a disturbing execution scene.",
+      "evidence": [
+        "This criminal can't carry his cross by himself anymore.",
+        "He's dead!",
+        "It is accomplished."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual or romantic content is present in the subtitles.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "The subtitles include direct insults and an ethnic/religious slur ('Jew'), as well as words like 'mongrels' and 'idiots', which qualify as strong language under the rubric.",
+      "evidence": [
+        "Stupid mongrels!",
+        "... Jew!",
+        "Idiots!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There is an explicit instruction to 'drink' in a religious/communion context ('Take this and drink'), which is an incidental reference to drinking rather than depiction of substance misuse.",
+      "evidence": [
+        "Take this and drink. This is my blood of the new covenant...... which is given for you and for many, for the forgiveness of sins."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 1703,
+    "output_tokens": 1026,
+    "cost_usd": 0.00248
+  },
+  "seconds": 23.4
+}

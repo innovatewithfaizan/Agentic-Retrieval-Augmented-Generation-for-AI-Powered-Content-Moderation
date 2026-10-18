@@ -1,0 +1,50 @@
+{
+  "film_id": "the_english_patient",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitle dialogue shows wartime peril (bomb squad, booby-traps), injured/dying characters, and threats to kill — realistic, non-graphic violence and sustained danger consistent with “moderate.”",
+      "evidence": [
+        "Here comes the bomb squad!",
+        "A woman is dying.",
+        "- I thought I would kill you."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Mostly romantic/affectionate dialogue, but includes an explicit sexual reference (mention of \"kama sutra\"), so the most intense content is sexual reference/innuendo -> “moderate.”",
+      "evidence": [
+        "If one night I didn't come to see you, what would you do?",
+        "He didn't ask me if I could spin the ball at cricket or kama sutra or -"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains f-word(s) and direct insults (e.g. \"fucking\" and \"Asshole\"), which meets the rubric for strong language.",
+      "evidence": [
+        "I'm going to give you a fucking good hiding!",
+        "Count Fuckin ' Asshole Von Bismarck!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There is an explicit request for morphine (a controlled drug) in the dialogue — a direct reference to drug use/medical narcotics. This counts as more than incidental drinking but not prolonged addiction/dealing -> “moderate.”",
+      "evidence": [
+        "I need a doctor... to come with me, and I need to borrow this car.",
+        "And I need - I need morphine."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2831,
+    "output_tokens": 1881,
+    "cost_usd": 0.00447
+  },
+  "seconds": 24.3
+}

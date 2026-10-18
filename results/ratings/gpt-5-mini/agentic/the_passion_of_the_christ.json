@@ -1,0 +1,49 @@
+{
+  "film_id": "the_passion_of_the_christ",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly refers to forced carrying of a cross, commands to 'help' carry it, insults toward those being punished, and explicit mention of a death ('He's dead! Make sure!'). These indicate realistic violence and a death but no graphic description in the subtitles, so level is moderate.",
+      "evidence": [
+        "This criminal can't carry his cross by himself anymore.",
+        "Turn the wood over on its face, idiots!",
+        "Hurry! He's dead! Make sure!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There is no sexual or romantic content in the provided dialogue: no references to kissing, sex, nudity or sexual innuendo.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue contains direct insults and name-calling (e.g. 'stupid', 'idiots', 'mongrels', 'impossible people'), but no strong profanity or slurs shown in the subtitles, fitting a mild rating.",
+      "evidence": [
+        "Stupid mongrels!",
+        "Turn the wood over on its face, idiots!",
+        "Impossible people!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "There are ritual drinking lines ('Take this and drink', 'This is my blood...') and a line 'I thirst.' These are incidental/religious references to drinking rather than depiction of alcohol use, drunkenness, or drug use, so mild.",
+      "evidence": [
+        "Take this and drink. This is my blood of the new covenant...",
+        "Take this and eat. This is my body which is given up for you.",
+        "I thirst."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2855,
+    "output_tokens": 1372,
+    "cost_usd": 0.00346
+  },
+  "seconds": 22.5
+}

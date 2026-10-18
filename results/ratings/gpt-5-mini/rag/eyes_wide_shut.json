@@ -1,0 +1,53 @@
+{
+  "film_id": "eyes_wide_shut",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains direct death threats and references to someone turning up dead. Threats and implied real danger indicate non-graphic, realistic violence and peril.",
+      "evidence": [
+        "I promise I'll kill you!",
+        "You little whore!",
+        "... ends with somebody turning up dead?"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual language, crude sexual descriptions and implied nudity; sexual activity and partial nudity are referenced.",
+      "evidence": [
+        "Do you realize that what you ' re saying...... is that the only reason you wouldn't fuck those models...... is out of consideration for me?",
+        "Let's say, for example, you have some gorgeous woman...... standing in your office naked...... and you ' re feeling her fucking tits.",
+        "I felt wonderful. Then I was lying in a beautiful garden...... stretched out naked in the sunlight..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity and slurs (including f-word usage and derogatory slurs) appear in the dialogue.",
+      "evidence": [
+        "... fuck them?",
+        "You want to take a ride in this fudge- tunnel, you stupid faggot?",
+        "I recommended that cocksucker to those people...... and he's made me look like a complete asshole."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple explicit references to hard drugs (heroin, cocaine, 'speedball'), mention of needing rehab, plus on-screen drinking references — indicates recurring substance use and drug-related issues.",
+      "evidence": [
+        "A speedball or a snowball or whatever the hell they call it.",
+        "It's heroin and coke.",
+        "You ' re going to need some rehab."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2767,
+    "output_tokens": 2538,
+    "cost_usd": 0.00577
+  },
+  "seconds": 42.1
+}

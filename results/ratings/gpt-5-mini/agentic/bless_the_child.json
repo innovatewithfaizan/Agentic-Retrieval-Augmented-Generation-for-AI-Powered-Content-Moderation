@@ -1,0 +1,48 @@
+{
+  "film_id": "bless_the_child",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats, a character asking if they'll be shot, commands to shoot, and a gunshot — realistic gun violence and life-threatening peril without graphic details.",
+      "evidence": [
+        "Are you really gonna shoot me, Maggie?",
+        "Shoot her!",
+        "[ Gunshot ]"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content, romance or nudity is present in the provided dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes the f-word and strong insults (explicit profanity).",
+      "evidence": [
+        "I don't give a fuck if we gotta call in... the French Foreign Legion if that's what it takes to stop this guy.",
+        "You son of a bitch."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple lines reference drug use and addiction (being born a drug addict, getting off drugs, wasted half my life on drugs, and being drugged) — addiction and drugging are explicit themes in the dialogue.",
+      "evidence": [
+        "You gave birth on drugs?",
+        "I wasted half my life on drugs.",
+        "They drugged me."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2836,
+    "output_tokens": 1083,
+    "cost_usd": 0.00287
+  },
+  "seconds": 17.4
+}

@@ -1,0 +1,141 @@
+{
+  "film_id": "million_dollar_baby",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic physical fighting and injury descriptions from boxing: mentions of cuts, severed vein, bleeding, blood pouring into an eye and doctors/patching up — realistic, non-graphic fighting and injury. This supports a 'moderate' level (realistic fights and blood without graphic gore).",
+      "evidence": [
+        "[00:01:36] maybe you got a severed vein, or you just cant get the cuagulant deep enough.",
+        "[00:01:25] Let him hit you. cuts too high, too close to the bone,",
+        "[00:58:30] Both rounds cut opens up, blood starts pouring into my eye, they should have stopped the fight, but hell i was black man in san bernadino, blood was what i was there for, round after round, i kept getting frankie to patch me up, he's talking bout throwing in the towel, but he aint my manager he can't throw in nothing, round after round he's arguing with me, i'm almost laughing cause (... ) more to him than to me."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows flirting/romantic talk and references to 'romance' and listening to a boss's advances; no explicit sexual activity or nudity mentioned in the subtitles. This aligns with 'mild'.",
+      "evidence": [
+        "[00:05:12] The only reason you can romance at me is to wind me up, it's not gonna happen this morning.",
+        "[00:32:22] If i take you on... I'll promise I'll work so hard. God this is a mistake already. mmm mmm i'm listening boss."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include strong profanity and slurs (an instance of the f-word and multiple uses of a racial slur), which meets the 'strong' threshold.",
+      "evidence": [
+        "[00:05:43] There are no demigods you fucking pagan.",
+        "[00:32:22] ...dont say nigger ... maybe yes frankie and i'm gonna try to forget the fact that your a girl."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue contains incidental mention of drinking/drunkenness (manager 'getting drunk'), but no sustained depiction of substance use or dealing — fits 'mild'.",
+      "evidence": [
+        "[00:58:03] My manager was off getting drunk somewhere,"
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "severed",
+          "cut",
+          "cuts",
+          "blood",
+          "bleed",
+          "bleeding",
+          "kill",
+          "gun",
+          "shot",
+          "stab",
+          "knife",
+          "murder",
+          "die",
+          "died"
+        ]
+      },
+      "counts": {
+        "severed": 1,
+        "cut": 4,
+        "cuts": 1,
+        "blood": 3,
+        "bleed": 3,
+        "bleeding": 3,
+        "kill": 1,
+        "gun": 0,
+        "shot": 7,
+        "stab": 0,
+        "knife": 0,
+        "murder": 0
+      }
+    },
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "damn",
+          "hell",
+          "bitch",
+          "nigger",
+          "asshole",
+          "crap",
+          "stupid",
+          "goddamn",
+          "god damn"
+        ]
+      },
+      "counts": {
+        "fuck": 1,
+        "shit": 2,
+        "damn": 7,
+        "hell": 13,
+        "bitch": 0,
+        "nigger": 3,
+        "asshole": 0,
+        "crap": 1,
+        "stupid": 2,
+        "goddamn": 0,
+        "god damn": 1
+      }
+    },
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "drunk",
+          "drunken",
+          "drinking",
+          "drink",
+          "alcohol",
+          "smoke",
+          "smoking",
+          "cigarette"
+        ]
+      },
+      "counts": {
+        "drunk": 1,
+        "drunken": 0,
+        "drinking": 0,
+        "drink": 1,
+        "alcohol": 0,
+        "smoke": 0,
+        "smoking": 0,
+        "cigarette": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 4,
+    "input_tokens": 17022,
+    "output_tokens": 2854,
+    "cost_usd": 0.00996
+  },
+  "seconds": 43.6
+}

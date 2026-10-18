@@ -1,0 +1,51 @@
+{
+  "film_id": "the_firm",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats, references to dead lawyers and organized-crime activity (the Mafia), mentions of prison/protective custody and implied violence. No graphic descriptions are present, so this indicates realistic, non-graphic violence — moderate under the rubric.",
+      "evidence": [
+        "This is going to turn out badly for you, but we can make it relatively painless.",
+        "Why are you asking questions about dead Iawyers?",
+        "The Mafia`s getting away."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Subtitles include explicit sexual offers and descriptions of sexual acts (e.g. ‘naked’, and a line describing ‘intimate acts, oral and what not’). These are explicit sexual references but not graphic sex scenes on screen in the dialogue, fitting ‘moderate’.",
+      "evidence": [
+        "Want to have some naked?",
+        "Devastating. Not just screwing, Mitch. But the kind of intimate acts, oral and what not, that could be particularly hard for a trusting young wife to forgive and impossible to forget."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The dialogue includes multiple strong profanities and slurs (explicit f-word usage and terms like “cocksucker”), which meets the rubric for strong language.",
+      "evidence": [
+        "Fuck!",
+        "How about you kissing my ass for not indicting you as a co- conspirator, you cocksucker?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "There are multiple, casual references to alcohol (ordering martinis, beer, Havana Club, offers of drinks). This is incidental/social drinking without signs of addiction or drug dealing — mild.",
+      "evidence": [
+        "Care for a drink? - I`m fine.",
+        "Bombay martini on the rocks, EIlis, three olives.",
+        "We could grab some sun, take a dip... drink some Havana Club."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2685,
+    "output_tokens": 2326,
+    "cost_usd": 0.00532
+  },
+  "seconds": 26.1
+}

@@ -1,0 +1,53 @@
+{
+  "film_id": "the_thomas_crown_affair",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue shows physical threats, attempts to move/escape, and references to arrests — no graphic detail but clear violent threats and scuffling. This supports a 'moderate' rating.",
+      "evidence": [
+        "Move, move.",
+        "Start arresting people.",
+        "I'll tell you what.\nYou pull a stunt like that again...\nI'll break both your arms."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains direct references to sleeping with someone under investigation and suggestive flirtation/dancing — implied sexual activity and clear sexual references, so 'moderate'.",
+      "evidence": [
+        "Do you really think I'm going to sleep with a man I'm investigating, hmm?",
+        "You are the most remarkable woman.",
+        "You don't think we're finished, do you?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain multiple profanities and strong insults (e.g. 'son of a bitch', 'shit', 'damn'), which fits the 'moderate' category.",
+      "evidence": [
+        "I can't do that!\nDamn you, you son of a bitch!",
+        "One moment.\nShit! I knew it.",
+        "Jesus Christ!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Several lines show characters drinking or ordering alcohol (wine, vodka, scotch) casually. This is incidental/typical drinking, so 'mild'.",
+      "evidence": [
+        "I set out a bottle of wine.",
+        "Vodka rocks, twist.",
+        "You want some wine? Yes."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2349,
+    "output_tokens": 1933,
+    "cost_usd": 0.00445
+  },
+  "seconds": 23.9
+}

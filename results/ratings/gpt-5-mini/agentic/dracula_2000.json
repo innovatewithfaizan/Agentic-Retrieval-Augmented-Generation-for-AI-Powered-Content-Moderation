@@ -1,0 +1,52 @@
+{
+  "film_id": "dracula_2000",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats to kill, orders to kill, characters saying ‘He meant to kill us,’ and multiple screams and falling bodies. These indicate realistic lethal violence, killings and sustained peril but no graphic gore described in the subtitles—so moderate.",
+      "evidence": [
+        "I'll kill everything",
+        "He meant to kill us.",
+        "I told you to kill her!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual language and crude sexual description (visible genital outline through pants) and references to giving pleasure and bodily offerings. This is explicit sexual content and crude sexual talk but no depiction of sex acts—so moderate.",
+      "evidence": [
+        "I can even see the outline of your cock... through your pants.",
+        "I drink the blood of your children... but I give them more than just eternal life.",
+        "All the pleasure you would deny them... forever."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of the f-word and other strong profanity appear in the subtitles (explicit f-words and 'The fuck?'), which meets the rubric’s threshold for strong language.",
+      "evidence": [
+        "Fuck.",
+        "The fuck?",
+        "Never, ever fuck with an antiques dealer."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Subtitles include a direct reference to Xanax and mention of addiction (‘My unholy addiction has corrupted Mary’s blood’), indicating drug use/addiction is part of the story. This goes beyond incidental drinking and fits moderate.",
+      "evidence": [
+        "Father Devereaux says I should go back to Xanax...",
+        "\" My unholy addiction has corrupted Mary's blood..."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2613,
+    "output_tokens": 1633,
+    "cost_usd": 0.00392
+  },
+  "seconds": 23.3
+}

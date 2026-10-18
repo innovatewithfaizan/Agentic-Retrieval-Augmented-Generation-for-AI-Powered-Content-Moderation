@@ -1,0 +1,53 @@
+{
+  "film_id": "meet_the_fockers",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats of killing, shooting, a person being shot/stunned, references to combat and 'demise'. These are realistic violent threats and weapons use but no graphic gore, so severity is moderate.",
+      "evidence": [
+        "You realize your father is going to kill me?",
+        "Weaver stance! Oh, my God. You shot my son. Halt.",
+        "Your son has merely been stunned by a less than lethal weapon. Remain calm. 50, 000 volts of electricity are now passing into your skeletal muscle tissue."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual talk, references to having had sex, crude sexual comments and talk of sexual acts/bodies. This is more than mild flirting but not explicit sex scenes, so severity is moderate.",
+      "evidence": [
+        "You are the sexiest woman alive I know.",
+        "and reveal that I had sex with Isabel and play weird sex games that everybody can hear in the house.",
+        "Look at those boobs. Man! I just wanna -- I just wanna lather them up with soap and just..."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple uses of the insult 'Asshole' and spelled-out profanity occur in dialogue. These are stronger insults than mild language and match the 'moderate' level.",
+      "evidence": [
+        "Asshole.",
+        "Asshole.",
+        "I know. F - O- C- K- E- R. Hey, it's Jack."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drinking, offers of wine/vodka, characters getting drunk, and giving alcohol to soothe a teething baby. This shows active alcohol use and drunkenness but no drug-dealing or addiction focus — rated moderate.",
+      "evidence": [
+        "I told Greg to give him some rum to ease the pain.",
+        "I used to rub bourbon on Denny's gums. Yeah!",
+        "Can I interest you in a little vodka?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2809,
+    "output_tokens": 1842,
+    "cost_usd": 0.00439
+  },
+  "seconds": 25.1
+}

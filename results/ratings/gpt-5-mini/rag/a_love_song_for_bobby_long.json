@@ -1,0 +1,53 @@
+{
+  "film_id": "a_love_song_for_bobby_long",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes realistic physical assault with someone 'cracked Bobby's face wide open' and 'beat up that kid pretty bad'—injury and beating but no graphic gore.",
+      "evidence": [
+        "He took a swing.",
+        "Bobby stepped in... and he cracked Bobby's face wide open.",
+        "He beat up that kid pretty bad."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Contains flirting, lecherous behavior and obsessive romantic talk but no explicit sexual acts or nudity—more suggestive/romantic than explicit.",
+      "evidence": [
+        "You keep your lecherous eyes off our girl.",
+        "I've seen him with a woman that he can't get enough of.",
+        "I have the scars of that love on my face."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Multiple instances of strong profanity (several uses of the f-word and terms like 'piece-of-shit' and 'goddamn') in dialogue.",
+      "evidence": [
+        "Now, why don't you come out and fucking say what you really mean?",
+        "I am so fucking sorry.",
+        "As opposed to the piece- of- shit life that we had? ... Fuck you!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Several clear references to drinking and drunkenness (characters described as drunk, escalating drinking, and encouragement to get a bottle of wine).",
+      "evidence": [
+        "You're drunk.",
+        "Somehow one drink became two, and then three.",
+        "Why do you keep drinking that shit?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2969,
+    "output_tokens": 1735,
+    "cost_usd": 0.00421
+  },
+  "seconds": 20.7
+}

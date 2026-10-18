@@ -1,0 +1,49 @@
+{
+  "film_id": "mr_3000",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitle dialogue contains no threats, fights, peril or scary imagery—mostly banter and song lyrics; no violent actions are described.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "sex": {
+      "rationale": "Multiple explicit references to sexual activity and frequency (e.g., 'best sex I ever had'), indicating sexual content and crude sexual talk but no graphic description—fits 'moderate'.",
+      "evidence": [
+        "You know what, Mo?\nThe best sex I ever had was with you.",
+        "More times a night?\nOh, you still hold the record.",
+        "What's up?\nLook, Stan, it was just sex, right?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent profanity and strong insults appear in the dialogue (e.g., 'shit', 'bitch', 'ass'), but no use of the f-word or slurs—matches 'moderate'.",
+      "evidence": [
+        "Kiss my ass.",
+        "Man, what type of shit is this?",
+        "Make you a hot dog on a stick, bitch."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly references drunkenness and bottles, and characters discuss heavy past drinking—indicates regular alcohol use/drunkenness (moderate).",
+      "evidence": [
+        "You played in the majors?\nFigures.\nHe's drunk.",
+        "Yo, Boca, get this man another bottle.",
+        "You don't drink no more.\nWhat's up with that?\n'Cause I remember you used to drink half the American League underneath the table."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2711,
+    "output_tokens": 1945,
+    "cost_usd": 0.00457
+  },
+  "seconds": 29.0
+}

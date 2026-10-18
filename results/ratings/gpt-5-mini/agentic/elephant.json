@@ -1,0 +1,52 @@
+{
+  "film_id": "elephant",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes explicit planning and use of firearms, threats to kill, and an active armed confrontation—realistic gun violence and sustained danger, though no graphic gore is described in the dialogue.",
+      "evidence": [
+        "While I go, on the red line, up through this hallway... where we'll have the best targets, dumb- ass jocks and shit.\nBecause we'll have a fucking field day down there.\nI mean, come on.\nYou've got your Tec- 9 and your rifle... and I've got my shotty and my. 223 on my back.",
+        "Down the hallway to the band room exit!\nHey, Mr. Luce.\nWhy are you doing this?\nEric, put the gun down.",
+        "I ain't putting shit down!\nPut the gun down, we'll talk about this.\nShut up!\nDad!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit talk of nudity and a request to get naked and be photographed — implied/explicit nudity but no sexual acts shown.",
+      "evidence": [
+        "- Like, naked people?",
+        "Want us to get naked with you, take our picture?",
+        "I'm not for the outdoor- naked thing."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity (multiple uses of the f-word) and derogatory slur appear in the subtitles.",
+      "evidence": [
+        "- No, my parents are being bitches.\nThat's retarded.",
+        "Get the fuck out and don't come back.\nSome heavy shit's going down.",
+        "Fuck!\n- Oh, my God, there he is!\n- Oh, shit!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes a direct reference to a character being drunk (incidental/background drunkenness) and casual references to drinking; no depiction of drug use or heavy substance abuse in the dialogue.",
+      "evidence": [
+        "Dad's drunk again.",
+        "I wouldn't drink that. You'll get herpes or something."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2788,
+    "output_tokens": 1786,
+    "cost_usd": 0.00427
+  },
+  "seconds": 24.2
+}

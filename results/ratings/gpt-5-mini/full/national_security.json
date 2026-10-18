@@ -1,0 +1,53 @@
+{
+  "film_id": "national_security",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes gunfire, officer down, shootings, beatings, and multiple deaths referenced. Injuries and violent confrontations are realistic and central to the plot but not described as graphic gore.",
+      "evidence": [
+        "A- six- seven, shots fired!",
+        "Officer down.",
+        "Officer Rafferty's vicious beating of a black suspect...... has sparked a swift and angry response...his face grotesquely bruised and swollen."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "There are instances of partial or implied nudity and sexualized situations (a naked woman handcuffed, requests to remove pants). No explicit sex scenes but nudity/sexual context is present.",
+      "evidence": [
+        "we also encountered a naked girl upstairs, handcuffed to a light fixture.",
+        "Take off your pants.",
+        "You're not wearing any underwear."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue contains strong profanity including the f-word and frequent insults/slurs.",
+      "evidence": [
+        "You're...... a...... fucking...... pig.",
+        "You son of a bitch!",
+        "Kiss my ass."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "A plotline revolves around smuggling alcohol in beer kegs; substance presence and trafficking are important to the story. No depiction of heavy drunkenness or drug use shown in dialogue.",
+      "evidence": [
+        "They're smuggling alcohol...... into the inner city in an effort to further subjugate the black man.",
+        "To smuggle it out, they had to melt it down and recast it as beer kegs.",
+        "What we have here appears to be...... your average, garden- variety, $22- deposit beer keg...... but it's way too light."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 11609,
+    "output_tokens": 1006,
+    "cost_usd": 0.00491
+  },
+  "seconds": 13.4
+}

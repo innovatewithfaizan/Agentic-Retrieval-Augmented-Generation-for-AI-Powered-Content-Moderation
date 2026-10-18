@@ -1,0 +1,52 @@
+{
+  "film_id": "garden_state",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains explicit threats of beheading/killing, kidnapping threats and references to a muzzle/gun and a death; non-graphic but realistic violent threats and implied homicide/suicide - fits moderate level.",
+      "evidence": [
+        "\"Wypieprzaj from my house before I will chop off you head.\"",
+        "\"Do not it try me to kidnap only, because my uncle is in mafia and he would tell you to track down and to kill.",
+        "\"Close up muzzle!\""
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines show intimate/romantic situations and talk of being together/forgiveness and having a child; no explicit sexual description — mild.",
+      "evidence": [
+        "\"We are here together andlet's make this. I will forgive me this what I made. Ready?\"",
+        "\"Being with her here and our... exquisite child",
+        ""
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes strong insults (\"whore\", \"ass-hole\"); occasional coarse slurs/insults qualify as strong language per rubric.",
+      "evidence": [
+        "\"Whore, so.\"",
+        "\"That you are ass- hole.\""
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Multiple references to alcohol and stimulant use (vodka with Red Bull), explicit mention of lines of cocaine, and prescription psychiatric medications — regular/drug use present but not depicted as explicit dealing/gore — moderate.",
+      "evidence": [
+        "\"We will take four Red Bulle from vodka and...\"",
+        "\"There now, Kenny, I saw ostatni once when you you did on chamber pot the lines of cocaine.\"",
+        "\"You take lithium since? ... And paxil, zoloft, celexa? Depakote?\""
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3114,
+    "output_tokens": 1477,
+    "cost_usd": 0.00373
+  },
+  "seconds": 24.1
+}

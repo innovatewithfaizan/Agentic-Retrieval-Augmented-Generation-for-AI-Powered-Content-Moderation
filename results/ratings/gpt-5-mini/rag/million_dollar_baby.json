@@ -1,0 +1,53 @@
+{
+  "film_id": "million_dollar_baby",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue centers on realistic boxing violence, threats of beatings, and references to injury (e.g., severed vein). This suggests realistic fighting and bodily harm but no graphic gore described in the subtitles.",
+      "evidence": [
+        "Let him hit you. cuts too high, too close to the bone,",
+        "maybe you got a severed vein, or you just cant get the cuagulant deep enough.",
+        "Hey i'll fight any man any time."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Contains mild romantic/flirtatious lines and references to a female fighter; no explicit sexual activity or nudity.",
+      "evidence": [
+        "The only reason you can romance at me is to wind me up, it's not gonna happen this morning.",
+        "Who's your new girl?",
+        "If i take you on, you dont say anything, you dont question me, dont ask why, you dont say nigger something maybe yes frankie and i'm gonna try to forget the fact that your a girl."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include several profanities ('hell', 'god damn') and a racial slur appearing in dialogue, which meets the highest severity.",
+      "evidence": [
+        "If i take you on, you dont say anything, you dont question me, dont ask why, you dont say nigger something maybe yes frankie and i'm gonna try to forget the fact that your a girl.",
+        "Here, keep the god damn thing.",
+        "What the hell are you doing?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental references to alcohol/drunkenness (a manager 'off getting drunk'), plus coffee — background/subtle, not a major theme or depicted addiction.",
+      "evidence": [
+        "My manager was off getting drunk somewhere,",
+        "It's just frankie and me.",
+        "Coffee."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3450,
+    "output_tokens": 2057,
+    "cost_usd": 0.00498
+  },
+  "seconds": 29.9
+}

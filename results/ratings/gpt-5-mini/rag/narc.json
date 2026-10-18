@@ -1,0 +1,53 @@
+{
+  "film_id": "narc",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes realistic killings, guns being pointed and fired, explicit threats to kill and shoot — non-graphic but serious violent acts and sustained threats, so this fits 'moderate'. Rating is based solely on subtitle lines provided.",
+      "evidence": [
+        "You took it, you pointed it in his skull, you pulled the trigger and you killed him.",
+        "I'm going to kill ' em!",
+        "You're pointing a gun in face. You're threatening my life."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual acts described in crude terms and also kissing/pregnancy references. The crude sexual reference elevates this to 'moderate' (sexual references/crude sexual talk).",
+      "evidence": [
+        "I think I might've let him suck on my dick once or twice.",
+        "Give me a kiss.",
+        "Five months pregnant, being in a detox tank with you."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Subtitles contain frequent use of the f-word and at least one racial slur. Per rubric, presence of f-words or slurs makes language 'strong'.",
+      "evidence": [
+        "I'll have you wearing half- shirts and halter tops, braiding some nigger's hair!",
+        "Fuck you!",
+        "Don't fuck with us."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references being high, history of drug abuse, smoking blunts and possession/trafficking; multiple characters are tied to drug use — fits 'moderate'.",
+      "evidence": [
+        "Are you high right now?",
+        "I used to smoke blunts with you, Mr. Cop, man.",
+        "What I am actually worried about is his prior history of drug abuse, and I'd like to know more about that series of..."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2745,
+    "output_tokens": 1790,
+    "cost_usd": 0.00427
+  },
+  "seconds": 20.8
+}

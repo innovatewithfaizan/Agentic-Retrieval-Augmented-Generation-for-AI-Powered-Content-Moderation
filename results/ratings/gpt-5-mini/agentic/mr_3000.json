@@ -1,0 +1,75 @@
+{
+  "film_id": "mr_3000",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains direct threats of physical assault and references to beating someone, but no graphic or gory descriptions. This indicates non-graphic, realistic threats/assault—falls under mild violence (threats, scuffles, slapstick/brief fights).",
+      "evidence": [
+        "[00:58:13] I'm gonna slap the shit out of T- Rex.",
+        "[00:30:31] Brother, you're looking at 25 Little Leaguers in here who want to give you an ass- whupping."
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit references to sexual encounters and 'the best sex I ever had', discussion of frequency and sexual history — sexual content and crude sexual talk without graphic description. This fits 'moderate' (sexual references/innuendo and crude sexual talk).",
+      "evidence": [
+        "[00:46:13] You know what, Mo? The best sex I ever had was with you.",
+        "[00:46:29] More times a night? Oh, you still hold the record."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent profanity and insults appear (multiple instances of 'shit', 'bitch', 'ass', 'damn', etc.). There is no use of the f-word or slurs, so this matches 'moderate' language (occasional stronger words and crude language).",
+      "evidence": [
+        "[00:02:15] Kiss my ass. How about you, Ernie? You're gonna tell me to kiss your ass, too? Why don't you suck my...",
+        "[00:44:06] How ' bout I shove my Hall of Fame bat up the crack of your mascot ass? Make you a hot dog on a stick, bitch."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue contains multiple references to drinking and drunkenness (characters called drunk, ordering another bottle, talk of heavy past drinking). This indicates on-screen or referenced heavy alcohol use — fits 'moderate' (drunkenness and regular drinking).",
+      "evidence": [
+        "[00:17:54] You played in the majors? Figures. He's drunk.",
+        "[00:18:12] Yo, Boca, get this man another bottle."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "bitch",
+          "ass",
+          "damn",
+          "hell",
+          "suck",
+          "motherfucker"
+        ]
+      },
+      "counts": {
+        "fuck": 0,
+        "shit": 5,
+        "bitch": 7,
+        "ass": 23,
+        "damn": 19,
+        "hell": 16,
+        "suck": 4,
+        "motherfucker": 0
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 6255,
+    "output_tokens": 2580,
+    "cost_usd": 0.00672
+  },
+  "seconds": 41.3
+}

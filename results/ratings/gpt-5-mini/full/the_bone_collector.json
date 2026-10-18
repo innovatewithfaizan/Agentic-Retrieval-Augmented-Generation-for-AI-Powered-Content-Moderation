@@ -1,0 +1,51 @@
+{
+  "film_id": "the_bone_collector",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Transcript contains multiple murders, mutilation and graphic descriptions (skinned hand, surgically removed flesh to bone), threats of cutting off hands and gutting/opening a person — indicates graphic and brutal violence.",
+      "evidence": [
+        "\"They found him dead, buried, shot in the face...... hand sticking out of the ground with his wife's ring on his finger...... which was skinned to the bone.\"",
+        "\"There’s also a large piece of flesh...... missing from her right forearm. It’s right down to the bone.\"",
+        "\"Saw off her hands.\""
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes sexual references and innuendo (discussion of someone 'shtupping' another person, requests for a kiss, and a suggestive line about loosening shorts) but no explicit sex scenes described in the subtitles.",
+      "evidence": [
+        "\"She’s shtupping a guy named Morris.\"",
+        "\"Give me a kiss.\""
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the dialogue, including multiple instances of the f-word and other expletives.",
+      "evidence": [
+        "\"Fuck him.\"",
+        "\"What the fuck are you doing?\"",
+        "\"Son of a bitch!\""
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes explicit references to alcohol (requests for vodka, mention of liquor breath) and a direct list of illicit drugs offered to youths (marijuana, barbiturates, amphetamines, cocaine), indicating notable substance references though not prolonged on-screen intoxication.",
+      "evidence": [
+        "\"How about two fingers of vodka?\"",
+        "\"Here are some of the drugs they’ll be offered. Marijuana.\""
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 12079,
+    "output_tokens": 1337,
+    "cost_usd": 0.00569
+  },
+  "seconds": 14.1
+}

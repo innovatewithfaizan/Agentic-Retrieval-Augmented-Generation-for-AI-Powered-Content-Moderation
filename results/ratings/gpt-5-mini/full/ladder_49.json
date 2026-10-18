@@ -1,0 +1,49 @@
+{
+  "film_id": "ladder_49",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes sustained peril (burning building, collapse), serious injuries (burned face), and a death of a firefighter. These are realistic/serious but not graphic or gory.",
+      "evidence": [
+        "It's a collapse out here.",
+        "Tommy's face got burned, but his skin will grow back.",
+        "He gave his life for that cause."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains mild romantic content and a mention of kissing, but no explicit sexual activity or nudity.",
+      "evidence": [
+        "I saw Linda kissing..."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes mild profanity/insults such as 'hell', 'damn', and 'ass', but no strong swear words.",
+      "evidence": [
+        "Let's get the hell out of here.",
+        "I don't worry about damn fight!",
+        "I kicked his ass too."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Characters refer to having had a few drinks; incidental/background alcohol use is present but not a major theme.",
+      "evidence": [
+        "Been drinking? Yes, I had a few drinks with boys."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 4040,
+    "output_tokens": 1479,
+    "cost_usd": 0.00397
+  },
+  "seconds": 24.1
+}

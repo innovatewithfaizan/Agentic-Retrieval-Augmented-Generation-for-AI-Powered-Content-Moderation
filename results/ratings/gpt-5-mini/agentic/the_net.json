@@ -1,0 +1,53 @@
+{
+  "film_id": "the_net",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue explicitly mentions killings, a gangland shot to the head, a dead unidentified man, and threats to kill — realistic deaths and use of a gun are referenced but no graphic detail.",
+      "evidence": [
+        "They'd be interested to hear how you killed Dale and came after me.",
+        "You're gonna kill us.",
+        "I'm near where the body was found with a gangland shot to the head."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple lines discuss sex, one-night stands, dating to procreate, and characters losing clothes — sexual themes and references but no explicit sex scenes or nudity in dialogue.",
+      "evidence": [
+        "No one has sex.",
+        "Let's have a date and procreate.",
+        "You know... first date. sex. one-night stand."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes moderate profanity and insults such as 'shit' and 'sons of bitches' as well as words like 'hell' and 'jerk', indicating occasional strong language but no f-word.",
+      "evidence": [
+        "You mean shit to me.",
+        "Shit!",
+        "You are amazing sons of bitches."
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Dialogue contains references to drinking (\"I've had three already\"), smoking, and a criminal charge listing 'narcotics' — references to drug-related offenses and active drinking/smoking behavior.",
+      "evidence": [
+        "Oh no, I've had three already.",
+        "I used to smoke those...",
+        "She's wanted for prostitution and narcotics."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3027,
+    "output_tokens": 1165,
+    "cost_usd": 0.00309
+  },
+  "seconds": 27.1
+}

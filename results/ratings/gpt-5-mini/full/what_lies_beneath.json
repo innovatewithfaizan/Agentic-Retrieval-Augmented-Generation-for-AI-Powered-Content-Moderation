@@ -1,0 +1,53 @@
+{
+  "film_id": "what_lies_beneath",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "The subtitles include realistic, non-graphic depictions and admissions of violent acts (drowning, murder), sustained threat and a suicide attempt, indicating moderate violence/peril.",
+      "evidence": [
+        "I know you killed her, you murdering son of a bitch!",
+        "I put her in her car...... and I drove to the boat ramp...... and I rolled it out into the lake.",
+        "Hold her underwater... watch her life slip away."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Multiple sexual references and an extramarital affair are described; there is implied sexual activity and a line mentioning being 'wet, naked,' indicating partial nudity/explicit intimacy implied.",
+      "evidence": [
+        "Want to fool around? Yep.",
+        "You slept with a fucking student?",
+        "I almost froze to death laying here...... wet, naked, pretending to be electrocuted."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Several instances of strong profanity and insults occur, including use of the f-word and harsh slurs, meeting the 'strong' threshold.",
+      "evidence": [
+        "You slept with a fucking student?",
+        "Don't give me that shit.",
+        "You murdering son of a bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes references to prescription medication (Valium), medical anesthetic (halothane) and incidental alcohol (wine). These are more than background mentions but not depicted as heavy misuse; rated moderate.",
+      "evidence": [
+        "Now we're using halothane.",
+        "No. Well, Valium.",
+        "I gave my neighbors wine that someone left at my house."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 8124,
+    "output_tokens": 1705,
+    "cost_usd": 0.00544
+  },
+  "seconds": 16.8
+}

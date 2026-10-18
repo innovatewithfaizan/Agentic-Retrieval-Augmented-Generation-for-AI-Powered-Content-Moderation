@@ -1,0 +1,88 @@
+{
+  "film_id": "the_italian_job",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references explosives and launchers, a character saying “you shot John and left us all for dead,” explicit threats and a killed cousin — realistic gunfire, deaths and explosive violence are implied but not graphic.",
+      "evidence": [
+        "Nitromin, primer, - detonating cord... - Right, right.... two triple- charged chemical grenades and a launcher.",
+        "Tell me it wasn't about emotion when you shot John and left us all for dead.",
+        "I am Mashkov... and you killed my cousin Yevhen."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines show flirting and romantic/sexual propositions (inviting someone back to a place, terms like “baby”), but no explicit sex or nudity in the dialogue.",
+      "evidence": [
+        "We need, uh... some supplies. Baby, go relax. Baby... Go relax.",
+        "Let's go back to my place. No assumptions... Not tonight."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue contains strong profanity including the f-word as well as multiple instances of \"shit,\" \"goddamn,\" and an insult — meets the threshold for strong language.",
+      "evidence": [
+        "What the fuck happened to my truck?!",
+        "Shit!",
+        "So cut the crap, and give me my goddamn gold!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue explicitly discusses 'bricks' in quantities (\"13 across... 208 bricks\") and place names tied to bricks — indicates drug dealing. This is more than incidental references and fits the 'drug dealing shown' level.",
+      "evidence": [
+        "Venice... that's where these bricks...",
+        "Napster. Yeah? 13 across, four high, four deep. That's, uh, 208 bricks.",
+        "We need, uh... some supplies."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "fuck",
+          "shit",
+          "goddamn",
+          "bitch",
+          "drink",
+          "drunk",
+          "beer",
+          "smoke",
+          "cigarette",
+          "drug",
+          "bricks",
+          "green*",
+          "weed",
+          "cocaine"
+        ]
+      },
+      "counts": {
+        "fuck": 1,
+        "shit": 4,
+        "goddamn": 1,
+        "bitch": 1,
+        "drink": 0,
+        "drunk": 0,
+        "beer": 0,
+        "smoke": 0,
+        "cigarette": 0,
+        "drug": 0,
+        "bricks": 9,
+        "green*": 3
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 5921,
+    "output_tokens": 1921,
+    "cost_usd": 0.00532
+  },
+  "seconds": 59.3
+}

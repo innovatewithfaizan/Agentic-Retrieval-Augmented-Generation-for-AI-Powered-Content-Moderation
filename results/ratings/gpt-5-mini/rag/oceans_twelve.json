@@ -1,0 +1,53 @@
+{
+  "film_id": "oceans_twelve",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains repeated references to being chased by police, plans involving trap doors, smoke tactics, and mentions of death/being killed — indicating realistic peril and threats but no graphic gore described. This supports a 'moderate' violence rating.",
+      "evidence": [
+        "I thought I'd be dead before I heard the sound that killed me.",
+        "Yeah, you were being chased by the police.",
+        "It's gonna get out. Then we'll be dead, and no one will wanna work with us."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue shows flirting/romantic lines (inviting someone to bed, anniversaries, professing love) but no explicit sexual content or nudity. This fits a 'mild' rating for romance/kissing/innocent sexual references.",
+      "evidence": [
+        "Are you coming to bed, baby?",
+        "It's our second third anniversary.",
+        "Rust, look, I know this is your joint. I just... There's this girl. I love her, man."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles contain strong profanity and insults (e.g. 'son of a bitch', 'whore', 'shit', multiple heavily-censored expletives). This amount and severity supports a 'strong' language rating.",
+      "evidence": [
+        "You know why that is? Because that son of a bitch Jim crow...... took his name off the history books.",
+        "You called his niece a whore.",
+        "I gotta go to the toilet. Otherwise, I'm gonna shit on your feet."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes passing references to alcohol (whiskey bottles) and prescription sleeping pills (Ambien) but no depiction of heavy drug use or drunkenness. These are incidental references, supporting a 'mild' rating.",
+      "evidence": [
+        "Fred \" Bud \" Kelly made skates out of whiskey bottles...... at his uncle's farm in the early 1900s.",
+        "Means he opens his window. Every night at 1: 30 he takes an Ambien, puts on Beethoven's Third.",
+        "Just a cappuccino or espresso."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2667,
+    "output_tokens": 1731,
+    "cost_usd": 0.00413
+  },
+  "seconds": 29.7
+}

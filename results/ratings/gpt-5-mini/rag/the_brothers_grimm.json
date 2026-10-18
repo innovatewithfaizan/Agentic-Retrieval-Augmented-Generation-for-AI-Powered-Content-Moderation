@@ -1,0 +1,49 @@
+{
+  "film_id": "the_brothers_grimm",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Multiple lines explicitly threaten or describe killing, burning and executing people; characters beg for their lives and someone is dying — realistic lethal violence and sustained peril, though not graphic.",
+      "evidence": [
+        "Slaughter every innocent in search for you",
+        "Execute them",
+        "He's dying, Jacob - No!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes kissing prompts and romantic/possessive lines (\"my love\"), and references to multiple girls, but no explicit sexual acts or nudity are described — mild romantic/sexual content.",
+      "evidence": [
+        "Go on, kiss her!",
+        "Soonwe shall be 1, my love",
+        "12 cribs, 11 girls.."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "There are insults and expressions of hatred (e.g. \"You're a fool\", \"God, I hate him\"), but no strong profanity or slurs.",
+      "evidence": [
+        "God, I hate him He makes me so mad",
+        "You're a fool!",
+        "He should be whipped, doesn't he?"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Subtitle excerpts contain no references to drinking, smoking, or drugs; the lines focus on gear, hooks and actions but nothing indicating substance use.",
+      "evidence": [],
+      "severity": "none"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2394,
+    "output_tokens": 1251,
+    "cost_usd": 0.0031
+  },
+  "seconds": 16.5
+}

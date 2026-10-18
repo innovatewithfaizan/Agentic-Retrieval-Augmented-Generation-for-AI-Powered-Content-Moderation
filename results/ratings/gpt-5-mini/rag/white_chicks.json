@@ -1,0 +1,53 @@
+{
+  "film_id": "white_chicks",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes direct threats to kill and shoot, an arrest, and fear of being killed—realistic, non-graphic violence and threat of a firearm. This fits the 'moderate' level.",
+      "evidence": [
+        "If you crash this mans car, he will kill you.",
+        "You run and ill shoot you.",
+        "FBl. Youre under arrest."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and crude sexual talk (e.g., explicit mention of vaginas, references to not being a whore/virgin), but no depiction of actual sex scenes—matches 'moderate'.",
+      "evidence": [
+        "I need something for my friend. Something that says, lm not a whore but lm not a virgin either.",
+        "And braiding our vaginas.",
+        "Intimate Fantasies!"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Multiple insults and stronger words (e.g., 'chewing my ass', 'bitch', 'Asswipe') are present. No f-word or slurs shown, so this aligns with 'moderate'.",
+      "evidence": [
+        "The Chief is chewing my ass right now.",
+        "You hit like a bitch!",
+        "Asswipe!"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Frequent references to alcohol (bar, champagne, wine, martinis) and cigarettes, plus explicit reference to drugs. This is more than incidental background drinking—fits 'moderate'.",
+      "evidence": [
+        "Wheres the drugs? I know nothing about drugs. I sell ice cream.",
+        "after work, me and Kevin went down to the bar and had a couple of drinks.",
+        "May I bring you something from the bar? Let me have a bottle of your best champagne."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2443,
+    "output_tokens": 1791,
+    "cost_usd": 0.00419
+  },
+  "seconds": 28.2
+}

@@ -1,0 +1,81 @@
+{
+  "film_id": "twisted",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains threats, repeated references to guns and killing, and explicit mention of body parts and dumped/dead bodies — indicating graphic/brutal violence beyond slapstick or brief scuffles.",
+      "evidence": [
+        "It's my gun.",
+        "When did you realize that you had the capacity to kill?",
+        "I mean, what kind of moron tries to flush body parts down a toilet, especially when he's got a perfectly good furnace out back?"
+      ],
+      "severity": "strong"
+    },
+    "sex": {
+      "rationale": "Dialogue includes explicit sexual talk, references to people seen naked and casual sex, and explicit references to sexual assault (roofies/date-rape drug and someone putting something in wine).",
+      "evidence": [
+        "It's a new century and people think it's OK to just have sex with whoever.",
+        "Who the fuck cares who you sleep with?",
+        "It's a date rape drug."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "Subtitles include multiple uses of the f-word and other strong profanity.",
+      "evidence": [
+        "Fuck you, Mike.",
+        "Every fucking time!",
+        "Jesus fucking..."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Frequent on-screen drinking and shots are referenced, plus explicit discussion and use of drugs (roofies/date-rape drug, party drugs). The presence of drugging someone raises this to the highest level.",
+      "evidence": [
+        "Another shot of Jack, please, Pete.",
+        "It's a date rape drug.",
+        "You put something in my wine."
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [
+    {
+      "tool": "find_words",
+      "input": {
+        "words": [
+          "roofie*",
+          "date",
+          "drug*",
+          "drunk",
+          "beer",
+          "wine",
+          "shot",
+          "cigarette",
+          "smoker"
+        ]
+      },
+      "counts": {
+        "roofie*": 4,
+        "date": 3,
+        "drug*": 9,
+        "drunk": 1,
+        "beer": 2,
+        "wine": 2,
+        "shot": 4,
+        "cigarette": 6,
+        "smoker": 1
+      }
+    }
+  ],
+  "usage": {
+    "calls": 2,
+    "input_tokens": 6016,
+    "output_tokens": 2733,
+    "cost_usd": 0.00697
+  },
+  "seconds": 43.4
+}

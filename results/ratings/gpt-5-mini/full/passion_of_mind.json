@@ -1,0 +1,50 @@
+{
+  "film_id": "passion_of_mind",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions a destructive hurricane and includes brief physical scuffles and sounds of struggle (grunting, 'Get off of me'), but no graphic or sustained violent/graphic content.",
+      "evidence": [
+        "July has brought the onset ofstorm season... as HurricaneJulie pounded the Eastern seaboard.",
+        "( Man ) Get off of me! ( Grunting ) Ohh!"
+      ],
+      "severity": "mild"
+    },
+    "sex": {
+      "rationale": "Multiple lines explicitly refer to having sex ('made love') and ask detailed questions about sexual encounters, indicating implied sexual activity though no graphic descriptions or nudity are present.",
+      "evidence": [
+        "I think I may have fallen in love with someone... and I made love to him last night... and I don't even know if he's real.",
+        "How does he make love to you? Where? How do his hands feel? His lips? Does he get to stay the night?"
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes occasional stronger profanity and insults (e.g., 'shit', 'bitch'), but no f-word or frequent extreme slurs.",
+      "evidence": [
+        "Shit.",
+        "I never saw the bitch in my life.",
+        "Jesus, is it 1 0: 00 already?"
+      ],
+      "severity": "moderate"
+    },
+    "substances": {
+      "rationale": "Characters smoke and there are references to drinking (whisky), shown in dialogue as incidental; no heavy drug use or addiction themes in the subtitles.",
+      "evidence": [
+        "Dr. Peters, I really need to smoke today.",
+        "I'm just the old girl who comes and drinks your whisky... plays in your garden."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 10240,
+    "output_tokens": 1513,
+    "cost_usd": 0.00559
+  },
+  "seconds": 18.6
+}

@@ -1,0 +1,51 @@
+{
+  "film_id": "the_village",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes threats, explicit shooting/murder described, and instructions to avoid screaming — realistic violent acts (gunshot, murder) are mentioned though not graphically shown.",
+      "evidence": [
+        "They will kill me, lvy.",
+        "<i>A drug addict came in with a wound to his ribs. </ i>",
+        "<i>He pulled a gun from his jacket... </ i> <i>... then he shot my brother through his left eye. </ i>"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue explicitly describes sexual violence (rape) and mentions a body found naked — this is explicit sexual harm and non-consensual sexual violence.",
+      "evidence": [
+        "<i>My sister did not live past her 23rd birthday. </ i>",
+        "<i>A group of men raped and killed her. </ i>",
+        "He was found robbed and naked in the filthy river, two days later."
+      ],
+      "severity": "strong"
+    },
+    "language": {
+      "rationale": "No strong profanity; mostly polite or formal language and some mild reproach/insult (e.g., accusing someone of cheating).",
+      "evidence": [
+        "Ivy, you cheated!",
+        "What a deeply scandalous thing to say. I insist you take that back."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue refers to a 'drug addict' and to medicines obtained in towns — references to drug use and medicinal substances are present but not depicted as heavy addiction on-screen.",
+      "evidence": [
+        "<i>A drug addict came in with a wound to his ribs. </ i>",
+        "Lvy has returned with medicines from the towns."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 3014,
+    "output_tokens": 2411,
+    "cost_usd": 0.00558
+  },
+  "seconds": 37.4
+}

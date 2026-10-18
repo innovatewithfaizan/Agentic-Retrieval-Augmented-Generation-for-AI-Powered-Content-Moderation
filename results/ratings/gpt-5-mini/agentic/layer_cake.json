@@ -1,0 +1,53 @@
+{
+  "film_id": "layer_cake",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains realistic threats, guns, murder accusations and mentions of killing (no graphic detail). This indicates non-graphic but serious violence and lethal threats.",
+      "evidence": [
+        "You murdering bastard!",
+        "He killed him.",
+        "I usually kill for less."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue includes partial nudity and explicit sexual references (naked in bed, T-shirt only, nipples described), implying sexual content but not explicit sex scenes.",
+      "evidence": [
+        "You lying there naked?",
+        "I've got a little T- shirt on. But that's all.",
+        "Look at my nipples, standing up like little soldiers."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity is present (multiple uses of the f-word), reaching the highest language level.",
+      "evidence": [
+        "I ain't fucking touching ' em.",
+        "I don't give a fuck!",
+        "Bunch of under- endowed, ageing fuck pigs."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drug dealing and use (cocaine, pills, crack, snorting), indicating drug activity as a theme.",
+      "evidence": [
+        "Drugs changed everything.",
+        "I'm a businessman whose commodity happens to be cocaine.",
+        "You smoke too much of that fucking crack!"
+      ],
+      "severity": "strong"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2953,
+    "output_tokens": 1062,
+    "cost_usd": 0.00286
+  },
+  "seconds": 15.1
+}

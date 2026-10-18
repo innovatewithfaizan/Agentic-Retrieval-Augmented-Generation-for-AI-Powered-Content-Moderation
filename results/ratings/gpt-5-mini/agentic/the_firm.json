@@ -1,0 +1,52 @@
+{
+  "film_id": "the_firm",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue references deaths, 'dead lawyers', threats of violence, Mafia involvement, and protective custody — realistic peril and implied lethal threats but no graphic gore in the dialogue.",
+      "evidence": [
+        "Pick him up, pick him up!",
+        "This is going to turn out badly for you, but we can make it relatively painless.",
+        "I Iost my son."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and descriptions of intimate acts (including oral), and a line explicitly offering nudity — stronger than mild flirting/innocuous romance.",
+      "evidence": [
+        "Want to have some naked?",
+        "Not just screwing, Mitch. But the kind of intimate acts, oraI and what not, that could be particularly hard for a trusting young wife to forgive and impossible to forget."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "The subtitles include multiple uses of the f-word and strong insults/slurs (e.g. 'cocksucker'), meeting the rubric for strong profanity.",
+      "evidence": [
+        "Fuck!",
+        "How about you kissing my ass for not indicting you as a co- conspirator, you cocksucker?",
+        "You trying to fuck with me?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Frequent, casual references to alcoholic drinks (orders, beer, rum, specific cocktails) and characters drinking socially — incidental alcohol use but no depiction of heavy addiction or drug dealing in the dialogue.",
+      "evidence": [
+        "- Welcome.\nCare for a drink?\n- I`m fine.",
+        "Bombay martini on the rocks, EIlis, three olives.",
+        "We could grab some sun, take a dip... drink some Havana Club."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2961,
+    "output_tokens": 1726,
+    "cost_usd": 0.00419
+  },
+  "seconds": 28.4
+}

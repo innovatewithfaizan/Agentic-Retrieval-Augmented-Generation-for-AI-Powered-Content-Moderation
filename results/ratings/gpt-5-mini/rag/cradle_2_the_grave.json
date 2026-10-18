@@ -1,0 +1,53 @@
+{
+  "film_id": "cradle_2_the_grave",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue includes armed confrontations, explicit threats to kill, multiple calls to shoot, and mention that a team was killed — realistic lethal violence and sustained combat tension but no graphic gore described.",
+      "evidence": [
+        "<i>He betrayed us.\nHe killed our team. </ i>",
+        "That motherfucker's shooting!",
+        "Fire the M- 60!"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Lines contain sexual innuendo and direct references to sexual activity (e.g., 'jail sex'), implying implied sex and crude sexual talk rather than explicit on-screen sex.",
+      "evidence": [
+        "I can be pretty rough.",
+        "Don't get me excited now.",
+        "Enjoy the jail sex, Fait."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity including multiple uses of the f-word and other strong insults in the dialogue.",
+      "evidence": [
+        "Fuck off!",
+        "Stay away from my fucking truck!",
+        "You ain't fucking with me, are you?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue directly references drug dealers and includes mentions of substances (champagne, Ritalin) — clear drug/dealing references though no detailed depiction of addiction; consistent substance-related plot elements.",
+      "evidence": [
+        "So whose stuff we stealing?",
+        "- Drug dealers, money launderers...",
+        "Champagne?"
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2332,
+    "output_tokens": 2223,
+    "cost_usd": 0.00503
+  },
+  "seconds": 53.6
+}

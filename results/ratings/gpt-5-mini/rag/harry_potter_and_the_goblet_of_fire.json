@@ -1,0 +1,51 @@
+{
+  "film_id": "harry_potter_and_the_goblet_of_fire",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles describe killings, threats, blood and a named killing (Cedric Diggory), and ritualistic blood use — indicating deaths, sustained peril and frightening scenes though not graphic gore.",
+      "evidence": [
+        "I want that you watch to me when it kills to you!",
+        "The blood of the enemy...",
+        "... to Cedric Diggory I kill it '......"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains courting/ball invitation and references to love, but no explicit sexual content — mild romantic content.",
+      "evidence": [
+        "I will not go single, because créanlo or no, somebody invited to me.",
+        "It was the love."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Subtitles include mild profanities/insults (\"damn\", insults like 'despicable mother') but no strong profanity or slurs.",
+      "evidence": [
+        "- the name, déme the damn name.",
+        "Coverall your despicable mother."
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references magical potions (Polyjuice/Veritaserum-like) and their use; this indicates more than incidental mention — characters use potions on-screen (moderate).",
+      "evidence": [
+        "I was taking a walk by a pipe obstructed the other day and...... it could swear that I saw little of potion multi- juice.",
+        "Potion of the truth.",
+        "Potion multi- juice."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2736,
+    "output_tokens": 2316,
+    "cost_usd": 0.00532
+  },
+  "seconds": 32.8
+}

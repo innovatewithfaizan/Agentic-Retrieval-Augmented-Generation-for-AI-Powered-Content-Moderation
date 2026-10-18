@@ -1,0 +1,53 @@
+{
+  "film_id": "shanghai_knights",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue contains shootings ('Lead flying', 'bullet'), explicit references to murder and attempted killing, threats and beatings ('beating you', 'Get him!'). No graphic gore, but realistic violence, weapons and murder threats are present — consistent with 'moderate'.",
+      "evidence": [
+        "Lead flying everywhere.\nAnd not a single bullet touched me.",
+        "My sister followed the murderer to London.",
+        "I snuck inside his house and tried to kill him."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue explicitly discusses sleeping with women for money (prostitution), mentions of 'naked ladies' and sexual behavior ('It's kinky'). These are sexual references and implied sex/partial nudity, matching 'moderate'.",
+      "evidence": [
+        "I will not sleep with women for money!",
+        "I'm gonna sleep with her for money.",
+        "Just ignore the naked ladies."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes derogatory language and slurs (e.g. 'savages', and 'Quit going all Chinese on me'), which are slurs/ethnic insults. Presence of slurs qualifies this as 'strong'.",
+      "evidence": [
+        "Please don't ever call those noble people savages.",
+        "Quit going all Chinese on me.",
+        "So piss off!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue repeatedly references drinking (brandy, hooch, whiskey) and an explicit reference to the Opium Wars (drug-related). Drinking appears as an on-screen activity and drugs are referenced — fits 'moderate'.",
+      "evidence": [
+        "The opium wars have ravaged the land.",
+        "Sitting here drinking expensive hooch? Refill.",
+        "Don't slosh the brandy."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2733,
+    "output_tokens": 1206,
+    "cost_usd": 0.0031
+  },
+  "seconds": 14.9
+}

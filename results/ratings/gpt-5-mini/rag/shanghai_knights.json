@@ -1,0 +1,53 @@
+{
+  "film_id": "shanghai_knights",
+  "mode": "rag",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue mentions bullets, murder, attempted killings, beatings and explicit calls to 'kill him' — realistic violence and threats without graphic detail, so 'moderate'.",
+      "evidence": [
+        "Lead flying everywhere.",
+        "My sister followed the murderer to London.",
+        "I snuck inside his house and tried to kill him."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue refers to sleeping with women for money, moaning, and references to naked ladies and kinky behavior — implied sex and partial nudity, so 'moderate'.",
+      "evidence": [
+        "I'm gonna sleep with her for money.",
+        "[ Woman moans ]",
+        "Just ignore the naked ladies."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Dialogue includes ethnic/racial slurs and insulting language (e.g. 'savages', 'Quit going all Chinese on me', 'piss off'), which counts as strong language due to slurs.",
+      "evidence": [
+        "Please don't ever call those noble people savages.",
+        "Quit going all Chinese on me.",
+        "So piss off!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue contains multiple references to alcohol (brandy, whiskey, 'drinking expensive hooch') and a mention of the Opium Wars — indicating substance references beyond incidental, so 'moderate'.",
+      "evidence": [
+        "The opium wars have ravaged the land.",
+        "Sitting here drinking expensive hooch? Refill.",
+        "Don't slosh the brandy."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2457,
+    "output_tokens": 1539,
+    "cost_usd": 0.00369
+  },
+  "seconds": 16.6
+}

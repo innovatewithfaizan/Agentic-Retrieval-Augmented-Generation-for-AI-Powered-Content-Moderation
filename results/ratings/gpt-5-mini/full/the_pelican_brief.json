@@ -1,0 +1,48 @@
+{
+  "film_id": "the_pelican_brief",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue repeatedly describes realistic killings, shootings, car explosions, and assassinations (multiple murders described, bullets, car explosion). Content is violent and serious but not graphic, so level = moderate.",
+      "evidence": [
+        "He was shot...... in broad daylight in a crowd.",
+        "Callahan was...... killed exactly as you said.",
+        "There was a bullet in his head...... and a gun beside him."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Brief references to a romantic/sexual relationship (an affair) but no explicit sexual content, so mild.",
+      "evidence": [
+        "They had an affair."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Dialogue includes an explicit f-word and other strong insults (e.g., “son of a bitch”), so language is strong.",
+      "evidence": [
+        "Fucking PBS!",
+        "You son- of- a- bitch!"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Incidental, non-problematic drinking is mentioned (characters sipping bourbon) but no drug use or heavy intoxication, so mild.",
+      "evidence": [
+        "In it, the President and Mattiece are in front of Mattiece's hunting lodge...... sipping on some bourbon, having a good laugh."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7287,
+    "output_tokens": 914,
+    "cost_usd": 0.00365
+  },
+  "seconds": 10.3
+}

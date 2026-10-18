@@ -1,0 +1,53 @@
+{
+  "film_id": "cradle_2_the_grave",
+  "mode": "agentic",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Multiple lines explicitly reference shootings, weapons (M-60), orders to shoot/kill, and physical assaults, indicating realistic and sustained violent action though no graphic gore is shown.",
+      "evidence": [
+        "That motherfucker's shooting!",
+        "Fire the M- 60!",
+        "How many times do we have to kill you?"
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Dialogue contains explicit sexual references and innuendo (mentions of 'jail sex', requests for 'love', and suggestive lines), indicating sexual content beyond mild flirting.",
+      "evidence": [
+        "Enjoy the jail sex, Fait.",
+        "I can be pretty rough.",
+        "Give me some love."
+      ],
+      "severity": "moderate"
+    },
+    "language": {
+      "rationale": "Frequent strong profanity appears in the dialogue, including multiple uses of the f-word and 'motherfucker', which meets the threshold for strong language.",
+      "evidence": [
+        "Fuck off!",
+        "Stay away from my fucking truck!",
+        "You ain't fucking with me, are you?"
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Dialogue includes references to drug dealers and Ritalin, and characters offering/mentioning champagne (alcohol). These are clear references to drug/alcohol-related activity, so moderate.",
+      "evidence": [
+        "So whose stuff we stealing?\n- Drug dealers, money launderers...",
+        "Someone give the geek his Ritalin.",
+        "Champagne?\n- Yes.\nI got it."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 2608,
+    "output_tokens": 1228,
+    "cost_usd": 0.00311
+  },
+  "seconds": 15.1
+}

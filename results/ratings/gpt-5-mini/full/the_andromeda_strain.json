@@ -1,0 +1,52 @@
+{
+  "film_id": "the_andromeda_strain",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Dialogue describes numerous unexplained deaths, contaminated bodies, autopsies, bones picked clean and dramatic threats (self-destruct bomb). These are realistic, frightening deaths and peril but not graphic gore in subtitles—rated moderate.",
+      "evidence": [
+        "Buzzards only come when something's dead.",
+        "Five quarts of blood turned to powder!",
+        "Major! Take a look at that, sir. We just found this, General. It's a human bone. Arm, I think."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "Very mild romantic/sexual references in dialogue (reassuring arms, bordello remark) but no explicit sexual activity or nudity—rated mild.",
+      "evidence": [
+        "I'll be safe as in your arms.",
+        "Reminds me of my years in a bordello."
+      ],
+      "severity": "mild"
+    },
+    "language": {
+      "rationale": "Frequent mild profanity and exclamations (\"damn\", \"God's sakes\") and strong language but no f-word or slurs—rated mild.",
+      "evidence": [
+        "Damn it, Comroe, of course we're certain.",
+        "Damn it, get this call through!",
+        "For God's sakes, Jeremy!"
+      ],
+      "severity": "mild"
+    },
+    "substances": {
+      "rationale": "Dialogue includes references to Sterno drinking and its physiological effects and characters smoking—substance use referenced and implicated in plot, more than incidental background—rated moderate.",
+      "evidence": [
+        "In Piedmont, Jackson was crocked on Sterno.",
+        "Sterno acidosis.",
+        "I'd like a cigarette right now."
+      ],
+      "severity": "moderate"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 14917,
+    "output_tokens": 1696,
+    "cost_usd": 0.00712
+  },
+  "seconds": 26.6
+}

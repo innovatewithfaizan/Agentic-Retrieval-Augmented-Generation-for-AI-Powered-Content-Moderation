@@ -1,0 +1,48 @@
+{
+  "film_id": "master_and_commander_the_far_side_of_the_world",
+  "mode": "full",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "effort": "medium",
+  "ratings": {
+    "violence": {
+      "rationale": "Subtitles depict naval combat with repeated commands to 'Fire', ship(s) sinking, combat casualties and a burial at sea — realistic battle violence and deaths but no graphic gore described in the dialogue.",
+      "evidence": [
+        "Fire!!",
+        "Its sinking!",
+        "We therefore commit their body to the deep."
+      ],
+      "severity": "moderate"
+    },
+    "sex": {
+      "rationale": "No sexual content, nudity, or explicit romance is present in the subtitle dialogue.",
+      "evidence": [],
+      "severity": "none"
+    },
+    "language": {
+      "rationale": "Dialogue includes strong profanity (the f-word) and milder profanities ('bloody', 'god damn'), which meets the 'strong' profanity threshold.",
+      "evidence": [
+        "Get that bloody swords!... she's not at the range yet.",
+        "We are rob by the fucking pirates.",
+        "I can't enhance the wind and god damn creator."
+      ],
+      "severity": "strong"
+    },
+    "substances": {
+      "rationale": "Only incidental references to drinking/toasts and buying a drink appear in dialogue (toasts and a line about buying a drink) — no depiction of heavy or problematic substance use.",
+      "evidence": [
+        "To wives and to sweethearts.",
+        "and that money bought me a drink."
+      ],
+      "severity": "mild"
+    }
+  },
+  "tool_calls": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 7205,
+    "output_tokens": 1935,
+    "cost_usd": 0.00567
+  },
+  "seconds": 30.5
+}
