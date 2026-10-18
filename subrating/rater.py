@@ -98,9 +98,9 @@ SEARCH_TOOLS = [
     ),
     llm.function_tool(
         "find_words",
-        "Exact, case-insensitive whole-word counts across every subtitle line of the film, with up "
-        "to 8 example lines. A trailing * matches any ending ('drunk*' matches 'drunken'). "
-        "At most 12 words per call.",
+        "Case-insensitive whole-word counts across every subtitle line of the film, with up to 8 "
+        "example lines. Each word also matches common endings ('fuck' finds 'fucking', 'drunk' "
+        "finds 'drunken'); a trailing * matches any ending. At most 12 words per call.",
         {
             "type": "object",
             "properties": {"words": {"type": "array", "items": {"type": "string"}}},

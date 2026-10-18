@@ -12,6 +12,14 @@ def test_find_words_counts_whole_words_with_wildcard():
     assert 0 < len(found["example_lines"]) <= 8
 
 
+def test_find_words_matches_common_endings_but_not_other_words():
+    lines = [Line("1", "00:00:01", "What the fucking hell, you fucker."),
+             Line("2", "00:00:02", "Hello there, he got drunken again."),
+             Line("3", "00:00:03", "Shell game.")]
+    counts = index.find_words(lines, ["fuck", "hell", "drunk"])["counts"]
+    assert counts == {"fuck": 2, "hell": 1, "drunk": 1}
+
+
 def test_memory_store_finds_the_relevant_chunk_and_skips_seen_ones():
     lines = [Line(str(i), f"00:00:{i:02d}", t) for i, t in enumerate([
         "Good morning, how are you?", "Fine, thanks.", "Want some coffee?", "Sure.",
