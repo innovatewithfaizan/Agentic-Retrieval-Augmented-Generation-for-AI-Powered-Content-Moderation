@@ -91,16 +91,22 @@ def build_index(films: list[dict]) -> int:
     return sum(store.ensure(f["film_id"], film_lines(f["subtitle_file"])) for f in films)
 
 
-def find_words(lines: list[Line], words: list[str], max_examples: int = 8) -> dict:
-    """Whole-word, case-insensitive counts over every line of a film.
+# Common English endings, so "fuck" also finds "fucking" and "drunk" finds
+# "drunken", without letting "hell" match "hello".
+INFLECTIONS = r"(?:s|es|ed|d|ing|in|er|ers|y|en)?"
 
-    A trailing '*' matches any suffix ("fuck*" matches "fucking")."""
+
+def find_words(lines: list[Line], words: list[str], max_examples: int = 8) -> dict:
+    """Case-insensitive whole-word counts over every line of a film.
+
+    Each word also matches common endings ("fuck" -> "fucking", "fuckin",
+    "fucker"); a trailing '*' matches any ending."""
     counts, examples = {}, []
     for word in words[:12]:
         stem = re.escape(word.strip().rstrip("*"))
         if not stem:
             continue
-        tail = r"\w*" if word.strip().endswith("*") else ""
+        tail = r"\w*" if word.strip().endswith("*") else INFLECTIONS
         pattern = re.compile(rf"\b{stem}{tail}\b", re.I)
         n = 0
         for line in lines:
