@@ -33,3 +33,13 @@ def test_memory_store_finds_the_relevant_chunk_and_skips_seen_ones():
     assert top[0]["id"] == "demo:c0001"
     rest = store.search("demo", "shooting and violence", k=2, exclude={"demo:c0001"})
     assert "demo:c0001" not in {h["id"] for h in rest} and len(rest) == 2
+
+
+def test_persistent_store_is_created_once_across_threads(monkeypatch, tmp_path):
+    from concurrent.futures import ThreadPoolExecutor
+
+    monkeypatch.setattr(index.config, "CHROMA_DIR", tmp_path / "chroma")
+    monkeypatch.setattr(index, "_persistent", None)
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        stores = list(pool.map(lambda _: index.persistent_store(), range(8)))
+    assert all(s is stores[0] for s in stores)

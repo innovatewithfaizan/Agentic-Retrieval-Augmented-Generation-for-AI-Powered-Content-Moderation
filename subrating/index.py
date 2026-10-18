@@ -55,9 +55,18 @@ class Store:
         return sorted(hits, key=lambda h: h["start"])
 
 
-@lru_cache(maxsize=1)
+_persistent: Store | None = None
+_persistent_lock = threading.Lock()
+
+
 def persistent_store() -> Store:
-    return Store(chromadb.PersistentClient(path=str(config.CHROMA_DIR)))
+    """One shared on-disk store. Chroma's client setup is not thread-safe, so
+    parallel rating workers must not create it at the same time."""
+    global _persistent
+    with _persistent_lock:
+        if _persistent is None:
+            _persistent = Store(chromadb.PersistentClient(path=str(config.CHROMA_DIR)))
+    return _persistent
 
 
 def memory_store() -> Store:
