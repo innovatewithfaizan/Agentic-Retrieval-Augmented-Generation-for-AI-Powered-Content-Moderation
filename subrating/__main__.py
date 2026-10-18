@@ -5,13 +5,19 @@
     search     try a semantic or exact-word search on one film
     estimate   token and cost estimate for the rating modes (no API calls)
     rate       rate films from their subtitles with an LLM (needs an API key)
+    label      turn parent-guide review text into severity labels (LLM)
+    evaluate   compare ratings with labels -> results/metrics.{json,md} and figures
+
+rate and label skip films that are already done, so a run stopped by a
+provider's daily limit continues where it left off when you rerun it.
 """
 
 import argparse
 import json
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from . import config, index, llm, rater, reviews
+from . import config, index, labels, llm, rater, reviews
 
 
 def cmd_match(args) -> None:
@@ -73,12 +79,55 @@ def cmd_estimate(args) -> None:
     print(f"  {'total':<8} ${grand:.2f}")
 
 
-def cmd_rate(args) -> None:
+def daily_limit_hit(exc: Exception) -> bool:
+    text = str(exc).lower()
+    return "per day" in text or "(tpd)" in text or "(rpd)" in text
+
+
+def run_all(items: list[dict], work, workers: int) -> None:
+    """Run work(item) in a small thread pool. Stops early if the provider's
+    daily limit is reached; rerunning the command resumes."""
+    stop = threading.Event()
+    spent, failed = 0.0, []
+
+    def guarded(item):
+        if stop.is_set():
+            return None
+        return work(item)
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(guarded, it): it["film_id"] for it in items}
+        for n, fut in enumerate(as_completed(futures), 1):
+            fid = futures[fut]
+            try:
+                result = fut.result()
+            except Exception as exc:  # keep going, report at the end
+                if daily_limit_hit(exc) and not stop.is_set():
+                    stop.set()
+                    print(f"Daily limit reached at {fid}; rerun the same command later to resume.", flush=True)
+                failed.append(fid)
+                if not stop.is_set():
+                    print(f"[{n}/{len(items)}] {fid}: ERROR {exc!r}", flush=True)
+                continue
+            if result is None:
+                continue
+            summary, cost = result
+            spent += cost
+            print(f"[{n}/{len(items)}] {fid}: {summary} (list price ${cost:.4f})", flush=True)
+    print(f"estimated cost at list price: ${spent:.4f}"
+          + (f"; not done: {len(failed)}" if failed else "; all done"))
+
+
+def make_backend(args, model: str) -> llm.Backend:
     try:
-        backend = llm.Backend(args.provider, args.model, effort=args.effort)
+        return llm.Backend(args.provider, model, effort=args.effort)
     except RuntimeError as exc:
         raise SystemExit(str(exc)) from None
-    out_dir = config.RATINGS_DIR / args.mode
+
+
+def cmd_rate(args) -> None:
+    backend = make_backend(args, args.model)
+    out_dir = config.ratings_dir(args.model, args.mode)
     out_dir.mkdir(parents=True, exist_ok=True)
     films = select_films(args)
     todo = [f for f in films if not (out_dir / f"{f['film_id']}.json").exists()]
@@ -89,24 +138,39 @@ def cmd_rate(args) -> None:
         rec = rater.rate(index.FilmContext.from_dataset(film), args.mode, backend)
         path = out_dir / f"{film['film_id']}.json"
         path.write_text(json.dumps(rec, indent=2, ensure_ascii=False), encoding="utf-8")
-        return rec
+        sev = " ".join(f"{c}={r['severity']}" for c, r in rec["ratings"].items())
+        return f"{sev} tools={len(rec['tool_calls'])}", rec["usage"]["cost_usd"]
 
-    spent, failed = 0.0, []
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(work, f): f["film_id"] for f in todo}
-        for n, fut in enumerate(as_completed(futures), 1):
-            fid = futures[fut]
-            try:
-                rec = fut.result()
-            except Exception as exc:  # keep going, report at the end
-                failed.append(fid)
-                print(f"[{n}/{len(todo)}] {fid}: ERROR {exc!r}", flush=True)
-                continue
-            spent += rec["usage"]["cost_usd"]
-            sev = " ".join(f"{c}={r['severity']}" for c, r in rec["ratings"].items())
-            print(f"[{n}/{len(todo)}] {fid}: {sev} tools={len(rec['tool_calls'])} "
-                  f"${rec['usage']['cost_usd']:.4f}", flush=True)
-    print(f"spent ${spent:.4f}" + (f"; failed: {', '.join(failed)}" if failed else ""))
+    run_all(todo, work, args.workers)
+
+
+def cmd_label(args) -> None:
+    model = args.model or (config.CHECK_LABEL_MODEL if args.check else config.LABEL_MODEL)
+    backend = make_backend(args, model)
+    path = config.LABELS_CHECK_JSONL if args.check else config.LABELS_JSONL
+    done = labels.read_labels(path)
+    by_title = reviews.reviews_by_title()
+    todo = [f for f in select_films(args) if f["film_id"] not in done]
+    print(f"labelling {len(todo)} reviews with {args.provider}/{model} -> "
+          f"{path.relative_to(config.ROOT)} ({len(done)} already done)")
+    lock = threading.Lock()
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    def work(film):
+        rec = labels.label_review(film["film_id"], by_title[film["review_title"]], backend)
+        with lock, open(path, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        sev = " ".join(f"{c}={v['severity']}" for c, v in rec["labels"].items())
+        return sev, rec["usage"]["cost_usd"]
+
+    run_all(todo, work, args.workers)
+
+
+def cmd_evaluate(args) -> None:
+    from . import evaluate, report
+
+    report.write(evaluate.run(args.model))
+    print((config.RESULTS_DIR / "metrics.md").read_text(encoding="utf-8"))
 
 
 def main(argv=None) -> None:
@@ -137,8 +201,18 @@ def main(argv=None) -> None:
     film_args(p)
     p.add_argument("--mode", choices=rater.MODES, required=True)
     p.add_argument("--effort", default=config.EFFORT, choices=["low", "medium", "high"])
-    p.add_argument("--workers", type=int, default=2)
+    p.add_argument("--workers", type=int, default=1)
     p.set_defaults(fn=cmd_rate)
+    p = sub.add_parser("label")
+    film_args(p)
+    p.set_defaults(model=None)  # LABEL_MODEL, or CHECK_LABEL_MODEL with --check
+    p.add_argument("--check", action="store_true", help="second, independent labeler")
+    p.add_argument("--effort", default=config.EFFORT, choices=["low", "medium", "high"])
+    p.add_argument("--workers", type=int, default=1)
+    p.set_defaults(fn=cmd_label)
+    p = sub.add_parser("evaluate")
+    p.add_argument("--model", default=config.RATER_MODEL, help="whose ratings to score")
+    p.set_defaults(fn=cmd_evaluate)
     args = parser.parse_args(argv)
     args.fn(args)
 
