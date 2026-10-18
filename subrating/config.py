@@ -81,3 +81,7 @@ CHUNK_SIZE = 4
 TOP_K = 12          # chunks per category for the RAG baseline (about 48 lines)
 AGENT_SEARCH_K = 6  # chunks returned per agent search call
 AGENT_MAX_SEARCHES = 8
+# Stop agent searches once a request would pass this many (approximate)
+# tokens. Unset: the provider's default (6500 on Groq for its free tier,
+# no limit elsewhere). 0 disables it.
+MAX_PROMPT_TOKENS = int(os.environ["MAX_PROMPT_TOKENS"]) if os.environ.get("MAX_PROMPT_TOKENS") else None
