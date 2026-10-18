@@ -1,0 +1,5 @@
+[server]
+maxUploadSize = 5  # MB; the largest subtitle file in the dataset is 0.86 MB
+
+[browser]
+gatherUsageStats = false

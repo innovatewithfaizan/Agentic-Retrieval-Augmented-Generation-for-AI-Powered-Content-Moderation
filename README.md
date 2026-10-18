@@ -116,6 +116,25 @@ The set leans heavily to "moderate" and "strong": most of these are films for te
 - **One rater, one run.** All numbers come from a single run of `gpt-5-mini` at medium effort; run-to-run variance and other models are not measured.
 - **The majority baseline is optimistic.** It is chosen from the label distribution it is scored on.
 
+## Demo app
+
+[`app.py`](app.py) is a Streamlit app that runs the rater with **your own API key**:
+
+- Pick a provider (Groq, OpenAI, Together AI or OpenRouter) and a model, and paste a key. The key is passed to that one run and is not stored, logged, cached or read from the server's environment.
+- Rate one of the 75 films, or upload a subtitle file (`.srt` or OpenSubtitles `.xml`, up to 5 MB). Uploads are embedded in memory under a random id and deleted after the run.
+- Watch the agent's tool calls as they happen, then read each category's rating, rationale and quoted evidence. Dataset films also show the parent-guide label.
+- Without a key you can still browse the saved gpt-5-mini ratings for every film and method.
+
+Groq's free tier works, but it allows about 8K tokens a minute, so an agentic run can pause between steps and the full-transcript mode is usually too large for it.
+
+```bash
+.venv/bin/streamlit run app.py
+```
+
+For local development only, `SUBRATING_DEV_ENV_KEYS=1` lets the app fall back to the keys in your `.env` when the key field is empty. Never set it on a public deployment.
+
+**Deploying on Streamlit Community Cloud:** create an app from this repository with `app.py` as the main file and Python 3.11. `requirements.txt` already includes Streamlit. Add no secrets: visitors bring their own keys. On first use the server downloads the small embedding model Chroma uses (all-MiniLM-L6-v2).
+
 ## How to run
 
 Python 3.10+.
@@ -159,7 +178,7 @@ Tests (no API key; the first run downloads the small embedding model Chroma uses
 
 ```text
 subrating/
-  subtitles.py   parse OpenSubtitles XML, chunk lines
+  subtitles.py   parse OpenSubtitles XML and .srt files, chunk lines
   reviews.py     load review CSVs, match titles to subtitle files
   index.py       ChromaDB store, semantic search, exact word counts
   llm.py         one OpenAI-compatible client for OpenAI, Groq, Together AI, OpenRouter; usage and cost
@@ -168,6 +187,8 @@ subrating/
   evaluate.py    agreement metrics, bootstrap CI, evidence grounding, baseline
   report.py      results/metrics.md, metrics.json and confusion matrices
   __main__.py    CLI: match, index, search, estimate, rate, label, evaluate
+  demo.py        helpers for the demo app: key handling, uploads, saved ratings
+app.py           Streamlit demo (bring your own key)
 tests/           unit tests with fake LLM backends
 data/            matched_films.csv
 results/         labels, per-film ratings (JSON with evidence and tool calls), metrics
